@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Apparently, this user likes to keep an air of mistery about himself...
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm user `pgorod` on Github, and user `pgr` on the SuiteCRM forums.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+I'm not currently providing a contact email, but you can always mention me on Github or post in any forum post where I participated.
