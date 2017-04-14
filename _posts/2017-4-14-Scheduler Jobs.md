@@ -62,16 +62,16 @@ You can add more than one allowed user. `root` is particularly NOT recommended, 
 The relevant section of config.php might look like this:
 
 {% highlight php %}
-    'cron' =>
-       array (
-         'max_cron_jobs' => 10,
-         'max_cron_runtime' => 30,
-         'min_cron_interval' => 30,
-         'allowed_cron_users' =>
-         array (
-            0 => 'www-data',
-         ),
-       ),
+'cron' =>
+   array (
+	 'max_cron_jobs' => 10,
+	 'max_cron_runtime' => 30,
+	 'min_cron_interval' => 30,
+	 'allowed_cron_users' =>
+	 array (
+		0 => 'www-data',
+	 ),
+   ),
 {% endhighlight %}
 
 # Which command should I use in crontab? #
