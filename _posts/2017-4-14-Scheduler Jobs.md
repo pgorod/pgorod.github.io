@@ -7,7 +7,7 @@ SuiteCRM uses a number of `Scheduler jobs` that are supposed to run at scheduled
 
 When completing installation, the Scheduler jobs need to be **manually enabled**. This is done by asking your operating system to run a script called cron.php every minute. This, in turn, manages all SuiteCRM jobs according to their proper schedules. This can all be managed at the `Admin / Schedulers` screen.
 
-In Windows this is setup on the system's "Task Scheduler"; **in Linux and iOS, which is the focus of this answer,** it is setup in crontab. During the installation you will receive detailed instructions with the specific commands you need to run to setup these jobs. After installation, you can still access these instructions at the bottom of the `Admin / Schedulers` screen.
+In Windows this is setup on the system's "Task Scheduler"; **in Linux and iOS, which is the focus of this post,** it is setup in crontab. During the installation you will receive detailed instructions with the specific commands you need to run to setup these jobs. After installation, you can still access these instructions at the bottom of the `Admin / Schedulers` screen.
 
 To make sure your Scheduler jobs don't create permissions problems, **the standard practice is to run them under the same user that your Web server runs under**. For different configurations, the allowed_cron_users array in config.php must be adjusted.
 
