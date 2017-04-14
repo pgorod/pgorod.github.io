@@ -12,4 +12,4 @@ I'm user [pgorod](https://github.com/pgorod) on Github, and user [pgr](https://s
 
 ### Contact me
 
-I'm not currently providing a contact email, but you can always mention me on Github or post in any forum post where I participated.
+I'm not currently providing a contact email, but you can always mention me on Github or post in any forum post where I participated, to get my attention.
