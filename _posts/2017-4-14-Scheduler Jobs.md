@@ -49,9 +49,11 @@ There are many ways to do this that you can read about online. I will list a few
 2. In versions 7.8.3 and later, check the `cron_allowed_users` section of your config.php file, it should be there.
 3. On any version, go into `Admin / Diagnostics` and select only `phpinfo`. Once that file is produced, check the `APACHE_RUN_USER` value it provides.
 
-# What is the `cron_allowed_users` section in `config.php`?
+# What is the cron_allowed_users section in config.php?
 
-> Starting with SuiteCRM 7.8.3 in April 2017, a mechanism was introduced to limit the users that are allowed to run cron jobs. **The information in this section applies only from that version on**. Earlier versions don't check the user and let you run cron as any user (so YOU need to make sure it is the correct user, and not `root`, for example)
+> The information in this section applies only to SuiteCRM version 7.8.3 and newer.
+
+Starting with SuiteCRM 7.8.3 in April 2017, a mechanism was introduced to limit the users that are allowed to run cron jobs. Earlier versions don't check the user and let you run cron as any user (so YOU need to make sure it is the correct user, and not `root`, for example)
 
 Only users listed in an array called `cron_allowed_users` in `config.php` (on the root of your SuiteCRM installation) will be allowed to run `cron.php`. Any other users will cause that script to terminate itself every time it starts.
 
