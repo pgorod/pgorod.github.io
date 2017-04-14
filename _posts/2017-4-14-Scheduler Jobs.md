@@ -3,8 +3,6 @@ layout: post
 title: Scheduler Jobs in SuiteCRM in Linux - the Definitive Guide
 ---
 
-# What are Scheduler Jobs and how do they operate? #
-
 SuiteCRM uses a number of `Scheduler jobs` that are supposed to run at scheduled times, supporting functionalities like search indexing, workflows, email notifications, database maintenance, etc.
 
 When completing installation, the Scheduler jobs need to be **manually enabled**. This is done by asking your operating system to run a script called cron.php every minute. This, in turn, manages all SuiteCRM jobs according to their proper schedules. This can all be managed at the `Admin / Schedulers` screen.
