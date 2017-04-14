@@ -8,7 +8,7 @@ Apparently, this user likes to keep an air of mistery about himself...
 
 ### More Information
 
-I'm user `pgorod` on Github, and user `pgr` on the SuiteCRM forums.
+I'm user [pgorod](https://github.com/pgorod) on Github, and user [pgr](https://suitecrm.com/forum/profile/6776-pgr) on the SuiteCRM forums.
 
 ### Contact me
 
