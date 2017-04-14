@@ -61,6 +61,7 @@ You can add more than one allowed user. `root` is particularly NOT recommended, 
 
 The relevant section of config.php might look like this:
 
+{% highlight php %}
     'cron' =>
        array (
          'max_cron_jobs' => 10,
@@ -71,6 +72,7 @@ The relevant section of config.php might look like this:
             0 => 'www-data',
          ),
        ),
+{% endhighlight %}
 
 # Which command should I use in crontab? #
 
