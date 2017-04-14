@@ -11,7 +11,7 @@ In Windows this is setup on the system's "Task Scheduler"; **in Linux and iOS, w
 
 To make sure your Scheduler jobs don't create permissions problems, **the standard practice is to run them under the same user that your Web server runs under**. For different configurations, the allowed_cron_users array in config.php must be adjusted.
 
-# What are the `crontab` basics I need to understand? #
+## What are the crontab basics I need to understand? ##
 
 In Linux there can be one crontab per user. This applies even to users who can't login to a shell, like the standard web-server users found in many default installations (like `www-data` and `nobody`). Throughout these examples I will be using `www-data`, but you can change that to whatever user you want.
 
@@ -33,7 +33,7 @@ Notice that the comments inside this crontab explain that it is the system-wide 
 
 See that `www-data` in there? That would not be there in a specific user's crontab. That username column is just for the system-wide crontab.
 
-# Which user should these jobs run under? #
+## Which user should these jobs run under? ##
 
 The answer will vary from system to system. However, a standard acceptable solution is to find out which user your web-server runs under and use this user for the cron jobs also. This simplifies the design of your permissions scheme and basically ensures that the two processes (the web app and the cron jobs) accessing the same database and files don't create permissions problems for one another.
 
@@ -41,7 +41,7 @@ The answer will vary from system to system. However, a standard acceptable solut
 
 If you were running your cron jobs as root for some time, due to a wrong crontab configuration, after you fix it, remember to reset correct ownership and permissions on the entire SuiteCRM directory tree, and then do a `Quick Repair and Rebuild`.
 
-# And how can I find out which user my web server runs under? #
+## And how can I find out which user my web server runs under? ##
 
 There are many ways to do this that you can read about online. I will list a few that are specific to SuiteCRM:
 
@@ -49,7 +49,7 @@ There are many ways to do this that you can read about online. I will list a few
 2. In versions 7.8.3 and later, check the `cron_allowed_users` section of your config.php file, it should be there.
 3. On any version, go into `Admin / Diagnostics` and select only `phpinfo`. Once that file is produced, check the `APACHE_RUN_USER` value it provides.
 
-# What is the cron_allowed_users section in config.php?
+## What is the cron_allowed_users section in config.php?
 
 > The information in this section applies only to SuiteCRM version 7.8.3 and newer.
 
@@ -76,7 +76,7 @@ The relevant section of config.php might look like this:
    ),
 {% endhighlight %}
 
-# Which command should I use in crontab? #
+## Which command should I use in crontab? ##
 
 The basic idea is to frequently run `cron.php`, and that takes care of everything.
 
@@ -98,11 +98,11 @@ Of course you can also use crontab's syntax to make it run less frequently, whic
 
 `*/2  *    * * *   cd /your/suitecrm/folder; php -f cron.php > /dev/null 2>&1`
 
-# What if I can't edit crontab? #
+## What if I can't edit crontab? ##
 
 If you don't have access as sudo to edit some crontab, which might occur on shared hosting scenarios, contact your web hosting technical support to request the changes. You can direct them to these instructions here.
 
-# What php.ini settings apply to the cron jobs? #
+## What php.ini settings apply to the cron jobs? ##
 
 First, recall that there are usually at least two independent PHP configurations in a system: the one that runs inside the web server and the one that runs from the command-line (CLI).
 
@@ -116,7 +116,7 @@ To see which php.ini file your CLI is using, type
 
 `php -i | grep php.ini`
 
-# How can I make sure the jobs are actually running? #
+## How can I make sure the jobs are actually running? ##
 
 1. Linux's `syslog` normally logs which processes it launches in `cron`.
 
