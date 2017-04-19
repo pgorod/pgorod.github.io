@@ -21,3 +21,4 @@ So to get a full list translating document names to files on the filesystem, use
 
 ``SELECT `filename`, concat("upload/", `id`) FROM `document_revisions` ``
 
+watch out for multiple files with the same name, these would be different revisions of the same document.
