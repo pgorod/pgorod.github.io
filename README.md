@@ -1,4 +1,4 @@
-Welcome to the **[pgorod.github.io](https://pgorod.github.io)** wiki!
+Welcome to the **[pgorod.github.io](https://pgorod.github.io)** Github Pages!
 
 This is a Github repository that produces a website at [pgorod.github.io](https://pgorod.github.io) where I post about SuiteCRM.
 
