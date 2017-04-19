@@ -3,6 +3,8 @@ layout: post
 title: SuiteCRM Concepts Explained: Documents, Notes, Attachments
 ---
 
+These SuiteCRM concepts seem to mix and overlap in unexpected manners, causing some initial confusion. This guide will help you sort everything out.
+
 Documents are files that you upload into the system for later reference. The distinguishing feature of this concept is that it allows for Revisions, meaning SuiteCRM will keep all previous versions as you upload new ones, instead of replacing them. You can add some comments to each revision. 
 
 Attachments are also uplodaded files, but they can be, well, attached to either Emails or Cases or Notes. Even so, you shouldn't conclude that Notes and Attachments are the same thing, because not all Notes contain (or are) Attachments. Some might just have a text (that shows directly on the Note), but not an attached file (that you can click to download and open locally on your computer). Attachments do not have the option to keep multiple revisions.
