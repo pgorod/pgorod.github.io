@@ -19,6 +19,6 @@ The file name as visible to the user (like `invoice.doc`) will be stored both in
 
 So to get a full list translating document names to files on the filesystem, use this from SQL:
 
-`SELECT `filename`, concat("upload/", \`id\`) FROM \`document_revisions\``
+`SELECT ``filename``, concat("upload/", ``id``) FROM ``document_revisions```
 
 ---
