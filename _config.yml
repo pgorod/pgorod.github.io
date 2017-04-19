@@ -83,3 +83,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+#hide future posts to allow auto publishing by date:
+  future: false
