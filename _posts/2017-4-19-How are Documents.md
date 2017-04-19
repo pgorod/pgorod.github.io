@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How are Documents stored in the Database?
+title: How are Documents stored?
 ---
 
 At some point you might need to go under the hood and see how SuiteCRM stores `Documents` in the database, and in the file system. So here's a guide to help you out.
@@ -19,6 +19,6 @@ The file name as visible to the user (like `invoice.doc`) will be stored both in
 
 So to get a full list translating document names to files on the filesystem, use this from SQL:
 
-``SELECT `filename`, concat("upload/", `id`) FROM `document_revisions` ``
+``SELECT `filename`, CONCAT("upload/", `id`) FROM `document_revisions` ``
 
 watch out for multiple files with the same name, these would be different revisions of the same document.

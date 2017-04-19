@@ -14,6 +14,9 @@ avatar: https://avatars3.githubusercontent.com/u/15945027?v=3&s=460
 # Flags below are optional
 #
 
+#hide future posts to allow auto publishing by date:
+future: false
+  
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -84,5 +87,3 @@ exclude:
   - README.md
   - CNAME
 
-#hide future posts to allow auto publishing by date:
-  future: false
