@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SuiteCRM Concepts Explained: Documents, Notes, Attachments
+title: 'SuiteCRM Concepts Explained: Documents, Notes, Attachments'
 ---
 
 These SuiteCRM concepts seem to mix and overlap in unexpected manners, causing some initial confusion. This guide will help you sort everything out.
