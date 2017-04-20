@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'SuiteCRM Concepts Explained: Documents, Notes, Attachments'
+title: SuiteCRM Concepts Explained: Documents, Notes, Attachments
 categories: Concepts, Documents, Notes, Attachments
 ---
 
@@ -35,4 +35,4 @@ So, to untangle all that from the point of view of each concept:
 - not all Notes are Attachments, they can be just text
 - but all Attachments are Notes
 
-In other posts, I will explain how Documents and Attachments are stored in the database and in the file system.
+In other posts, I explain how [Documents](2017-4-19-How-are-Documents) and Attachments are stored in the database and in the file system.

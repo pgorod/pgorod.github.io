@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How are Documents stored?
+categories: Database, File System, Documents
 ---
 
 At some point you might need to go under the hood and see how SuiteCRM stores `Documents` in the database, and in the file system. So here's a guide to help you out.
