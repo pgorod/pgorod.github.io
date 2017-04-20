@@ -35,4 +35,4 @@ So, to untangle all that from the point of view of each concept:
 - not all Notes are Attachments, they can be just text
 - but all Attachments are Notes
 
-In other posts, I explain how [Documents]({{ site.baseurl }}{% post_url 2017-4-19-How-Documents-Stored %}) and [Attachments]({{ site.baseurl }}{% post_url 2017-4-21-How-Attachments-Stored %}) are stored in the database and in the file system.
+In other posts, I explain how [Documents]({{ site.baseurl }}{% post_url 2017-4-19-How-Documents-Stored %}) and  are stored in the database and in the file system.
