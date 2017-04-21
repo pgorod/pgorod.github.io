@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Customizations in the custom folder
+categories: [Customization, File System]
 ---
 
 SuiteCRM's code can be customized in many places. The basic rule is pretty simple: whenever it needs a php file, it will look first inside the `custom` folder, and use any customized file that you placed there. Only if it's not there it will keep looking in the original place of the file.

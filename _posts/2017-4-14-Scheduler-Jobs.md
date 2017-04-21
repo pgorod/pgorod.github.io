@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Scheduler Jobs in SuiteCRM in Linux - the Definitive Guide
+categories: [Scheduler Jobs]
 ---
 
 SuiteCRM uses a number of `Scheduler jobs` that are supposed to run at scheduled times, supporting functionalities like search indexing, workflows, email notifications, database maintenance, etc.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The two logs you need to know
+categories: [Troubleshooting, Logs, File System]
 ---
 
 SuiteCRM uses a couple of logs that give you helpful clues as to what is going on in your system. In fact, if you need to troubleshoot a problem, this is always worth checking.
