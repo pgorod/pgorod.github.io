@@ -33,6 +33,6 @@ So, to untangle all that from the point of view of each concept:
 ### Concept overlaps: ###
 - all files uploaded to the system become either a Document Revision or a Note
 - not all Notes are Attachments, they can be just text
-- but all Attachments are Notes
+- but all Attachments created will be saved as Notes unless they are pre-existing Documents
 
-In other posts, I explain how [Documents]({{ site.baseurl }}{% post_url 2017-4-19-How-Documents-Stored %}) and Attachments are stored in the database and in the file system.
+In other posts, I explain how [Documents]({{ site.baseurl }}{% post_url 2017-4-19-How-Documents-Stored %}) and [Attachments]({{ site.baseurl }}{% post_url 2017-4-21-How-Attachments-Stored %}) are stored in the database and in the file system.
