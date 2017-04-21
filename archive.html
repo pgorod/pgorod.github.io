@@ -8,9 +8,7 @@ All posts, listed by category:
 
 <div id="archives">
 {% for category in site.categories %}
- <ul> 
  <div class="archive-group">
-    <li>
 		<ul>
 		{% capture category_name %}{{ category | first }}{% endcapture %}
 		<div id="#{{ category_name | slugize }}"></div>
@@ -23,8 +21,6 @@ All posts, listed by category:
 		</article>
 		{% endfor %}
 		</ul>
-	</li>
-</ul>
   </div>
 {% endfor %}
 </div>
