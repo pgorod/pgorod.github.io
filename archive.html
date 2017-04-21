@@ -8,20 +8,23 @@ All posts, listed by category:
 
 <div id="archives">
 {% for category in site.categories %}
-  <div class="archive-group">
+ <ul> 
+ <div class="archive-group">
     <li>
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <h3 class="category-head">{{ category_name }}</h3>
-    <ul>
-    <li><a name="{{ category_name | slugize }}"></a></li>
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
-    </article>
-    {% endfor %}
-	</ul>
-  </li>
+		<ul>
+		{% capture category_name %}{{ category | first }}{% endcapture %}
+		<div id="#{{ category_name | slugize }}"></div>
+		<h3 class="category-head">{{ category_name }}</h3>
+		<ul>
+		<li><a name="{{ category_name | slugize }}"></a></li>
+		{% for post in site.categories[category_name] %}
+		<article class="archive-item">
+		  <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+		</article>
+		{% endfor %}
+		</ul>
+	</li>
+</ul>
   </div>
 {% endfor %}
 </div>
