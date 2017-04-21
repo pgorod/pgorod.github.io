@@ -4,9 +4,9 @@ title: How are Attachments stored?
 categories: [Database, File System, Attachments, Notes]
 ---
 
-At some point you might need to go under the hood and see how SuiteCRM stores **Attachments** in the database, and in the file system. So here's a guide to help you out.
+At some point you might need to go under the hood and see how SuiteCRM stores `Attachments` in the database, and in the file system. So here's a guide to help you out.
 
-If haven't read this already, start with a few non-obvious points about what **Attachments** _are_ in SuiteCRM, by reading [SuiteCRM Concepts Explained: Documents, Notes, Attachments]({% post_url 2017-4-20-Concepts-Docs-Attach-Notes %})
+If haven't read this already, start with a few non-obvious points about what Attachments _are_ in SuiteCRM, by reading [SuiteCRM Concepts Explained: Documents, Notes, Attachments]({% post_url 2017-4-20-Concepts-Docs-Attach-Notes %})
 
 ## In the database ##
 
