@@ -2,12 +2,14 @@
 layout: default
 ---
 
+<link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.png" >
+
 All posts, listed by category: 
 
 <div id="archives">
 {% for category in site.categories %}
-  <li>
   <div class="archive-group">
+    <li>
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
     <h3 class="category-head">{{ category_name }}</h3>
