@@ -14,10 +14,9 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}, included in catogories {{ page.categories | join: ', ' }}
-	 
+    Written on {{ page.date | date: "%B %e, %Y" }}, included in catogories 	 
 	 {% for c in page.categories %}
-	 <a href="{{ site.baseurl }}/archive.html#{{c}}">{{ c }}</a>
+	 <a href="{{ site.baseurl }}/archive#{{c}}">{{ c }}</a>, 
 	 {% endfor %}
   </div>
 
