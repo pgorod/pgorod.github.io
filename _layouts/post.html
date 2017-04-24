@@ -16,7 +16,7 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}, included in catogories 	 
 	 {% for c in page.categories %}
-	 <a href="{{ site.baseurl }}/archive#{{c  | uri_escape | downcase }}">{{ c }}</a>, 
+	 <a href="{{ site.baseurl }}/archive#{{ c | slugify }}">{{ c }}</a>, 
 	 {% endfor %}
   </div>
 

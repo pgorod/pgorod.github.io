@@ -15,7 +15,7 @@ All posts, listed by category:
 {% assign sorted_cats = site.categories | sort %}
 {% for category in sorted_cats %}
 {% assign sorted_posts = category[1] | reversed %}
-<h4 id="{{category[0] | uri_escape | downcase }}">{{category[0] | capitalize}}</h4>
+<h4 id="{{category[0] | slugify }}">{{category[0] | capitalize}}</h4>
 <ul>
   {% for post in sorted_posts %}
  	<li><a href="{{ site.url }}{{ site.baseurl }}{{  post.url }}">{{  post.title }}</a></li>
