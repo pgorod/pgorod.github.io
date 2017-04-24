@@ -15,8 +15,8 @@ layout: default
 
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}, included in catogories {{ page.categories | join: ', ' }}
-	    {% for category in page.categories %}
-      <li><a href="#{{ category[0] }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
+	    {% for p in site.categories[page.category]  %}
+      <li><a href="#{{ p[0] }}">{{ p[0] | capitalize }} ({{ p[1].size }})</a></li>
 {% endfor %}
   </div>
 
