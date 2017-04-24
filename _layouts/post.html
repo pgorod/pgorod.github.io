@@ -17,7 +17,7 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}, included in catogories {{ page.categories | join: ', ' }}
 	 
 	 {% for c in page.categories %}
-	 <a href="archive.html#{{c}}">{{ c }}</a>
+	 <a href="{{ site.baseurl }}/archive.html#{{c}}">{{ c }}</a>
 	 {% endfor %}
   </div>
 
