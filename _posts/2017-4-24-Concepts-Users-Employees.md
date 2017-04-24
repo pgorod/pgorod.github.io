@@ -35,9 +35,9 @@ So, how can we make sense of all of this? The essential point is that normally t
 - all users are employees
 - not all employees are users
 
-So how does SuiteCRM provide a way for you to express a person who is not your employee but that you want accessing your system? Well, there is a way, but very limited and different, who is the `Portal User` (see below).
+So how does SuiteCRM provide a way for you to express a person who is not your employee but that you want accessing your system? Well, there is a way, but very limited and different, which is the `Portal User` (see below).
 
-On the other hand, an Employee who does not use the CRM is simple to achieve. It doens't do much, though, except save his name and address and other fields like these.
+On the other hand, an Employee who does not use the CRM is simple to achieve. It doesn't do much, though, except save his name and address and other fields like these.
 
 If you create an `Employee` you can later turn him into a `User` by going into the `Users` module and adding a username and password.
 
