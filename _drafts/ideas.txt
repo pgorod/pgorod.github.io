@@ -1,10 +1,17 @@
 ubuntu install
-run in vm
+
 backup strategies
+
 contacts/leads/targets/opportunities
+
 assignments/direct reports
+
 campaigns
+
 suitecrm as a generic database
+
 fields in relationships
+
 using audit to see files that get loaded
 
+some SQL
