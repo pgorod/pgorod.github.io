@@ -48,7 +48,7 @@ There are many ways to do this that you can read about online. I will list a few
 
 1. In versions 7.8.3 and later, go into `Admin / Schedulers` and see that crontab command on the bottom of the screen.
 2. In versions 7.8.3 and later, check the `cron_allowed_users` section of your config.php file, it should be there.
-3. On any version, go into `Admin / Diagnostics` and select only `phpinfo`. Once that file is produced, check the `APACHE_RUN_USER` value it provides.
+3. On any version, go into `Admin / Diagnostics` and select only `phpinfo`. Once that file is produced, check the `APACHE_RUN_USER` value it provides. (Note: don't run php -i from the command-line, it's not the same thing)
 
 ## What is the cron_allowed_users section in config.php?
 

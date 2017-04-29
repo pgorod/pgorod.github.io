@@ -31,3 +31,5 @@ For test and development machines, 3 Gb RAM will suffice, and about 10Gb for the
 ### Anything against? ###
 
 Sure, some opposite arguments might also apply. These would be the generic reasons you can find online for why you prefer _not_ to virtualize some server. For SuiteCRM I would say the only one I can find relevant is hardware performance, in case you have a very I/O intensive server and after careful consideration decide you can't really virtualize without suffering some performance hit. But this is unlikely, and as a rule of thumb: if you have that kind of installation, you know what you're doing, and you're not here reading my introductory advice about virtualisation : - )
+
+See [My SuiteCRM hardware and system architecture]({{ site.baseurl }}{% post_url 2017-4-29-Architecture %}) for how I put all this together in real-life, with extra tips.
