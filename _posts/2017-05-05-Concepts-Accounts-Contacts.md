@@ -4,7 +4,7 @@ title: 'SuiteCRM Concepts Explained: Accounts, Contacts and Sub-Accounts'
 categories: [Concepts, Accounts, Contacts]
 ---
 
-`Accounts` and `Contacts` are veryy central concepts in SuiteCRM. 
+`Accounts` and `Contacts` are veryy central concepts in SuiteCRM. Normally your data-modelling decisions start here - and there are a few subtleties you need to learn.
 
 An `Account` is basicaly a representation of an impersonal entity, like a company, an institution, etc. 
 
