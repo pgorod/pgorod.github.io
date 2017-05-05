@@ -51,4 +51,4 @@ There might be good reasons to use this system, imperfect as it is. If you need 
 
 ### Setting up Security ###
 
-Although it's a different topic, if you're interested in modelling groups, subgroups and people, you will probably want to consider the different accesses you will be letting each group of users have. So a recommended reading is this: (A Typical Hierarchy Setup)[https://www.sugaroutfitters.com/docs/securitysuite/example-of-a-typical-setup]
+Although it's a different topic, if you're interested in modelling groups, subgroups and people, you will probably want to consider the different accesses you will be letting each group of users have. So a recommended reading is this: <a href="https://www.sugaroutfitters.com/docs/securitysuite/example-of-a-typical-setup" target="_blank">A Typical Hierarchy Setup</a>.
