@@ -36,7 +36,7 @@ There can be several levels in this composition, so that an `Account` can be the
 
 And how does this affect the relationship with Contacts? Well, Contacts are still only linked to a single specific Account, and it can be at any level in the hierarchy. But with clever work under the hood, with some SQL you could have fancier operations like loading every contact of every sub-account into a Target List you can email, for example.
 
-Where this is most useful is for security accesses. If you limit access to a certain Account, SuiteCRM 
+Where this is most useful is for **security accesses**. If you limit access to a certain Account, SuiteCRM will be smart enough to consider everything under that `Account`, including `Sub-Accounts`. This makes it easy to segment your data in high-level blocks, as well as with greater detail if you need to.
 
 ### Exceptionally, a Contact can belong to several accounts ###
 
@@ -51,4 +51,4 @@ There might be good reasons to use this system, imperfect as it is. If you need 
 
 ### Setting up Security ###
 
-Although it's a different topic, if you're interested in modelling groups, subgroups and people, you will probably want to consider the different accesses you will be letting each group of users have. So a recommended reading is this: (A Typical Hierarchy Setup) [https://www.sugaroutfitters.com/docs/securitysuite/example-of-a-typical-setup]
+Although it's a different topic, if you're interested in modelling groups, subgroups and people, you will probably want to consider the different accesses you will be letting each group of users have. So a recommended reading is this: [A Typical Hierarchy Setup] (https://www.sugaroutfitters.com/docs/securitysuite/example-of-a-typical-setup)
