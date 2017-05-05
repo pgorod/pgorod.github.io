@@ -1,43 +1,42 @@
 ---
 layout: post
-title: 'SuiteCRM Concepts Explained: Accounts, Contacts and sub-accounts'
+title: 'SuiteCRM Concepts Explained: Accounts, Contacts and Sub-Accounts'
 categories: [Concepts, Accounts, Contacts]
 ---
 
+`Accounts` and `Contacts` are veryy central concepts in SuiteCRM. 
 
-Accounts and Contacts are pretty central concepts in SuiteCRM. 
-
-An Account is basicaly a representation of an impersonal entity, like a company, an institution, etc. 
+An `Account` is basicaly a representation of an impersonal entity, like a company, an institution, etc. 
 
 Then it articulates with the several representations of persons (`Contacts`, `Leads`, `Targets`). Of these, the main one is clearly `Contacts`, which is a person in full standing in your CRM: it is the personal entity that keeps more information, and that links to all other modules in the CRM, so that you can keep a view of the History of your relationship with that person. Customers will almost always be modelled as `Contacts`.
 
-So, almost every system you design around SuiteCRM is going to make use of both of these concepts. Your main institutions will be modelled as `Accounts`, your main persons will be modelled as `Contacts`. 
+So, almost every system you design around SuiteCRM is going to make use of both of these concepts. **Your main institutions will be modelled as `Accounts`**, **your main persons will be modelled as `Contacts`**. 
 
 **I don't recommend starting with new entities to model companies or people**. For example, you might think, my business deals with Artists, so I will go into Studio and create a module called `Artists`. Sure, you can do that, and you can even base it on the `Contacts` module so that most fields will already be there. But the default `Contacts` is so linked to everything in the CRM, that you will be better off using it directly. You can rename it to `Artists` if that's really the only thing a contact will ever be in your company - but this is a superficial name change that keeps everything the same underneath. The new module would be more difficult to integrate. The same goes for the `Accounts` module.
 
 ### An Account can have many Contacts ### 
 
-The most common relationship between these two central concepts is this: each Account can contain zero, one or many Contacts. These could be the many people you know inside an organization.
+The most common relationship between these two central concepts is this: each Account can contain zero, one or many `Contacts`. These could be the many people you know inside an organization.
 
-But you can also use an Account as an alternative way to group people. For example, you might create an Account called "Impressionists" and put all your impressionistic style Artists in it. You could - but I'm not recommending you do. A custom field called "Painting style" in the Contacts record might serve you better for these purposes.
+But you can also use an `Account` as an alternative way to group people. For example, you might create an `Account` called "Impressionists" and put all your impressionistic style Artists in it. You could - but I'm not recommending you do. A custom field called "Painting style" in the Contacts record might serve you better for these purposes.
 
-But I gave the example just to show that sometimes the relationship doesn't striclty have to be "people who work for a company". It could be a system keeping data about students of a group of schools, and each student would be in an account for her own school.
+But I gave the example just to show that sometimes the relationship doesn't strictly have to be "people who work for a company". It could be a system keeping data about students of a group of schools, and each student would be in an account for her own school.
 
-So, how should you make a wise decision about whether to segment your people by a field, or by Accounts? Only you can say that, but as hints I would say to only use Accounts if it is a primary relationship in your data, an important aspect of your data; and if you don't need to use Accounts for anything else; and if you need to use that information to differentiate security accesses (some users can only see or edit records from one Account, buy not the other).
+So, how should you make a wise decision about whether to segment your people by a field, or by `Accounts`? Only you can say that, but as hints I would say: only use Accounts if it is a primary relationship in your data, an important aspect of your data; and if you don't need to use Accounts for anything else; and if you need to use that information to differentiate security accesses (some users can only see or edit records from one `Account`, buy not the other).
 
 ### Sub-Accounts ###
 
-There is a concept in SuiteCRM that allows making some accounts part of others. This could be used for any case of entity-inside-entity, like for a central company that contains several other companies, or several branches, or locations, or departments.
+There is a concept in SuiteCRM that allows making some `Accounts` part of others. This could be used for any case of _entity-inside-entity_, like for a central company that contains several other companies, or several branches, or locations, or departments.
 
-To use this, go into the detail record of a company and edit it. You will find a field there called `Member of`, with a selector for Accounts. What you chose there will make your current rAccount a member of the other Account, its Parent account.
+To use this, go into the detail record of an `Account` and edit it. You will find a field there called `Member of`, with a selector for `Accounts`. What you choose there will make your current `Account` a member of the other `Account`, its `Parent Account`.
 
-To see things from the other side of the relationship, if you go into a parent account, you'll see a subpanel called `Member Organizations` with a list of its sub-accounts. If you remove rows from this list, you will break the relationship (but the sub-account will only be unlinked, it won't be deleted).
+To see things from the other side of the relationship, if you go into a parent `Account`, you'll see a subpanel called `Member Organizations` with a list of its sub-accounts. If you remove rows from this list, you will break the relationship (but the sub-account will only be unlinked, it won't be deleted).
 
-There can be several levels in this composition, so that an `Account` can be the parent of another `Account`, which in turn has other `Accounts` underneath it as `Member organizations`. So in theory you could represent a full organizatiop chart of a large corporation with this.
+There can be several levels in this composition, so that an `Account` can be the parent of another `Account`, which in turn has other `Accounts` underneath it as `Member organizations`. So in theory you could represent a full organization chart of a large corporation with this.
 
 And how does this affect the relationship with Contacts? Well, Contacts are still only linked to a single specific Account, and it can be at any level in the hierarchy. But with clever work under the hood, with some SQL you could have fancier operations like loading every contact of every sub-account into a Target List you can email, for example.
 
-
+Where this is most useful is for security accesses. If you limit access to a certain Account, SuiteCRM 
 
 ### Exceptionally, a Contact can belong to several accounts ###
 
@@ -50,4 +49,6 @@ There might be good reasons to use this system, imperfect as it is. If you need 
 - handle the relationships directly from the database (you will find multiple rows in table `accounts_contacts` for a single contact)
 - if you don't see the second Account from the Contacts detail record, you can still see the Contact in the Accounts record, as an item in a subpanel. From that line you can select "delete". Remeber deleting in subpanels doesn't delete the full records, it only deletes the relationship between the record you are on, and that linked record.
 
+### Setting up Security ###
 
+Although it's a different topic, if you're interested in modelling groups, subgroups and people, you will probably want to consider the different accesses you will be letting each group of users have. So a recommended reading is this: (A Typical Hierarchy Setup) [https://www.sugaroutfitters.com/docs/securitysuite/example-of-a-typical-setup]
