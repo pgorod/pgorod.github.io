@@ -32,9 +32,9 @@ To use this, go into the detail record of an `Account` and edit it. You will fin
 
 To see things from the other side of the relationship, if you go into a parent `Account`, you'll see a subpanel called `Member Organizations` with a list of its sub-accounts. If you remove rows from this list, you will break the relationship (but the sub-account will only be unlinked, it won't be deleted).
 
-There can be several levels in this composition, so that an `Account` can be the parent of another `Account`, which in turn has other `Accounts` underneath it as `Member organizations`. So in theory you could represent a full organization chart of a large corporation with this.
+There can be **several levels** in this composition, so that an `Account` can be the parent of another `Account`, which in turn has other `Accounts` underneath it as `Member organizations`. So in theory you could represent a full organization chart of a large corporation with this.
 
-And how does this affect the relationship with Contacts? Well, Contacts are still only linked to a single specific Account, and it can be at any level in the hierarchy. But with clever work under the hood, with some SQL you could have fancier operations like loading every contact of every sub-account into a Target List you can email, for example.
+And **how does this affect the relationship with Contacts?** Well, Contacts are still only linked to a single specific Account, and it can be at any level in the hierarchy. But with clever work under the hood, with some SQL you could have fancier operations like loading every contact of every sub-account into a Target List you can email, for example.
 
 Where this is most useful is for **security accesses**. If you limit access to a certain Account, SuiteCRM will be smart enough to consider everything under that `Account`, including `Sub-Accounts`. This makes it easy to segment your data in high-level blocks, as well as with greater detail if you need to.
 
@@ -42,7 +42,7 @@ Where this is most useful is for **security accesses**. If you limit access to a
 
 SuiteCRM is built to have only one Account attributed to a Contact. The user interface follows that assumption. However, there is a known gap in the system. You _can_ add a second account to a user, making him effectively belong in both. You can also extend this to a third account, and more... 
 
-If you do this, the user interface will behave strangely. It will still only show one Account in a Contact's record. I'm not sure if it shows the first one inserted, the last one inserted, or just a random pick. So you see a single Account linked, but if you delete it, instead of seeing an unlinked record, the second Account will magically appear in its place.
+If you do this, the user interface will behave strangely. It will still only show one Account in a Contact's record (I'm not sure if it shows the first one inserted, the last one inserted, or just a random pick). So you see a single Account linked, but if you delete it, instead of seeing an unlinked record, the second Account will magically appear in its place.
 
 There might be good reasons to use this system, imperfect as it is. If you need to, you can work around it's interface limitations in two ways:
 
@@ -52,3 +52,5 @@ There might be good reasons to use this system, imperfect as it is. If you need 
 ### Setting up Security ###
 
 Although it's a different topic, if you're interested in modelling groups, subgroups and people, you will probably want to consider the different accesses you will be letting each group of users have. So a recommended reading is this: <a href="https://www.sugaroutfitters.com/docs/securitysuite/example-of-a-typical-setup" target="_blank">A Typical Hierarchy Setup</a>.
+
+_If you have any further questions or comments to improve this article, please leave a comment below!_
