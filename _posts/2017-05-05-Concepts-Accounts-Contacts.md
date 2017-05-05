@@ -38,6 +38,8 @@ And **how does this affect the relationship with Contacts?** Well, Contacts are 
 
 Where this is most useful is for **security accesses**. If you limit access to a certain Account, SuiteCRM will be smart enough to consider everything under that `Account`, including `Sub-Accounts`. This makes it easy to segment your data in high-level blocks, as well as with greater detail if you need to.
 
+For example, in the system modelling several schools, you could have top-level `Accounts` for each school, then sub-accounts for each class, in order to group students (modelled as `Contacts`) under these `Accounts`. In terms of security, a teacher from one of the schools (modelled as a `User` of your system) can be given access only to records from that school.
+
 ### Exceptionally, a Contact can belong to several accounts ###
 
 SuiteCRM is built to have only one Account attributed to a Contact. The user interface follows that assumption. However, there is a known gap in the system. You _can_ add a second account to a user, making him effectively belong in both. You can also extend this to a third account, and more... 
