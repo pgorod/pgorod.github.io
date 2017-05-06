@@ -4,8 +4,6 @@ backup strategies
 
 contacts/leads/targets/opportunities
 
-contacts/accounts/subaccounts
-
 assignments/direct reports
 
 campaigns
@@ -19,35 +17,42 @@ using audit to see files that get loaded
 some SQL
 
 
+info@salesagility.com 
+Dear sirs,
 
+although not directly related to any job opening currently on offer at SalesAgility, I take the liberty of addressing you with an informal job application, or perhaps just a preliminary talk on that subject. 
 
-Hi,
+I am a computer science engineer (5 year degree), a developer, and a manager. I've contributed code to SuiteCRM on Github as user pgorod, and I am user pgr in the SuiteCRM forums, where I am the third most prolific user, and the third most thanked. 
 
-this is an informal job application, or perhaps just a preliminary talk on that subject. 
-
-I am a computer science engineer, a developer, and a manager. I've contributed code to SuiteCRM on Github as user pgorod, and I am user pgr in the SuiteCRM forums, where I am the third most prolific user, and the third most thanked. 
-
-I have been keeping an eye on SugarCRM since 2006 and on SuiteCRM since the fork. Around 2015 everything became more serious when I started a project for a non-profit (4 private schools) with SuiteCRM. This project was developed and a serious prototpye proposed, but unfortunately things didn't take off and now I'm afraid things have dragged on for too long and I will have to abandon it.
+I have been keeping an eye on SugarCRM since 2006 and on SuiteCRM since the fork. Around 2015 everything became more serious when I started a project for a non-profit (4 private schools) with SuiteCRM. This project was developed and a serious prototpye presented, but unfortunately things didn't take off and now I'm afraid things have dragged on for too long and I will have to abandon it.
 
 I live in Lisbon, Portugal and I am involved with a number of non-profits and schools. I am 42 years old. I teach and I manage, and keep part-time computer projects to generate some revenue.
 
-It's very easy to get good, well payed jobs programming here in Lisbon with my qualifications, but my desire to stay connected to the non-profits I work on limits my options.
+It's very easy to get good, well-payed jobs programming here in Lisbon with my qualifications, but my options are limited by my desire to stay connected to these non-profits I work on.
 
 If I just go for a typical corporate job, the likelihood of staying with SuiteCRM is very low and I'd hate to drop it now, after building up my connections in the community, after learning so much about it. My heart is with open-source, and with this project and I'd love to stay with it, and I think it perfectly brings together my technical side and my life in the institutions whose service to society I deeply value.
 
-But I can't keep spending so much time on something unless there's some pay.
+But I can't keep spending so much time on something unless there's some pay. And I hope by now I have proven I am of value to this community - just ask around your dev team.
 
 So, the question (and I know it's a long shot): would Sales Agility bother to exceptionally hire a remote part-time worker for some projects? 
 
 Things I could do and am highly motivated to get my hands on:
+
 - fix permissions and robustness issues in SuiteCRM (Issues #2788 https://github.com/salesagility/SuiteCRM/issues/2788 and #2810 https://github.com/salesagility/SuiteCRM/issues/2810 at Github)
-- improve documentation (see my SuiteCRM blog at pgorod.github.io)
-- improve the learning-curve for SuiteCRM based on my extensive experience in the forums, facilitate the initial steps for people who need to install, design their data and processes, start developing, troubleshoot problems, etc.
+
+- improve documentation (see my SuiteCRM blog at http://pgorod.github.io)
+
+- improve the learning-curve for SuiteCRM based on my extensive experience in the forums, facilitate the initial steps for people who need to install, design their data and processes, start developing, troubleshoot problems, etc. I have many ideas for this.
+
 - keep doing work on the community forums, on Github. I can test and assess PR's.
+
 - try and assess the big proposals for technological improvement that are proposed by eager contributors on Github but never seem to get merged
+
 - other small projects you might have in mind
 
-I think I could manage about 16 hours a week for SuiteCRM, better if it's flexible. I'd take all the risks - you could pay me only after the work is delivered, and break the relationship whenever you want. I am available for video interview, and I would actually consider a visit to beautiful Scotland if things looked promising - I would love to meet the team personally.
+I think I could manage about 16 hours a week for SuiteCRM. I'd take all the risks - you could pay me only after the work is delivered, and you could break the relationship whenever you want. I am available for phone/video interview, and I would actually consider a visit to beautiful Scotland if things looked promising - I would love to meet the team personally.
+
+Well, I guess it doesn't hurt to ask... and if your answer is that you are not interested, then I would like us to part ways with a big thank you: you have my admiration and gratitude. It's been an honor and a pleasure to deal with your team on this project.
 
 Best regards
 Pedro
