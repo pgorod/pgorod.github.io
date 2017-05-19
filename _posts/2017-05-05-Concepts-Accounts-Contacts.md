@@ -49,7 +49,7 @@ If you do this, the user interface will behave strangely. It will still only sho
 There might be good reasons to use this system, imperfect as it is. If you need to, you can work around it's interface limitations in two ways:
 
 - handle the relationships directly from the database (you will find multiple rows in table `accounts_contacts` for a single contact)
-- if you don't see the second Account from the Contacts detail record, you can still see the Contact in the Accounts record, as an item in a subpanel. From that line you can select "delete". Remeber deleting in subpanels doesn't delete the full records, it only deletes the relationship between the record you are on, and that linked record.
+- if you don't see the second Account from the Contacts detail record, you can still see the Contact in the Accounts record, as an item in a subpanel. From that line you can select "delete". Remember deleting in subpanels doesn't delete the full records, it only deletes the relationship between the record you are on, and that linked record.
 
 ### Setting up Security ###
 
