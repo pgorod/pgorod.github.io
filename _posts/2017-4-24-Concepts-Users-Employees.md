@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Concepts: Users, Employees, Portal Users'
+title: 'SuiteCRM Concepts Explained: Users, Employees, Portal Users'
 categories: [Concepts, Users, Employees, Portal Users]
 ---
 

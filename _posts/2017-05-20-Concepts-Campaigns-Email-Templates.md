@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'SuiteCRM Concepts Explained: '
+title: 'SuiteCRM Concepts Explained: Campaigns, Target Lists, Email Templates'
 categories: [Concepts, Campaigns, Target Lists, Email Templates]
 ---
 
@@ -24,4 +24,4 @@ To manage `Target Lists`, you can do it from both sides of the equation:
 1. Either go into the `Target Lists` module (`Marketing` menu), and Select entities from their respective subpanels;
 2. Or go into the entities module you want (for example, `Leads`), and do some search there to get the records you want. Then select them and click **Bulk Action**, and then **Add to target list**. Finally, select which `Target List` you want to add them to.
 
-This is probably the best method.
+The first method is probably better if you want to mix different kinds of entities in the same Campaign. But most often you won't, and so the second method, from within a specific module, will probably give you more control over searching and selection of your records.
