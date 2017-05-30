@@ -29,3 +29,7 @@ You might need to turn on this log in your relevant `php.ini` file, by uncomment
 Again, for this log, pay attention to `Fatal` and `Error` messages, and ignore the rest, at least on your first approach.
 
 Unlike the other log, this one includes _stack traces_ which help you see the names of the functions that were being called when the error occurred.
+
+## upgradeWizard.log ##
+
+I know I promised only two logs, but here's a third one to surprise you. Also found in the root of your SuiteCRM installation, `upgradeWizard.log` contains the results of the original installation and SuiteCRM upgrades. So if you're troubleshooting an upgrade that didn't complete, or one that completed but left you with a broken system, this is the first place to check.
