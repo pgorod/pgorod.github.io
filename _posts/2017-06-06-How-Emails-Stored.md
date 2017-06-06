@@ -24,7 +24,7 @@ Then there is a column called `email_address_id` which is a reference to the `id
 
 ## Example Query
 
-Here is a sampe query to extract a list of `Users` with their Email addresses:
+Here is a sample query to extract a list of `Users` with their Email addresses:
 
 {% highlight sql %}
 SELECT users.user_name,
@@ -39,3 +39,5 @@ SELECT users.user_name,
              ON email_addresses.id = email_addr_bean_rel.email_address_id
             AND email_addresses.deleted = 0
 {% endhighlight %}
+
+This can easily be adapted to the other entities like `Contacts`, `Leads`, etc.
