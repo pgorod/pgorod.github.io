@@ -12,7 +12,7 @@ In Windows, this is done with a nice little app called **Process Monitor** (part
 
 **auditctl** will let you monitor specific folders and see exactly what SuiteCRM is trying to read/write, and whether it's succeding or not, and whether it's failing due to permissions problems.
 
-To install it, use this (or something similar for your flavour of Linux):
+To install it, use this (or something similar for your flavour of Linux): 
 `sudo apt-get install auditd audispd-plugins`
 
 If you need to find your config file, to edit the log location, try this
