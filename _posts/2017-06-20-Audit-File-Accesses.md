@@ -18,11 +18,14 @@ To install it, use this (or something similar for your flavour of Linux):
 If you need to find your config file, to edit the log location, try this
 
 `find / -name auditd.conf  2>/dev/null`
+
+In my case, I edit it at this location:
+
 `nano /etc/audit/auditd.conf`
 
 Now you need to add rules saying what you want to monitor. I suggest something like this (adapt to your paths, of course):
 
-`auditctl -a exit,always -F dir=/var/www/html/custom -F perm=rwa`
+`auditctl -a exit,always -F dir=/var/www/html/custom -F perm=rwa` 
 `auditctl -a exit,always -F dir=/var/www/html/modules -F perm=rwa`
 
 To list currently active rules use this command:
@@ -30,7 +33,7 @@ To list currently active rules use this command:
 
 Now you can `cat` or `tail` your log at the moment when you're accessing the screens, or when you're changing something in studio, or when you're doing a Rebuild, to understand what's going on. Here are a few examples of commands you can use to fous on a file, or on a folder:
 
-`cat /var/log/audit/audit.log | grep Line_Items.php`
+`cat /var/log/audit/audit.log | grep Line_Items.php` 
 `tail -f /var/log/audit/audit.log  | grep -i 'custom/modules/AOS_Products_Quotes'`
 `tail -f /var/log/audit/audit.log  | grep -i 'Invoices\|Products\|Quotes'`
 
