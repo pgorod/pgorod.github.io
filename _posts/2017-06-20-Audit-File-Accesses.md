@@ -42,7 +42,7 @@ Now you can `cat` or `tail` your log at the moment when you're accessing the scr
 
 `tail -f /var/log/audit/audit.log  | grep -i 'Invoices\|Products\|Quotes'`
 
-That third example is an "OR", it will match any of those words.
+That third example is an `OR`, so grep will match any of those three words (very useful!).
 
 > Note that there are performance issues associated with this technique. It should not be used on Production servers, or at least you should turn it off when you're not needing it anymore.
 
