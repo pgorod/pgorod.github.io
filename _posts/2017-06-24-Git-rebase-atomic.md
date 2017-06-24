@@ -14,7 +14,7 @@ Learn Git, understand the project's workflow, set up your local repositories cor
 
 __"But I just want it to let me do a simple PR! I don't have time to learn all that..."__
 
-Ok, so here's a nice little atomic procedure for you. Atomic doesn't mean it explodes (hopefully), it means it's self-contained, does it's job without any previous set up, and leaves no local traces behind it. It's fire and forget.
+Ok, so here's a nice little atomic procedure for you. Atomic doesn't mean it explodes (hopefully), it means it's self-contained, does its job without any previous set up, and leaves no local traces behind it. It's fire and forget.
 
 What this does is create a new directory, start a local clone, set everything up, bring a branch on your forked repo up to date with the origin repo, and delete everything local in the end. After that, you can easily and safely do your PR.
 

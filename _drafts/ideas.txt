@@ -1,4 +1,8 @@
+some SQL to see sizes and orphan relationships
+
 ubuntu install
+
+campaigns - complete post
 
 backup strategies
 
@@ -6,13 +10,8 @@ contacts/leads/targets/opportunities
 
 assignments/direct reports
 
-campaigns
-
 suitecrm as a generic database
 
 fields in relationships
 
-using audit to see files that get loaded
-
-some SQL
 

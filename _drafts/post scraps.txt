@@ -1,0 +1,55 @@
+I thought it would be on by default, but you're right, it defaults to "inactive". I guess that's because they want sysadmins to make conscious decisions about when to definitively remove deleted data from their databases.
+
+When SuiteCRM deletes stuff, it doesn't really delete rows from the database. It simply sets a "deleted" field to 1, and these records are ignored by the rest of the app. You can undelete records by going into the database and setting "deleted" to 0.
+
+What the "Prune database in the 1st of month" does is go through a bunch of tables and really delete rows that have that field set to 1. I'd say it's pretty safe to delete, but it's your call after considering what kind of usage you have, and what kind (and frequency) of backups you have.
+
+Leaving it off has a disadvantage: some tables tend to really fill up a lot. Occasionally you see people here in the forums that have systems almost unusable due to some performance problem, and when they diagnose it they find some overgrown table on the database is causing all the problems. 
+
+
+
+I am interested in this discussion, it's a good idea to start it.
+
+There have been a few cases of bad performance here in the forums lately that were caused by excessive unnecessary records in the database. These turned out to be either items with "deleted" field set to "1", or some records related to workflow logs.
+
+Of course, these were unnecessary records, which is very different from real, useful data.
+
+I don't know much did you investigate already, but here's a fancy query to get a view of your database sizes:
+
+SELECT CONCAT(table_schema, '.', table_name),
+       CONCAT(ROUND(table_rows / 1000000, 2), 'M')                                    rows,
+       CONCAT(ROUND(data_length / ( 1024 * 1024 * 1024 ), 2), 'G')                    DATA,
+       CONCAT(ROUND(index_length / ( 1024 * 1024 * 1024 ), 2), 'G')                   idx,
+       CONCAT(ROUND(( data_length + index_length ) / ( 1024 * 1024 * 1024 ), 2), 'G') total_size,
+       ROUND(index_length / data_length, 2)                                           idxfrac
+FROM   information_schema.TABLES
+ORDER  BY data_length + index_length DESC
+LIMIT  10;
+
+
+There are a few actions you can take without much risk:
+
+- really deleting rows that have "deleted=1"
+
+- deleting rows in relationship tables that point to already deleted records (can be many in tables like securitygroups_records, etc). I have a fancy query for this also... somewhere.
+
+- turn on log slow queries option and check the logs to see which queries are taking longest. 
+
+
+
+
+
+
+About the language file, shouldn't it be in
+
+custom/Extension/application/Ext/Language/en_us.descriptivename.php
+
+so that then it would be consolidated into
+
+custom/application/Ext/Language/en_us.lang.php
+
+during the Quick Repair and Rebuild? I'm following Jim Mackin's book here (sections Extension Framework and Language), though I can't test right now.
+
+I think the general idea is that everything in directories named Ext is auto-generated, except stuff under custom/Extension/*/Ext...
+
+
