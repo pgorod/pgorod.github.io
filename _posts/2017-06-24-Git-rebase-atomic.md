@@ -18,6 +18,8 @@ Ok, so here's a nice little atomic procedure for you. Atomic doesn't mean it exp
 
 What this does is create a new directory, start a local clone, set everything up, bring a branch on your forked repo up to date with the origin repo, and delete everything local in the end. After that, you can easily and safely do your PR.
 
+[<img src="{{ site.baseurl }}/images/upstream-origin-local.png" alt="Git Origin and Upstream" style="width: 400px;"/>]({{ site.baseurl }}/)
+
 #!/bin/bash
 
 # These point to your github forked repo of SuiteCRM:
@@ -25,8 +27,9 @@ user=yourUser
 fork=SuiteCRM_Forked
 
 echo -------
-echo This script will reset a branch on a SuiteCRM fork to look exactly like the official repo.
-echo It will delete any work you have on that branch in your fork.
+echo "This script will reset a branch on a SuiteCRM fork to look exactly like the official repo."
+echo "It will delete any work you have on that branch in your fork, but you will want to use this on branches like"
+echo "hotfix and develop, where you shouldn't be doing your work anyway, so it should be safe."
 echo "It won't delete anything on SalesAgility's repo, because you don't have the rights to push there..."
 echo -------
 echo 'What is the branch you want to reset (usually hotfix)? '
@@ -45,3 +48,5 @@ git checkout $theBranch
 git push origin $theBranch --force
 cd ..
 rm -R TempRepo
+
+This is for Linux but it works great in Windows if you install the Git Bash from Microsoft.
