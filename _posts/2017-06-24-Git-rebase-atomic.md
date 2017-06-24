@@ -18,9 +18,14 @@ Ok, so here's a nice little atomic procedure for you. Atomic doesn't mean it exp
 
 What this does is create a new directory, start a local clone, set everything up, bring a branch on your forked repo up to date with the origin repo, and delete everything local in the end. After that, you can easily and safely do your PR.
 
-<div style="text-align:center"><img src="{{ site.baseurl }}/images/upstream-origin-local.png" alt="Git Origin and Upstream" style="width: 400px;"/>
-Image taken from [here](https://coding.abel.nu/2015/03/fixing-a-pull-request-from-master/) 
+<div style="text-align:center"><img src="{{ site.baseurl }}/images/upstream-origin-local-2.png" alt="Git Origin and Upstream" style="width: 400px;"/>
+
+Image taken from [here](https://coding.abel.nu/2015/03/fixing-a-pull-request-from-master/), then edited by me.
 </div>
+
+See, when you're on the online GitHub site, you only care about the top part of this scheme. You don't want any work setting up the lower block, your local install, and learning about Push and Pull, when all you need to do is bring a branch up to date with salesAgility. So what the script does is create the lower part automatically, do it for you, and remove it afterwards.
+
+So, here's the script, complete with reassuring comments:
 
 {% highlight bash %}
 #!/bin/bash
@@ -53,4 +58,4 @@ cd ..
 rm -R TempRepo
 {% endhighlight %}
 
-This is for Linux but it works great in Windows if you install the Git Bash from Microsoft.
+This is for Linux but it works great in Windows 10 if you install the Linux Bash Shell from Microsoft.
