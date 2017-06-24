@@ -18,8 +18,9 @@ Ok, so here's a nice little atomic procedure for you. Atomic doesn't mean it exp
 
 What this does is create a new directory, start a local clone, set everything up, bring a branch on your forked repo up to date with the origin repo, and delete everything local in the end. After that, you can easily and safely do your PR.
 
-[<img src="{{ site.baseurl }}/images/upstream-origin-local.png" alt="Git Origin and Upstream" style="width: 400px;"/>]({{ site.baseurl }}/)
+<img src="{{ site.baseurl }}/images/upstream-origin-local.png" alt="Git Origin and Upstream" style="width: 400px;"/>
 
+{% highlight bash %}
 #!/bin/bash
 
 # These point to your github forked repo of SuiteCRM:
@@ -48,5 +49,6 @@ git checkout $theBranch
 git push origin $theBranch --force
 cd ..
 rm -R TempRepo
+{% endhighlight %}
 
 This is for Linux but it works great in Windows if you install the Git Bash from Microsoft.
