@@ -14,13 +14,13 @@ Learn Git, understand the project's workflow, set up your local repositories cor
 
 __"But I just want it to let me do a simple PR! I don't have time to learn all that..."__
 
-Ok, so here's a nice little atomic procedure for you. Atomic doesn't mean it explodes (hopefully), it means it's self-contained, does its job without any previous set up, and leaves no local traces behind it. It's fire and forget.
+Ok, so here's a nice little atomic procedure for you. Atomic doesn't mean it explodes (hopefully), it means it's self-contained, does its job without any previous set up, and leaves no local traces behind it. **It's fire and forget**.
 
 What this does is create a new directory, start a local clone, set everything up, bring a branch on your forked repo up to date with the origin repo, and delete everything local in the end. After that, you can easily and safely do your PR.
 
 <div style="text-align:center"><img src="{{ site.baseurl }}/images/upstream-origin-local-2.png" alt="Git Origin and Upstream" style="width: 400px;"/>
 
-__Image taken from [here](https://coding.abel.nu/2015/03/fixing-a-pull-request-from-master/), then edited by me.__
+_Image taken from [here](https://coding.abel.nu/2015/03/fixing-a-pull-request-from-master/), then edited by me._
 </div>
 
 See, when you're on the online GitHub site, you only care about the top part of this scheme. You don't want any work setting up the lower block, your local install, and learning about Push and Pull, when all you need to do is bring a branch up to date with SalesAgility (origin with upstream). So what the script does is create the lower part automatically, do it for you, and remove it afterwards.
@@ -57,5 +57,7 @@ git push origin $theBranch --force
 cd ..
 rm -R TempRepo
 {% endhighlight %}
+
+Of course, with a proper **git** set up you would avoid the long delay of fetching the entire project every time.
 
 This is for Linux but it works great in Windows 10 if you install the Linux Bash Shell from Microsoft.
