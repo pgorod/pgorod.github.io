@@ -119,10 +119,10 @@ To see which php.ini file your CLI is using, type
 
 ## How can I make sure the jobs are actually running? ##
 
-1. Linux's `syslog` normally logs which processes it launches in `cron`.
+1. The `Admin / Schedulers` will show the latest run times of each job, and whether it had errors.
 
-2. SuiteCRM's `suitecrm.log` will also log these events, as long as your log level covers it (you can check it and change it from `Admin / System Settings`).
+2. Linux's `syslog` normally logs which processes it launches in `cron`.
 
-3. The `Admin / Schedulers` will show the latest run times of each job, and whether it had errors.
+3. SuiteCRM's `suitecrm.log` will also log these events, as long as your log level covers it (you can check it and change it from `Admin / System Settings`).
 
-4. In case some specific Scheduler Job is failing with an error, the suitecrm.log is also the place to start troubleshooting, along with the Web Server's log (`php_errors.log`).
+4. In case some specific Scheduler Job is failing with an error, the suitecrm.log is also the place to start troubleshooting, along with the Web Server's log (often called `php_errors.log`).
