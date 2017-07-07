@@ -7,12 +7,12 @@
   $chapters=Array();
   $chapter='';
   foreach ($book as $line) {
-	  echo $count.' '.$line.' '.(strstr($line,'id="chap')!=null).PHP_EOL;
+	  echo $count.' '.$line.' '.(strstr($line,'id="chap')!=null);
 	  if (strstr($line,'id="chap')!=null) {
 		  $chapters[]=$chapter;
 		  $chapter=$line;  // re-start with just this one line
 	  }
-      $chapter = $chapter.PHP_EOL.$line;
+      $chapter = $chapter.$line;
 	  $count++;
   	  //if ($count == 145) break;
   }  
