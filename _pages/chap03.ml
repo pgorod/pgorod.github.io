@@ -1,4 +1,8 @@
-<span id="chap02.xhtml"></span>
+---
+Permalink: \"/chap00.html\"
+layout: page
+title: \"Chapter 03\"
+---<span id="chap02.xhtml"></span>
 
 <div>
 

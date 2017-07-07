@@ -4,12 +4,20 @@
   $book = file($filename);
   echo PHP_EOL.count($book).PHP_EOL;
   $count=0;
+  $chapnum=0;
   $chapters=Array();
   $chapter='';
   foreach ($book as $line) {
 	  echo $count.' '.$line.' '.(strstr($line,'id="chap')!=null);
 	  if (strstr($line,'id="chap')!=null) {
+		  //prepend front-matter:
+		  $chapter = '---'
+		     .PHP_EOL.'Permalink: \"/chap00.html\"'.PHP_EOL.'layout: page'
+		     .PHP_EOL.'title: \"Chapter '.sprintf('%02d', $chapnum).'\"'
+			 .PHP_EOL.'---'.$chapter;
+			 
 		  $chapters[]=$chapter;
+		  $chapnum=$chapnum+1;
 		  $chapter=$line;  // re-start with just this one line
 		  continue;
 	  }
@@ -19,6 +27,8 @@
   }  
   
   foreach ($chapters as $c => $out) {
-     file_put_contents(__DIR__.'\chap'.sprintf('%02d', $c).'.ml', $chapters[$c]);   //,FILE_APPEND);
+     file_put_contents(__DIR__.'\_pages\chap'.sprintf('%02d', $c).'.ml', $chapters[$c]);   //,FILE_APPEND);
   }
 ?>
+
+

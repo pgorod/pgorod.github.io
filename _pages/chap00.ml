@@ -1,6 +1,8 @@
 ---
----
-<span id="title_page.xhtml"></span>
+Permalink: \"/chap00.html\"
+layout: page
+title: \"Chapter 00\"
+---<span id="title_page.xhtml"></span>
 
 <div id="title_page.xhtml#cover-image">
 
