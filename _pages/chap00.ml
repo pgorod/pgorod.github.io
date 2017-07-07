@@ -1,3 +1,5 @@
+---
+---
 <span id="title_page.xhtml"></span>
 
 <div id="title_page.xhtml#cover-image">
