@@ -12,6 +12,7 @@
 	  $count++;
 	  if (strstr($line,'id="chap')!=null) {
 		  $chapters[]=$chapter;
+		  $chapter='';
 	  }
   	  //if ($count == 145) break;
   }  
