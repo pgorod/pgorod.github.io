@@ -18,6 +18,6 @@
   }  
   
   foreach ($chapters as $c => $out) {
-     file_put_contents(__DIR__.'\chap'.sprintf('%02d', $c).'.xhtml', $chapters[$c]);   //,FILE_APPEND);
+     file_put_contents(__DIR__.'\chap'.sprintf('%02d', $c).'.html', $chapters[$c]);   //,FILE_APPEND);
   }
 ?>
