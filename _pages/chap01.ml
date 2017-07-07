@@ -1,6 +1,7 @@
 ---
+layout: page
+title:  "Chapter 00"
 ---
-
 <span id="chap00.xhtml"></span>
 
 <div>
