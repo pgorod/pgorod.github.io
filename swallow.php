@@ -11,6 +11,7 @@
 	  if (strstr($line,'id="chap')!=null) {
 		  $chapters[]=$chapter;
 		  $chapter=$line;  // re-start with just this one line
+		  continue;
 	  }
       $chapter = $chapter.$line;
 	  $count++;
@@ -18,6 +19,6 @@
   }  
   
   foreach ($chapters as $c => $out) {
-     file_put_contents(__DIR__.'\chap'.sprintf('%02d', $c).'.html', $chapters[$c]);   //,FILE_APPEND);
+     file_put_contents(__DIR__.'\chap'.sprintf('%02d', $c).'.ml', $chapters[$c]);   //,FILE_APPEND);
   }
 ?>
