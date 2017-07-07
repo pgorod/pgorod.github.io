@@ -1,4 +1,5 @@
 ---
+permalink: "/chap00/"
 layout: page
 title:  "Chapter 00"
 ---
