@@ -8,16 +8,16 @@
   $chapter='';
   foreach ($book as $line) {
 	  echo $count.' '.$line.' '.(strstr($line,'id="chap')!=null).PHP_EOL;
-      $chapter = $chapter.PHP_EOL.$line;
-	  $count++;
 	  if (strstr($line,'id="chap')!=null) {
 		  $chapters[]=$chapter;
-		  $chapter='';
+		  $chapter=$line;  // re-start with just this one line
 	  }
+      $chapter = $chapter.PHP_EOL.$line;
+	  $count++;
   	  //if ($count == 145) break;
   }  
   
   foreach ($chapters as $c => $out) {
-     file_put_contents(__DIR__."\chap$c.xhtml", $chapters[$c]);   //,FILE_APPEND);
+     file_put_contents(__DIR__.'\chap'.sprintf('%02d', $c).'.xhtml', $chapters[$c]);   //,FILE_APPEND);
   }
 ?>
