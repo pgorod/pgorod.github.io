@@ -11,9 +11,8 @@
 	  echo $count.' '.$line.' '.(strstr($line,'id="chap')!=null);
 	  if (strstr($line,'id="chap')!=null) {
 		  //prepend front-matter:
-		          //.PHP_EOL.'permalink: "/chap'.sprintf('%02d', $chapnum).'.html"'.PHP_EOL.'layout: page'
 		  $chapter = '---'
-		     .PHP_EOL.'permalink: "/chap'.sprintf('%02d', $chapnum).'/"'.PHP_EOL.'layout: page'
+		     .PHP_EOL.'permalink: "/chap'.sprintf('%02d', $chapnum).'.html"'.PHP_EOL.'layout: page'
 		     .PHP_EOL.'title: "Chapter '.sprintf('%02d', $chapnum).'"'
 			 .PHP_EOL.'---'.PHP_EOL.$chapter;
 			 
