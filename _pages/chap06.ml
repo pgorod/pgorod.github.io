@@ -1,5 +1,5 @@
 ---
-Permalink: "/chap06.html"
+permalink: "/chap06.html"
 layout: page
 title: "Chapter 06"
 ---

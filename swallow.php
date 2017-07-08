@@ -12,7 +12,7 @@
 	  if (strstr($line,'id="chap')!=null) {
 		  //prepend front-matter:
 		  $chapter = '---'
-		     .PHP_EOL.'Permalink: "/chap'.sprintf('%02d', $chapnum).'.html"'.PHP_EOL.'layout: page'
+		     .PHP_EOL.'permalink: "/chap'.sprintf('%02d', $chapnum).'.html"'.PHP_EOL.'layout: page'
 		     .PHP_EOL.'title: "Chapter '.sprintf('%02d', $chapnum).'"'
 			 .PHP_EOL.'---'.PHP_EOL.$chapter;
 			 
