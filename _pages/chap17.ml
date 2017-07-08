@@ -7,17 +7,17 @@ title: "Chapter 17"
 
 <div>
 
-== <span class="section-number">16. </span>API ==
+## <span class="section-number">16. </span>API ##
 
 The SuiteCRM API allows third party code to access and edit SuiteCRM data and functionality.
 
-=== Using the API ===
+### Using the API ###
 
 SuiteCRM has both a REST and a SOAP API. Which API you want to use will largely come down to personal preference and the support for SOAP/REST libraries in whichever language you will be using.
 
 Both APIs will require a username and password. It is usual to create a user specifically for the API.
 
-==== SOAP ====
+#### SOAP ####
 
 The WSDL for the SOAP API can be found at:
 
@@ -40,7 +40,7 @@ Example 16.1: SOAP API WSDL Location
 </div>
 Where <code>example.com/suitecrm</code> is the address of your SuiteCRM instance. <code>v4_1</code> is the version of the API and can be changed, <code>v4_1</code> is the latest version at the time of writing.
 
-===== SOAP Example =====
+####= SOAP Example ####=
 
 The following PHP example uses the built in SoapClient class.
 
@@ -111,7 +111,7 @@ Example 16.2: Accessing the SOAP API
 
 
 </div>
-==== REST ====
+#### REST ####
 
 The SuiteCRM REST API can be found at:
 
@@ -156,7 +156,7 @@ method
 
 
 </div>
-===== Examples =====
+####= Examples ####=
 
 <div class="code-block">
 
@@ -246,7 +246,7 @@ Example 16.4: Accessing the REST API
 </div>
 For a full list of API methods and their arguments see [[#chap20.xhtml#appendix-b|Appendix B]].
 
-=== Adding custom API methods ===
+### Adding custom API methods ###
 
 Sometimes the existing API methods are not sufficient or using them for a task would be overly complex. SuiteCRM allows the web services to be extended with additional methods or overriding existing methods.
 
@@ -391,7 +391,7 @@ Example 16.8: Custom v4_1 SOAP Entry point
 
 
 </div>
-==== Usage ====
+#### Usage ####
 
 We can now use our custom endpoint. This is identical to using the API as detailed above, except that we use our custom entry point for either the SOAP WSDL or REST URL. For example using the same SuiteCRM location (<code>example.com/suitecrm</code>) as the above examples and using <code>v4_1</code>, we would use the following
 

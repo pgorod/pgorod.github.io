@@ -7,17 +7,17 @@ title: "Chapter 12"
 
 <div>
 
-== <span class="section-number">12. </span>Logic Hooks ==
+## <span class="section-number">12. </span>Logic Hooks ##
 
-=== Intro ===
+### Intro ###
 
 Logic hooks allow you to hook into various events in SuiteCRM to fire custom code. This can allow you to, for example, make a call to an external API, or to create a new record if certain events occur.
 
-=== Types ===
+### Types ###
 
 Logic hooks can occur in three contexts. These contexts are Application Hooks, Module Hooks and User Hooks. These are detailed below.
 
-=== Application Hooks ===
+### Application Hooks ###
 
 Application hooks are hooks which are fired in the application context (that is, they are not fired against a particular module). These hooks must be defined in the top level logic hook (i.e. <code>custom/modules/logic_hooks.php</code>).
 
@@ -30,7 +30,7 @@ Application hooks are hooks which are fired in the application context (that is,
 ; server_round_trip
 : Fired at the end of every page request.
 
-=== User Hooks ===
+### User Hooks ###
 
 User hooks are fired for certain login/logout actions. Similar to Application Hooks, these hooks must be defined in the top level logic hook (i.e. custom/modules/logic_hooks.php).
 
@@ -43,7 +43,7 @@ User hooks are fired for certain login/logout actions. Similar to Application Ho
 ; login_failed
 : Fired when a user attempts to login to SuiteCRM but the login fails.
 
-=== Module Hooks ===
+### Module Hooks ###
 
 Module Hooks are called on various record actions for a specific module.
 
@@ -74,7 +74,7 @@ Module Hooks are called on various record actions for a specific module.
 ; process_record
 : Fired when a record is processed ready to be displayed in list views or dashlets.
 
-=== Job Queue Hooks ===
+### Job Queue Hooks ###
 
 Job queue hooks are fired for scheduler jobs. Similar to application hooks these hooks must be defined in the top level logic hook (i.e. <code>custom/modules/logic_hooks.php</code>).
 
@@ -83,12 +83,12 @@ Job queue hooks are fired for scheduler jobs. Similar to application hooks these
 ; job_failure_retry
 : Fired when a scheduled job either returns false to signify failure or throws an exception but it will be retried. See the section on [[#chap12.xhtml#scheduled-tasks-chapter|Scheduled Tasks]].
 
-=== Implementing ===
+### Implementing ###
 
 Depending on the Logic Hook type logic hooks are either placed into<br />
 <code>custom/modules/Logic_Hooks.php</code> or <code>custom/modules/&lt;TargetModule&gt;/Logic_Hooks.php</code>.
 
-==== Logic_Hooks.php ====
+#### Logic_Hooks.php ####
 
 The logic hook file itself specifies which logic hooks to fire on this event. It looks something like this:
 
@@ -235,28 +235,28 @@ Here we are going to be adding some before_save hooks so we add an empty array f
 </div>
 Finally we reach an interesting line. This adds a new logic hook to the before_save hooks. This array contains 5 entries which define this hook. These are:
 
-===== Sort order =====
+####= Sort order ####=
 
 The first argument (77) is the sort order for this hook. The logic hook array is sorted by this value. If you wish for a hook to fire earlier you should use a lower number. If you wish for a hook to be fired later you should use a higher number. The numbers themselves are arbitrary.
 
-===== Hook label =====
+####= Hook label ####=
 
 The second argument (‘updateGeocodeInfo’) is simply a label for the logic hook. This should be something short but descriptive.
 
-===== Hook file =====
+####= Hook file ####=
 
 The third argument is where the actual class for this hook is. In this case it is in a file called <code>custom/modules/Cases/CasesJjwg_MapsLogicHook.php</code>. Generally you will want the files to be somewhere in custom and it is usual to have them in <code>custom/modules/&lt;TheModule&gt;/&lt;SomeDescriptiveName&gt;.php</code> or <code>custom/modules/&lt;SomeDescriptiveName&gt;.php</code> for Logic Hooks not targeting a specific module. However the files can be placed anywhere.
 
-===== Hook class =====
+####= Hook class ####=
 
 The fourth argument is the class name for the Logic Hook class. In this case<br />
 <code>CasesJjwg_MapsLogicHook</code>. It is usual for the class name to match the file name but this is not required.
 
-===== Hook method =====
+####= Hook method ####=
 
 The fifth, and final, argument is the method that will be called on the class. In this case <code>updateGeocodeInfo</code>.
 
-==== Adding your own logic hooks ====
+#### Adding your own logic hooks ####
 
 When adding logic hooks you should make full use of the Extensions framework (see the section on Extensions). This involves creating a file in<br />
 <code>custom/Extension/application/Ext/LogicHooks/</code> for application hooks and<br />
@@ -267,7 +267,7 @@ When adding logic hooks you should make full use of the Extensions framework (se
 |width="50%"| After adding a new logic hook it is necessary to perform a quick repair and rebuild in the admin menu for this to be picked up.
 |}
 
-==== Logic Hook function ====
+#### Logic Hook function ####
 
 The logic hook function itself will vary slightly based on the logic hook type. For module hooks it will appear similar to:
 
@@ -319,25 +319,25 @@ Example 12.3: Example logic hook method for application hooks
 
 
 </div>
-===== $bean (<code>SugarBean</code>) =====
+####= $bean (<code>SugarBean</code>) ####=
 
 The $bean argument passed to your logic hook is usually the bean that the logic hook is being performed on. For User Logic Hooks this will be the current User object. For module logic hooks (such as <code>before_save</code>) this will be the record that is being saved. For job queue logic hooks this will be the SchedulersJob bean. Note that for Application Logic Hook this argument is not present.
 
-===== $event (<code>string</code>) =====
+####= $event (<code>string</code>) ####=
 
 The $event argument contains the logic hook event e.g <code>process_record</code>, <code>before_save</code>,<br />
 <code>after_delete</code> etc.
 
-===== $arguments (<code>array</code>) =====
+####= $arguments (<code>array</code>) ####=
 
 The $arguments argument contains any additional details of the logic hook event. I.e. in the case of before_relationship_add this will contain details of the related modules.
 
-=== Tips ===
+### Tips ###
 
 {|
 |width="50%"| [[File:images/leanpub_info-circle.png|50px|class=sidebar-image|information]]
 |width="50%"|
-==== Triggering extra logic hooks ====
+#### Triggering extra logic hooks ####
 
 If you are performing certain actions that may trigger another logic hook (such as saving a bean) then you need to be aware that this will trigger the logic hooks associated with that bean and action. This can be troublesome if this causes a logic hook loop of saves causing further saves. One way around this is to simply be careful of the hooks that you may trigger. If doing so is unavoidable you can usually set an appropriate flag on the bean and then check for that flag in subsequent hooks.
 |}
@@ -345,7 +345,7 @@ If you are performing certain actions that may trigger another logic hook (such 
 {|
 |width="50%"| [[File:images/leanpub_info-circle.png|50px|class=sidebar-image|information]]
 |width="50%"|
-==== Think of the user ====
+#### Think of the user ####
 
 Most logic hooks will cause additional code which can degrade the users experience. If you have long running code in the after_save the user will need to wait for that code to run. This can be avoided by either ensuring the code runs quickly or by using the Job Queue (see the Job Queue chapter for more information).
 |}

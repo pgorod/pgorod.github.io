@@ -7,9 +7,9 @@ title: "Chapter 21"
 
 <div>
 
-== <span class="section-number">20. </span>Appendix A - Code Examples ==
+## <span class="section-number">20. </span>Appendix A - Code Examples ##
 
-=== Metadata ===
+### Metadata ###
 
 This is an example of setting up a function subpanel (see the [[#chap05.xhtml#metadata-chapter|Metadata]] chapter for more information).
 
@@ -78,7 +78,7 @@ Example A.2: <code>IncidentUtils.php</code>
 
 
 </div>
-=== Module Installer ===
+### Module Installer ###
 
 The following is a basic example manifest file. See the [[#chap14.xhtml#module-installer-chapter|Module Installer]] chapter.
 

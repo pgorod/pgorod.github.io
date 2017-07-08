@@ -7,13 +7,13 @@ title: "Chapter 16"
 
 <div>
 
-== <span class="section-number">15. </span>Module Installer ==
+## <span class="section-number">15. </span>Module Installer ##
 
 As detailed in the other chapters of this book there are many ways to customise SuiteCRM. The module installer allows you to package these changes and install them onto other SuiteCRM instances. This is achieved by creating a package.
 
 At the minimum a package is a zip file that contains a <code>manifest.php</code> file in it’s root. The manifest file is responsible for providing information about the installer as well as providing information on how to install the package.
 
-=== manifest.php ===
+### manifest.php ###
 
 The <code>manifest.php</code> file contains the definition of three arrays. Let’s look at each of these arrays in turn. See [[#chap19.xhtml#appendix-a|Appendix A]] for the full sample <code>manifest.php</code> file.
 
@@ -22,7 +22,7 @@ The <code>manifest.php</code> file contains the definition of three arrays. Let�
 |width="50%"| Within path in the manifest file you can use <code>&lt;basepath&gt;</code> to refer to the base directory of the installer. For example <code>&lt;basepath&gt;/Foo.txt</code> will refer to the <code>Foo.txt</code> file in the root of the installer package.
 |}
 
-==== <code>$manifest</code> ====
+#### <code>$manifest</code> ####
 
 The <code>$manifest</code> array provides information on the package itself such as it’s name, readme etc. (it also defines the <code>copy</code> array for <code>patch</code> packages). A sample definition of the manifest array will appear something like this:
 
@@ -96,15 +96,15 @@ Example 15.1: Example <code>$manifest</code> array definition
 ; <code>type</code>
 : The type of the installer, one of <code>langpack</code>, <code>module</code>, <code>patch</code> or <code>theme</code>. See the types section.
 
-==== <code>$install_defs</code> ====
+#### <code>$install_defs</code> ####
 
 Provides information on how the package is to be installed, which files go where and any additional information such as logic hooks, custom fields etc.
 
-===== <code>id</code> =====
+####= <code>id</code> ####=
 
 A unique identifier for the module.
 
-===== <code>connectors</code> =====
+####= <code>connectors</code> ####=
 
 An array of connectors to be installed. Each entry is an array with the following keys:
 
@@ -122,7 +122,7 @@ An array of connectors to be installed. Each entry is an array with the followin
 | The directory to copy the connector formatter files from.
 |}
 
-===== <code>copy</code> =====
+####= <code>copy</code> ####=
 
 An array of files and directories to be copied on install. Each entry is an array with the following keys:
 
@@ -142,7 +142,7 @@ An array of files and directories to be copied on install. Each entry is an arra
 |width="50%"| In general if a file can be handled by one of the other keys then that key should be used. For example new admin entries should be copied using the <code>administration</code> key rather than using the <code>copy</code> key.
 |}
 
-===== <code>dashlets</code> =====
+####= <code>dashlets</code> ####=
 
 An array of dashlets to be installed. Each entry is an array with the following keys:
 
@@ -157,7 +157,7 @@ An array of dashlets to be installed. Each entry is an array with the following 
 | The path in the install package from which the dashlet files will be copied.
 |}
 
-===== <code>language</code> =====
+####= <code>language</code> ####=
 
 An array of language files to be installed. Each entry is an array with the following keys:
 
@@ -177,7 +177,7 @@ An array of language files to be installed. Each entry is an array with the foll
 
 See the chapter on [[#chap08.xhtml#language-chapter|Language Strings]] for more information.
 
-===== <code>layoutdefs</code> =====
+####= <code>layoutdefs</code> ####=
 
 An array of layoutdef files which are used to add, remove or edit subpanels. Each entry is an array with the following keys:
 
@@ -192,7 +192,7 @@ An array of layoutdef files which are used to add, remove or edit subpanels. Eac
 | The module that this file will be installed to.
 |}
 
-===== <code>vardefs</code> =====
+####= <code>vardefs</code> ####=
 
 An array of the vardefs to be added to specific modules. Each entry is an array with the following keys:
 
@@ -212,7 +212,7 @@ An array of the vardefs to be added to specific modules. Each entry is an array 
 |width="50%"| Generally you should install custom fields using the <code>custom_fields</code> key. However this key can be used to alter existing fields or add more complex fields.
 |}
 
-===== <code>menu</code> =====
+####= <code>menu</code> ####=
 
 An array of menus to be installed. Each entry is an array with the following keys:
 
@@ -227,7 +227,7 @@ An array of menus to be installed. Each entry is an array with the following key
 | The destination module for this menu.
 |}
 
-===== <code>beans</code> =====
+####= <code>beans</code> ####=
 
 An array of beans to be installed. Each entry is an array with the following keys:
 
@@ -248,7 +248,7 @@ An array of beans to be installed. Each entry is an array with the following key
 | Whether or not a tab should be added for this module.
 |}
 
-===== <code>relationships</code> =====
+####= <code>relationships</code> ####=
 
 An array detailing any new relationships added (in particular relationships where one side is an existing module). Each entry is an array with the following keys:
 
@@ -263,7 +263,7 @@ An array detailing any new relationships added (in particular relationships wher
 | The location of the metadata file for this relationship.
 |}
 
-===== <code>custom_fields</code> =====
+####= <code>custom_fields</code> ####=
 
 An array of new custom fields to be installed (See the [[#chap03.xhtml#vardefs-chapter|Vardefs]] chapter for more information on this). Each entry is an array with the following keys:
 
@@ -308,7 +308,7 @@ An array of new custom fields to be installed (See the [[#chap03.xhtml#vardefs-c
 | Used to specify the module where the custom field will be added.
 |}
 
-===== <code>logic_hooks</code> =====
+####= <code>logic_hooks</code> ####=
 
 An array of logic hooks to be installed. See the [[#chap11.xhtml#logic-hooks-chapter|Logic Hooks]] chapter for more information. Each entry is an array with the following keys:
 
@@ -338,11 +338,11 @@ An array of logic hooks to be installed. See the [[#chap11.xhtml#logic-hooks-cha
 | The function to be invoked when this hook is triggered.
 |}
 
-===== <code>image_dir</code> =====
+####= <code>image_dir</code> ####=
 
 A path to a directory of images to be included in the install.
 
-===== <code>schedulers</code> =====
+####= <code>schedulers</code> ####=
 
 An array of schedulers to be installed. Each entry is an array with a single key:
 
@@ -354,7 +354,7 @@ An array of schedulers to be installed. Each entry is an array with a single key
 | The file containing the new scheduled task.
 |}
 
-===== <code>administration</code> =====
+####= <code>administration</code> ####=
 
 An array of admin panels to be installed. Each entry is an array with a single key:
 
@@ -366,23 +366,23 @@ An array of admin panels to be installed. Each entry is an array with a single k
 | The file containing the new admin panel definition.
 |}
 
-===== <code>pre_execute</code> =====
+####= <code>pre_execute</code> ####=
 
 Defines an array of files to be executed before the package is installed. Each entry is a path to a file within the package. Any output will be displayed to the user in the install log.
 
-===== <code>post_execute</code> =====
+####= <code>post_execute</code> ####=
 
 Defines an array of files to be executed after the package is installed. Each entry is a path to a file within the package. Any output will be displayed to the user in the install log.
 
-===== <code>pre_uninstall</code> =====
+####= <code>pre_uninstall</code> ####=
 
 Defines an array of files to be executed before the package is uninstalled. Each entry is a path to a file within the package. Any output will be displayed to the user in the uninstall log.
 
-===== <code>post_uninstall</code> =====
+####= <code>post_uninstall</code> ####=
 
 Defines an array of files to be executed after the package is uninstalled. Each entry is a path to a file within the package. Any output will be displayed to the user in the uninstall log.
 
-==== <code>$upgrade_manifest</code> ====
+#### <code>$upgrade_manifest</code> ####
 
 Provides a means of upgrading an already installed package by providing different <code>install_defs</code>.
 
@@ -391,7 +391,7 @@ Provides a means of upgrading an already installed package by providing differen
 
 
 </div>
-=== Types ===
+### Types ###
 
 {|
 ! Type
@@ -410,7 +410,7 @@ Provides a means of upgrading an already installed package by providing differen
 | A theme installer. This will add a new option to the themes.
 |}
 
-==== Other files ====
+#### Other files ####
 
 ; <code>README.txt</code>
 : Contains the readme for this package. If <code>README.txt</code> and a readme entry in the <code>manifest.php</code> is defined then this file will be used.

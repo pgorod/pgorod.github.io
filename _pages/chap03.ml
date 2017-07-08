@@ -7,11 +7,11 @@ title: "Chapter 03"
 
 <div>
 
-== <span class="section-number">3. </span>Working with Beans ==
+## <span class="section-number">3. </span>Working with Beans ##
 
 Beans are the Model in SuiteCRM’s MVC (Model View Controller) architecture. They allow retrieving data from the database as objects and allow persisting and editing records. This section will go over the various ways of working with beans.
 
-=== BeanFactory ===
+### BeanFactory ###
 
 The BeanFactory allows dynamically loading bean instances or creating new records. For example to create a new bean you can use:
 
@@ -81,11 +81,11 @@ Example 3.3: Retrieving an unpopulated bean
 
 Using BeanFactory ensures that the bean is correctly set up and the necessary files are included etc.
 
-=== SugarBean ===
+### SugarBean ###
 
 The SugarBean is the parent bean class and all beans in SuiteCRM extend this class. It provides various ways of retrieving and interacting with records.
 
-=== Searching for beans ===
+### Searching for beans ###
 
 The following examples show how to search for beans using a bean class. The examples provided assume that an account bean is available names $accountBean. This may have been retrieved using the getBean call mentioned in the BeanFactory section e.g.
 
@@ -106,7 +106,7 @@ Example 3.4: Retrieving an unpopulated account bean
 
 
 </div>
-==== get_list ====
+#### get_list ####
 
 The get_list method allows getting a list of matching beans and allows paginating the results.
 
@@ -146,7 +146,7 @@ Example 3.5: get_list method signature
 ; $show_deleted
 : Whether to include deleted results.
 
-===== Results =====
+####= Results ####=
 
 get_list will return an array. This will contain the paging information and will also contain the list of beans. This array will contain the following keys:
 
@@ -161,7 +161,7 @@ get_list will return an array. This will contain the paging information and will
 ; current_offset
 : The offset used for the current results.
 
-===== Example =====
+####= Example ####=
 
 Let’s look at a concrete example. We will return the third page of all accounts with the industry <code>Media</code> using 10 as a page size and ordered by name.
 
@@ -223,7 +223,7 @@ Example 3.7: Example get_list results
 
 
 </div>
-==== get_full_list ====
+#### get_full_list ####
 
 <code>get_list</code> is useful when you need paginated results. However if you are just interested in getting a list of all matching beans you can use <code>get_full_list</code>. The <code>get_full_list</code> method signature looks like this:
 
@@ -250,11 +250,11 @@ Example 3.8: get_full_list method signature
 </div>
 These arguments are identical to their usage in <code>get_list</code> the only difference is the <code>$check_dates</code> argument. This is used to indicate whether the date fields should be converted to their display values (i.e. converted to the users date format).
 
-===== Results =====
+####= Results ####=
 
 The get_full_list call simply returns an array of the matching beans
 
-===== Example =====
+####= Example ####=
 
 Let’s rework our <code>get_list</code> example to get the full list of matching accounts:
 
@@ -280,7 +280,7 @@ Example 3.9: Example get_full_list call
 
 
 </div>
-==== retrieve_by_string_fields ====
+#### retrieve_by_string_fields ####
 
 Sometimes you only want to retrieve one row but may not have the id of the record. <code>retrieve_by_string_fields</code> allows retrieving a single record based on matching string fields.
 
@@ -316,11 +316,11 @@ Example 3.10: retrieve_by_string_fields method signature
 |width="50%"| Note here that, confusingly, the deleted flag works differently to the other methods we have looked at. It flags whether or not we should filter out deleted results. So if true is passed then the deleted results will ''not'' be included.
 |}
 
-===== Results =====
+####= Results ####=
 
 retrieve_by_string_fields returns a single bean as it’s result or null if there was no matching bean.
 
-===== Example =====
+####= Example ####=
 
 For example to retrieve the account with name <code>Tortoise Corp</code> and account_type <code>Customer</code> we could use the following:
 
@@ -346,7 +346,7 @@ Example 3.11: Example retrieve_by_string_fields call
 
 
 </div>
-=== Accessing fields ===
+### Accessing fields ###
 
 If you have used one of the above methods we now have a bean record. This bean represents the record that we have retrieved. We can access the fields of that record by simply accessing properties on the bean just like any other PHP object. Similarly we can use property access to set the values of beans. Some examples are as follows:
 
@@ -415,11 +415,11 @@ Example 3.13: Persisting bean changes
 |width="50%"| Whether to save or update a bean is decided by checking the <code>id</code> field of the bean. If <code>id</code> is set then SuiteCRM will attempt to perform an update. If there is no <code>id</code> then one will be generated and a new record will be inserted into the database. If for some reason you have supplied an <code>id</code> but the record is new (perhaps in a custom import script) then you can set <code>new_with_id</code> to true on the bean to let SuiteCRM know that this record is new.
 |}
 
-=== Related beans ===
+### Related beans ###
 
 We have seen how to save single records but, in a CRM system, relationships between records are as important as the records themselves. For example an account may have a list of cases associated with it, a contact will have an account that it falls under etc. We can get and set relationships between beans using several methods.
 
-==== get_linked_beans ====
+#### get_linked_beans ####
 
 The <code>get_linked_beans</code> method allows retrieving a list of related beans for a given record.
 
@@ -462,11 +462,11 @@ Example 3.14: get_linked_beans method signature
 ; $optional_where
 : Allows filtering the results using an SQL WHERE clause. See the <code>get_list</code> method for more details.
 
-===== Results =====
+####= Results ####=
 
 <code>get_linked_beans</code> returns an array of the linked beans.
 
-===== Example =====
+####= Example ####=
 
 <div class="code-block">
 
@@ -492,11 +492,11 @@ Example 3.15: Example get_linked_beans call
 
 
 </div>
-==== relationships ====
+#### relationships ####
 
 In addition to the <code>get_linked_beans</code> call you can also load and access the relationships more directly.
 
-===== Loading =====
+####= Loading ####=
 
 Before accessing a relationship you must use the <code>load_relationship</code> call to ensure it is available. This call takes the link name of the relationship (not the name of the relationship). As mentioned previously you can find the name of the link in <code>cache/modules/&lt;TheModule&gt;/&lt;TheModule&gt;Vardefs.php</code> if you’re not sure.
 
@@ -520,13 +520,13 @@ Example 3.16: Loading a relationship
 
 
 </div>
-===== Methods =====
+####= Methods ####=
 
-====== <code>get</code> ======
+###### <code>get</code> ######
 
 Returns the ids of the related records in this relationship e.g for the account - contacts relationship in the example above it will return the list of ids for contacts associated with the account.
 
-====== <code>getBeans</code> ======
+###### <code>getBeans</code> ######
 
 Similar to <code>get</code> but returns an array of beans instead of just ids.
 
@@ -535,7 +535,7 @@ Similar to <code>get</code> but returns an array of beans instead of just ids.
 |width="50%"| <code>getBeans</code> will load the full bean for each related record. This may cause poor performance for relationships with a large number of beans.
 |}
 
-====== <code>add</code> ======
+###### <code>add</code> ######
 
 Allows relating records to the current bean. <code>add</code> takes a single id or bean or an array of ids or beans. If the bean is available this should be used since it prevents reloading the bean. For example to add a contact to the relationship in our example we can do the following:
 
@@ -566,7 +566,7 @@ Example 3.18: Adding a new contact to a relationship
 
 
 </div>
-====== <code>delete</code> ======
+###### <code>delete</code> ######
 
 <code>delete</code> allows unrelating beans. Counter-intuitively it accepts the ids of both the bean and the related bean. For the related bean you should pass the bean if it is available e.g when unrelating an account and contact:
 

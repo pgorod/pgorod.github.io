@@ -21,7 +21,11 @@
 		  $chapter=$line;  // re-start with just this one line
 		  continue;
 	  }
-      $chapter = $chapter.$line;
+	  $from = array("====", "===", "==");
+      $to = array("####", "###", "##");
+	  $pretty=str_replace($from, $to, $line);
+
+      $chapter = $chapter.$pretty;
 	  $count++;
   	  //if ($count == 145) break;
   }  

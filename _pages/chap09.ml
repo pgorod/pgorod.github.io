@@ -7,7 +7,7 @@ title: "Chapter 09"
 
 <div>
 
-== <span class="section-number">9. </span>Language Strings ==
+## <span class="section-number">9. </span>Language Strings ##
 
 Language strings provide an element of internationalisation to SuiteCRM. It allows specifying different strings to be used in different languages making it much easier to provide translations for modules and customisations. Even if you are only targeting a single language it is still worth using the language string functionality in SuiteCRM because it allows the simple changing of strings within SuiteCRM and it also allows users to customise the labels used in your customisations. There are three main types of language strings that we will cover here.
 
@@ -41,67 +41,67 @@ custom/Extension/application/Ext/Language/de_de.SomeCustomPackage.php</pre>
 </div>
 SuiteCRM will choose the language prefix to be used based on the language the user selected when logging in or the default language if none was selected. Generally when a language file is loaded the default language files and the <code>en_us</code> files will also be loaded. These files are then merged. This ensures that there will still be a definition if there are language keys in either <code>en_us</code> or the default language that don’t have definitions in the current language. In essence the language “falls back” to the default language and <code>en_us</code> if there are missing keys.
 
-=== Module Strings ===
+### Module Strings ###
 
-==== Use ====
+#### Use ####
 
 Module strings are strings associated with a particular module. These are usually, for example, field labels and panel name labels, but they may be used for anything that is specific to a single module.
 
-==== Definition location ====
+#### Definition location ####
 
 Module strings are defined in the <code>$mod_strings</code> array. This is initially defined in<br />
 <code>modules/&lt;TheModule&gt;/language/&lt;LanguageTag&gt;.lang.php</code>, for example<br />
 <code>modules/Accounts/language/en_us.lang.php</code>.
 
-==== Customisation location ====
+#### Customisation location ####
 
 Customisations can be made to the module strings by adding a new file in<br />
 <code>custom/Extension/modules/&lt;TheModule&gt;/Ext/Language/&lt;LanguageTag&gt;.&lt;Name&gt;.php</code> (<code>&lt;Name&gt;</code> in this case should be used to give it a descriptive name). An example is <code>custom/Extension/modules/Accounts/Ext/Language/en_us.MyLanguageFile.php</code>. See the Extensions section for more information on the Extensions folder.
 
-=== Application Strings ===
+### Application Strings ###
 
-==== Use ====
+#### Use ####
 
 Application strings are used for language strings and labels that are not specific to a single module. Examples of these may include labels that will appear in the headers or footers, labels that appear on search buttons throughout SuiteCRM or labels for pagination controls.
 
-==== Definition location ====
+#### Definition location ####
 
 The application strings are defined in the <code>$app_strings</code> array. This is initially defined in<br />
 <code>include/language/&lt;LanguageTag&gt;.lang.php</code>.
 
-==== Customisation location ====
+#### Customisation location ####
 
 Customisations can be made to the application strings in two ways. Firstly you can edit the file<br />
 <code>custom/include/language/&lt;LanguageTag&gt;.lang.php</code>. However to promote modularity it is recommended that you add a new file in the location<br />
 <code>custom/Extension/application/Ext/Language/&lt;LanguageTag&gt;.&lt;Name&gt;.php</code>. For example<br />
 <code>custom/Extension/application/Ext/Language/es_es.MyAppLanguageFile.php</code>. <code>&lt;Name&gt;</code> should be used to give the file a descriptive name. See the Extensions section for more information on the Extensions folder.
 
-=== Application List Strings ===
+### Application List Strings ###
 
-==== Use ====
+#### Use ####
 
 Application list strings are used to store the various dropdowns and lists used in SuiteCRM. Most of these are used as options for the various enum fields in SuiteCRM e.g the account type or the opportunity sales stage.
 
-==== Definition location ====
+#### Definition location ####
 
 The application list strings are defined in the <code>$app_list_strings</code> array. Similar to the <code>$app_strings</code> array this is initially defined in <code>include/language/en_us.lang.php</code>.
 
-==== Customisation location ====
+#### Customisation location ####
 
 Customisations can be made to the application list strings in two ways. Firstly you can edit the file<br />
 <code>custom/include/language/&lt;LanguageTag&gt;.lang.php</code>. However to promote modularity it is recommended that you add a new file in the location<br />
 <code>custom/Extension/application/Ext/Language/&lt;LanguageTag&gt;.&lt;Name&gt;.php</code> (<code>&lt;Name&gt;</code> should be used to give the file a descriptive name). For example<br />
 <code>custom/Extension/application/Ext/Language/es_es.MyAppListLanguageFile.php</code>. See the Extensions section for more information on the Extensions folder.
 
-=== Why and when to customise ===
+### Why and when to customise ###
 
 Generally language strings should be changed from within SuiteCRM using the studio tool. However there are times when it can be simpler to add or modify language strings as described in the previous section. If you are importing a large number of language strings or dropdown options it can be simpler to create a new file to add these values. Similarly if you are adding entirely new functionality, it is usually best to simply add these language strings as new values.
 
-=== Usage ===
+### Usage ###
 
 Language strings are used automatically throughout SuiteCRM. For example in metadata you can specify the language strings to display for fields. However in some cases you will want to access and use the language strings in custom code. There are several ways to do this.
 
-==== Globals ====
+#### Globals ####
 
 The <code>$mod_strings</code>, <code>$app_strings</code> and <code>$app_list_strings</code> variables are all global and can be accessed as such. <code>$app_strings</code> and <code>$app_list_strings</code> will always be available. However <code>$mod_strings</code> will only contain the strings for the current module (see the next section for other ways of accessing <code>$mod_strings</code>).
 
@@ -143,7 +143,7 @@ Example 9.2: Accessing language strings globally
 
 
 </div>
-==== Translate ====
+#### Translate ####
 
 As an alternative to using globals or, if you are in a different module than the language string you wish to retrieve you can use the <code>translate</code> method.
 
@@ -213,7 +213,7 @@ Example 9.4: Example <code>translate</code> method calls
 
 
 </div>
-==== JavaScript ====
+#### JavaScript ####
 
 Finally, you may be using JavaScript (for example in a view), and wish to display a language string. For this you can use the <code>SUGAR.language.get</code> method, which is similar to the <code>translate</code> method in example 9.3.
 

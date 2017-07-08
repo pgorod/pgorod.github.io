@@ -12,13 +12,13 @@ title: "Chapter 00"
 </div>
 <span id="verso_page.xhtml"></span>
 
-== SuiteCRM for Developers ==
+## SuiteCRM for Developers ##
 
-=== Getting started with developing for SuiteCRM ===
+### Getting started with developing for SuiteCRM ###
 
  
 
-==== Jim Mackin ====
+#### Jim Mackin ####
 
  
 
@@ -45,7 +45,7 @@ This is a [http://leanpub.com Leanpub] book. Leanpub empowers authors and publis
 
 <div>
 
-== Table of Contents ==
+## Table of Contents ##
 
 * [[#chap00.xhtml#leanpub-auto-introduction|<span class="section-number">1. </span>Introduction]]
 ** [[#chap00.xhtml#leanpub-auto-what-is-suitecrm|What is SuiteCRM]]

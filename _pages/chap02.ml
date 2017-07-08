@@ -7,7 +7,7 @@ title: "Chapter 02"
 
 <div>
 
-== <span class="section-number">2. </span>SuiteCRM Directory Structure ==
+## <span class="section-number">2. </span>SuiteCRM Directory Structure ##
 
 ; <code>cache</code>
 : Contains cache files used by SuiteCRM including compiled smarty templates, grouped vardefs, minified and grouped JavaScript. Some modules and custom modules may also store (temporary) module specific info here.

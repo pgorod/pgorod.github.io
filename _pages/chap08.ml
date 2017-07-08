@@ -7,11 +7,11 @@ title: "Chapter 08"
 
 <div>
 
-== <span class="section-number">8. </span>Entry Points ==
+## <span class="section-number">8. </span>Entry Points ##
 
 Entry points are simply a page which provides access to SuiteCRM. These can be used for a variety of purposes such as allowing an external form simple access to SuiteCRM or, as is the case with the stock Events module, allowing an event invite to be responded to by clicking a link in an email.
 
-=== Creating an entry point ===
+### Creating an entry point ###
 
 Let’s create a simple entry point to display the time. First we define this entry point in a new file in:
 

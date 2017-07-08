@@ -7,13 +7,13 @@ title: "Chapter 10"
 
 <div>
 
-== <span class="section-number">10. </span>Config ==
+## <span class="section-number">10. </span>Config ##
 
-=== The config files ===
+### The config files ###
 
 There are two main config files in SuiteCRM, both of which are in the root SuiteCRM folder. These are <code>config.php</code> and <code>config_override.php</code>. The definitions in here provide various configuration options for SuiteCRM. All the way from the details used to access the database to how many entries to show per page in the list view. Most of these options are accessible from the SuiteCRM administration page. However some are only definable in the config files.
 
-==== config.php ====
+#### config.php ####
 
 This is the main SuiteCRM config file and includes important information like the database settings and the current SuiteCRM version.
 
@@ -72,7 +72,7 @@ The site url for the above is simply ‘http://example.com/suitecrm’ if we wer
 These are generally the only two instances where you would directly change <code>config.php</code>. For other changes you would either make the change through SuiteCRM itself or you would use the<br />
 <code>config_override.php</code> file.
 
-==== config_override.php ====
+#### config_override.php ####
 
 <code>config_override.php</code> allows you to make config changes without risking breaking the main config file. This is achieved quite simply by adding, editing or removing items from the $sugar_config variable. The <code>config_override.php</code> file will be merged with the existing config allowing, as the name suggests, overriding the config. For example in config_override.php we can add our own, new, config item:
 
@@ -112,7 +112,7 @@ Example 10.4: Overwriting an existing config value
 
 
 </div>
-=== Using config options ===
+### Using config options ###
 
 We may want to access config options in custom code (or as detailed above if we have created our own config setting we may want to use that). We can easily get the config using the php global keyword:
 

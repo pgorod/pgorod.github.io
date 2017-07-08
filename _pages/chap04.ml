@@ -7,15 +7,15 @@ title: "Chapter 04"
 
 <div>
 
-== <span class="section-number">4. </span>Vardefs ==
+## <span class="section-number">4. </span>Vardefs ##
 
-=== What are Vardefs ===
+### What are Vardefs ###
 
 The Vardefs are used to supply information to SuiteCRM about a particular bean. These generally specify the fields, relationships and indexes in a given module as well as additional information such as whether it is audited, the table name etc.
 
-=== Defining Vardefs ===
+### Defining Vardefs ###
 
-==== Module ====
+#### Module ####
 
 Vardefs are initially defined in their respective modules folder. For the Accounts module this will be in modules/Accounts/vardefs.php. The information is stored in an array named $dictionary using the module name as the key. For Accounts this will be <code>$dictionary['Account']</code>. Let’s look at the Account vardefs (which have been edited for brevity):
 
@@ -61,7 +61,7 @@ Example 4.1: Account Vardefs
 
 
 </div>
-===== Keys =====
+####= Keys ####=
 
 The following are some of the keys that can be specified for the vardefs. Fields, indices and relationships are covered in their own sections.
 
@@ -80,7 +80,7 @@ The following are some of the keys that can be specified for the vardefs. Fields
 ; <code>optimistic_locking</code>
 : Whether optimistic should be enabled for this module. Optimistic locking locks concurrent edits on a record by assuming that there will be no conflict. On save the last modified timestamp on the record will be checked. If it is different then an edit has occurred since this record was loaded. If this is the case then the user will be prompted with a page showing the differences in the two edits and asked to choose which edits are to be used.
 
-===== Fields =====
+####= Fields ####=
 
 The field defines the behaviour and attributes of each field in the module.
 
@@ -123,7 +123,7 @@ The field defines the behaviour and attributes of each field in the module.
 ; <code>audited</code>
 : Whether or not changes to this field should be audited.
 
-===== Field types =====
+####= Field types ####=
 
 The following are common field types used:
 
@@ -154,7 +154,7 @@ The following are common field types used:
 ; <code>relate</code>
 : A related bean field.
 
-===== Indices =====
+####= Indices ####=
 
 The indices array allows defining any database indexes that should be in place on the database table for this module. Let’s look at an example:
 
@@ -197,7 +197,7 @@ Each array entry should have, at least, the following entries:
 ; fields
 : An array of the fields to be indexed. The order of this array will be used as the order of the fields in the index.
 
-===== Relationships =====
+####= Relationships ####=
 
 The Vardefs also specify the relationships within this module. Here’s an edited example from the Accounts module:
 
@@ -253,7 +253,7 @@ For many to many relationship fields the following keys are also available:
 ; <code>join_key_rhs</code>
 : The name of the field on the join table for the right hand side.
 
-==== Vardef templates ====
+#### Vardef templates ####
 
 Vardef templates provide a shortcut for defining common vardefs. This is done by calling <code>VardefManager::createVardef</code> and passing the module name, object name and an array of templates to be assigned. The following is an example from the accounts vardefs:
 
@@ -290,7 +290,7 @@ In this example the <code>default</code>, <code>assignable</code> and <code>comp
 ; <code>company</code>
 : Adds fields common to companies such as an industry dropdown, address, etc.
 
-==== Customising vardefs ====
+#### Customising vardefs ####
 
 Vardefs can be customised by adding a file into
 

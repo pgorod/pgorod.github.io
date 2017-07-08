@@ -7,13 +7,13 @@ title: "Chapter 13"
 
 <div>
 
-== <span class="section-number">13. </span>Scheduled Tasks ==
+## <span class="section-number">13. </span>Scheduled Tasks ##
 
-=== Intro ===
+### Intro ###
 
 Scheduled tasks are performed in SuiteCRM by the scheduler module. Jobs are placed into the queue either through the defined scheduled tasks or, for one off tasks, by code creating job objects. Note that both scheduled tasks and using the job queue requires that you have the schedulers set up. This will vary depending on your system but usually requires adding an entry either to Cron (for Linux systems) or to the windows scheduled tasks (for windows). Opening the scheduled tasks page within SuiteCRM will let you know the format for the entry.
 
-=== Scheduler ===
+### Scheduler ###
 
 Scheduled tasks allow SuiteCRM to perform recurring tasks. Examples of these which ship with SuiteCRM include checking for incoming mail, sending email reminder notifications and indexing the full text search. What if you want to create your own tasks?
 
@@ -105,7 +105,7 @@ Creating a scheduler that uses our new method
 </div>
 This will now behave just like any other scheduler and we can have this run as often (or as rarely) as we would like. Take care here. The default frequency is every one minute. If your task is heavy duty or long running this may not be what you would prefer. Here we settle for once a day.
 
-=== Job Queue ===
+### Job Queue ###
 
 Sometimes you will require code to perform a long running task but you do not need the user to wait for this to be completed. A good example of this is sending an email in a logic hook (see the Logic Hooks chapter for information on these). Assuming we have the following logic hook:
 
@@ -260,7 +260,7 @@ Example 13.5: Example Scheduler job
 </div>
 Now whenever a user triggers the hook it will be much quicker since we are simply persisting a little info to the database. The scheduler will run this in the background.
 
-==== Retries ====
+#### Retries ####
 
 Occasionally you may have scheduled jobs which could fail intermittently. Perhaps you have a job which calls an external API. If the API is unavailable it would be unfortunate if the job failed and was never retried. Fortunately the SchedulersJob class has two properties which govern how retries are handled. These are <code>requeue</code> and <code>retry_count</code>.
 
@@ -312,7 +312,7 @@ Example 13.6: Setting the retry count on a scheduled job
 </div>
 See the section on [[#chap11.xhtml#logic-hooks-chapter|logic hooks]] for more information on how job failures can be handled.
 
-=== Debugging ===
+### Debugging ###
 
 With Scheduled tasks and jobs running in the background it can sometimes be difficult to determine what is going on when things go wrong. If you are debugging a scheduled task the the scheduled task page is a good place to start. For both scheduled tasks and job queue tasks you can also check the job_queue table. For example, in MySQL we can check the last five scheduled jobs:
 

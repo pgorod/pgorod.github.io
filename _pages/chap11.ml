@@ -7,9 +7,9 @@ title: "Chapter 11"
 
 <div>
 
-== <span class="section-number">11. </span>Logging ==
+## <span class="section-number">11. </span>Logging ##
 
-=== Logging messages ===
+### Logging messages ###
 
 Logging in SuiteCRM is achieved by accessing the log global. Accessing an instance of the logger is as simple as
 
@@ -70,7 +70,7 @@ Example 11.3: Logging messages example output
 
 
 </div>
-=== Logging output ===
+### Logging output ###
 
 The logging output displays the following information by default:
 
@@ -102,7 +102,7 @@ Example 11.4: Logging messages example output
 ; <code>&lt;LogMessage&gt;</code>
 : The contents of the log message.
 
-=== Log levels ===
+### Log levels ###
 
 Depending on the level setting in admin some messages will not be added to the log e.g if your logger is set to <code>error</code> then you will only see log levels of <code>error</code> or higher (<code>error</code>, <code>fatal</code> and <code>security</code>).
 

@@ -7,13 +7,13 @@ title: "Chapter 06"
 
 <div>
 
-== <span class="section-number">6. </span>Metadata ==
+## <span class="section-number">6. </span>Metadata ##
 
-=== Intro ===
+### Intro ###
 
 Module metadata are used to describe how various views behave in the module. The main use of this is providing field and layout information but this can also be used to filter subpanels and to describe what fields are used in the search.
 
-=== Location ===
+### Location ###
 
 Module metadata can be found in:
 
@@ -34,13 +34,13 @@ Example 6.1: Module metadata location
 
 
 </div>
-=== Customising ===
+### Customising ###
 
 Usually studio is the best way of customising metadata. Even when you do wish to make customisations that are not possible through studio it can be simpler to set everything up in studio first. This is particularly true for layout based metadata. However if you are customising metadata it is as simple as placing, or editing, the file in the custom directory. For example to override the Accounts detailviewdefs (found in <code>modules/Accounts/metadata/detailviewdefs.php</code>) we would place (or edit) the file in <code>custom/modules/Accounts/metadata/detailviewdefs.php</code>. One exception to this rule is the studio.php file. The modules metadata folder is the only location checked - any version in <code>custom/&lt;TheModule&gt;/metadata/studio.php</code> is ignored.
 
-=== Different metadata ===
+### Different metadata ###
 
-==== detailviewdefs.php ====
+#### detailviewdefs.php ####
 
 detailviewdefs.php provides information on the layout and fields of the detail view for this module. This file uses the same structure as editviewdefs.php. Let’s look at an example for a fictional module <code>ABC_Vehicles</code>:
 
@@ -140,7 +140,7 @@ Example 6.2: DetailView metadata definition
 </div>
 We see that line 2 defines an array <code>$viewdefs['ABC_Vehicles']['DetailView']</code> which places a DetailView entry for the module ABC_Vehicles into <code>$viewdefs</code> (DetailView will be EditView or QuickCreateView as appropriate). This array has two main keys defined here:
 
-===== templateMeta =====
+####= templateMeta ####=
 
 The templateMeta key provides information about the view in general. The <code>['form']['buttons']</code> entries define the buttons that should appear in this view.
 
@@ -151,7 +151,7 @@ The templateMeta key provides information about the view in general. The <code>[
 ; <code>includes</code>
 : An array of additional JavaScript files to include. This is useful for adding custom JavaScript behaviour to the page.
 
-===== panels =====
+####= panels ####=
 
 The panels entry defines the actual layout of the Detail (or Edit) view. Each entry is a new panel in the view with the key being the label for that panel. We can see in our example that we have 2 panels. One uses the label defined by the language string <code>LBL_ABC_VEHICLES_INFO</code>, the other uses <code>LBL_PANEL_ADVANCED</code>.
 
@@ -215,11 +215,11 @@ Example 6.4: DetailView metadata displayParams
 ; customCode
 : Allows supplying custom smarty code to be used for the display. The code here can include any valid smarty code and this will also have access to the current fields in this view via <code>$fields</code>. An example of outputing the ID field would be <code>{$fields.id.value}</code>. Additionally the module labels and app labels can be accessed via <code>$MOD</code> and <code>$APP</code> respectively. Finally you can use <code>@@FIELD@@</code> to output the value of the field that would have been used. For example <code>{if $someCondition}@@FIELD@@{/if}</code> will conditionally show the field.
 
-==== editviewdefs.php ====
+#### editviewdefs.php ####
 
 <code>editviewdefs.php</code> provides information on the layout and fields of the edit view for this module. This file uses the same structure as detailviewdefs.php. Please see the information on detailviewdefs.php.
 
-==== listviewdefs.php ====
+#### listviewdefs.php ####
 
 The <code>listviewdefs.php</code> file for a module defines what fields the list view for that module will display. Let’s take a look at an example:
 
@@ -292,7 +292,7 @@ To define the list view defs we simply add a key to the <code>$listViewDefs</cod
 ; width
 : The width of the field in the list view. Note that, although this is usually given as a percentage it is treated as a proportion. The example above has five columns with a width of <code>15%</code> but these will actually be <code>20%</code> since this is a ratio.
 
-==== popupdefs.php ====
+#### popupdefs.php ####
 
 popupdefs.php provides information on the layout, fields and search options of the module popup that is usually used when selecting a related record.
 
@@ -396,11 +396,11 @@ The popupdefs.php specifies a <code>$popupMeta</code> array with the following k
 ; <code>searchdefs</code>
 : An array of the fields that should be available for searching in the popup. See the individual search defs in the searchdefs.php section (for example the <code>basic_search</code> array).
 
-==== quickcreatedefs.php ====
+#### quickcreatedefs.php ####
 
 <code>quickcreatedefs.php</code> provides information on the layout and fields of the quick create view for this module (this is the view that appears when creating a record from a subpanel). This file uses the same structure as <code>detailviewdefs.php</code>. Please see the information on <code>detailviewdefs.php</code>.
 
-==== searchdefs.php ====
+#### searchdefs.php ####
 
 The search defs of a module define how searching in that module looks and behaves.
 
@@ -536,15 +536,15 @@ Example 6.7: Search View metadata definition
 </div>
 Here we setup a new array for <code>Accounts</code> in the <code>$searchdefs</code> array. This has two keys:
 
-===== templateMeta =====
+####= templateMeta ####=
 
 The <code>templateMeta</code> key controls the basic look of the search forms. Here we define some overall layout info such as the maximum columns (3) and the maximum number of columns for the basic search (4). Finally we set the widths for the search fields and their labels.
 
-===== layout =====
+####= layout ####=
 
 The <code>layout</code> key contains the layout definitions for the basic search and advanced search. This is simply a list of array definition of the fields. See the section on listviewdefs.php for a description of some of the options.
 
-==== <code>subpaneldefs.php</code> ====
+#### <code>subpaneldefs.php</code> ####
 
 The subpaneldefs.php file provides definitions for the subpanels that appear in the detail view of a module. Let’s look at an example:
 
@@ -652,7 +652,7 @@ In the example above we set up a definition for a module (in this case <code>AOS
 ; top_buttons
 : Allows defining the buttons to appear on the subpanel. This is simply an array of the button definitions. These definitions have, at least, the <code>widget_class</code> defined which decides the button class to use in <code>include/generic/SugarWidgets</code>. Depending on the button this array may also be used to pass in extra arguments to the widget class.
 
-==== subpanels ====
+#### subpanels ####
 
 Inside the metadata folder is the <code>subpanels</code> folder. This allows creating different subpanel layouts for different parent modules. For example, the Contacts module will display differently in the subpanel on an account than it will in the subpanel of a case. The files inside the <code>subpanels</code> folder can be named anything. All that matters is that it can be referenced in the <code>subpanel_name</code> of the <code>subpaneldefs.php</code> of the parent module. The usual subpanel file is simply called <code>default.php</code>. Let’s look at the <code>modules/Accounts/metadata/subpanels/default.php</code> file:
 
@@ -735,7 +735,7 @@ There are three keys in the <code>$subpanel_layout</code> variable for this subp
 ; <code>list_fields</code>
 : Defines the list of fields to be displayed in this subpanel. See the section on <code>listviewdefs.php</code> for more information.
 
-==== studio.php ====
+#### studio.php ####
 
 studio.php is the simplest file in metadata and it’s existence is simply used to confirm if a module should be shown in studio for user tweaking. Note that, unlike other metadata files, the file in <code>modules/&lt;TheModule&gt;/metadata/studio.php</code> will be the only one checked. A file in <code>custom/modules/&lt;TheModule&gt;/metadata/studio.php</code> will have no effect.
 

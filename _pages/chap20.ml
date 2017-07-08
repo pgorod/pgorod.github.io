@@ -7,11 +7,11 @@ title: "Chapter 20"
 
 <div>
 
-== <span class="section-number">19. </span>Further Resources ==
+## <span class="section-number">19. </span>Further Resources ##
 
 Although this book has aimed to be a thorough resource, SuiteCRM is large and feature rich. Therefore it is not possible to include all the information you may require. Here are some extra resources for developing with SuiteCRM.
 
-=== SuiteCRM Website ===
+### SuiteCRM Website ###
 
 The SuiteCRM website ([http://suitecrm.com SuiteCRM.com] has many excellent resources including:
 
@@ -19,19 +19,19 @@ The SuiteCRM website ([http://suitecrm.com SuiteCRM.com] has many excellent reso
 * [https://suitecrm.com/suitecrm/blog SuiteCRM Blog]
 * [https://suitecrm.com/wiki/index.php/Main_Page SuiteCRM Wiki]
 
-=== External SuiteCRM Resources ===
+### External SuiteCRM Resources ###
 
 ; [https://github.com/salesagility/SuiteCRM SuiteCRM GitHub]
 : The SuiteCRM source code is hosted on GitHub. Here you can get bleeding edge code changes and even contribute code.
 
-=== SugarCRM Resources ===
+### SugarCRM Resources ###
 
 SuiteCRM has strived to remain compatible with the SugarCRM community edition and much of the documentation is still valid. The appropriate version for SuiteCRM information is 6.5. Versions of documentation higher than this (i.e. 7) will probably not be relevant.
 
 * [http://support.sugarcrm.com/02_Documentation/04_Sugar_Developer/ SugarCRM Developer docs]
 * [http://developer.sugarcrm.com/ SugarCRM Developer Blog]
 
-=== Technical Links ===
+### Technical Links ###
 
 * [http://php.net/ PHP] - The main language used by SuiteCRM
 * [http://www.smarty.net/ Smarty] - The templating language used throughout SuiteCRM.
@@ -45,7 +45,7 @@ SuiteCRM has strived to remain compatible with the SugarCRM community edition an
 * [https://www.jetbrains.com/phpstorm/ PHPStorm] - PHP IDE (Paid)
 * [https://eclipse.org/pdt/ Eclipse PHP Development Tools] - PHP IDE (Free and Open Source)
 
-=== Other Links ===
+### Other Links ###
 
 * [https://salesagility.com/ SalesAgility] - The company behind SuiteCRM.
 * [http://www.jsmackin.co.uk Jim Mackin] - Me :)

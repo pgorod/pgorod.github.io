@@ -7,19 +7,19 @@ title: "Chapter 18"
 
 <div>
 
-== <span class="section-number">17. </span>Best Practices ==
+## <span class="section-number">17. </span>Best Practices ##
 
-=== Development instances ===
+### Development instances ###
 
 When making changes you should always use a development or test instance first. This allows you to fully and safely test any changes.
 
-=== Version control ===
+### Version control ###
 
 When developing customisations it is prudent to use some form of version control. Version control allows tracking changes to your codebase in addition to rolling back changes. There are many version control systems available. SuiteCRM uses [http://git-scm.com/ Git] although I also like [http://mercurial.selenic.com/ Mercurial].
 
 If you are using a development instance (as mentioned above) then Version Control usually allows you to push changes to other versions or to tag releases. This provides a way of pushing changes to live or test instances safely. Crucially it also means that, should there be major problems with a version then this can be easily rolled back.
 
-=== Backup ===
+### Backup ###
 
 SuiteCRM has been developed to be customisable. However, mistakes, bugs and other unpleasantness can (and thanks to Murphy’s law, will) happen. You should always ensure, before making any changes, that you have a backup of all files and of the database.
 
@@ -61,21 +61,21 @@ Example 17.2: MySQL Database backup
 
 
 </div>
-=== Be upgrade safe ===
+### Be upgrade safe ###
 
 Unless you are making changes to a custom module you should strive in all cases to use the custom framework and make changes in the custom folder. This ensures that, should you make a mistake, rectifying the mistake is as simple as removing the customisation.
 
 However the main advantage to using <code>custom</code> is that, when you upgrade SuiteCRM in the future you will not have your changes overwritten by the updated SuiteCRM files. See the [[#chap13.xhtml#extensions-chapter|Extensions]] chapter for more information.
 
-=== Use appropriate log levels ===
+### Use appropriate log levels ###
 
 Using appropriate log levels (See the chapter on [[#chap10.xhtml#logging-chapter|Logging]]) makes it easier to track down issues. You do not want very important messages to be logged as <code>debug</code> since this will make them difficult to find. Likewise you don’t want unimportant log messages cluttering up the <code>fatal</code> log output.
 
-=== Long running logic hooks ===
+### Long running logic hooks ###
 
 If a logic hook task is long running then you should place it into the job queue (see the [[#chap11.xhtml#logic-hooks-chapter|Logic Hook]] and [[#chap12.xhtml#scheduled-tasks-chapter|Scheduled Tasks]] chapters).
 
-=== Minimise SQL ===
+### Minimise SQL ###
 
 Where possible you should strive to use the SuiteCRM supplied methods of accessing data. This includes using beans and the BeanFactory where possible (see the chapter on [[#chap02.xhtml#working-with-beans-chapter|Working with beans]]). There are a few reasons for this. The first is that SQL is usually either hardcoded or has to be dynamically built. In the case where the SQL is hardcoded this means that changes to fields will not be reflected thereby making your code more brittle.
 
@@ -85,7 +85,7 @@ Another issue is that, usually SQL will end up being Database specific (see the 
 
 Finally any custom logic (such as Logic Hooks) which would usually be fired for saving beans or relationships will not be fired for SQL queries.
 
-=== SQL Use ===
+### SQL Use ###
 
 In some cases using raw SQL is unavoidable. If that is the case then you should strive to use standard compliant SQL. If database engine specific features need to be used, and you wish to target other database engines, you can check for the DB type. For example:
 
@@ -118,7 +118,7 @@ Example 17.1: Checking for the database engine
 
 
 </div>
-=== Entry check ===
+### Entry check ###
 
 The majority of SuiteCRM files will start with some variation of the following line:
 
@@ -141,7 +141,7 @@ Example 17.2: Entry check
 </div>
 This prevents direct access to the file by ensuring that SuiteCRM has been loaded through a valid entry point (i.e. it has been loaded through index.php, cron.php or a custom entry point).
 
-=== Redirect after post ===
+### Redirect after post ###
 
 Sometimes you may have custom controller actions (see the controller section) or custom entry points (see the [[#chap07.xhtml#entry-point-chapter|Entry Points]] chapter). These actions and entry points or other pages are usually accessed using POST. After a POST request it is a web best practice to redirect to a different page, especially if your page makes any changes. This prevents the user from refreshing the page and causing a duplicate action. Within SuiteCRM it is best to use the <code>SugarApplication::redirect</code> method to redirect. This simply accepts a URL. As follows:
 

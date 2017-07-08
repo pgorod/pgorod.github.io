@@ -7,29 +7,29 @@ title: "Chapter 19"
 
 <div>
 
-== <span class="section-number">18. </span>Performance Tweaks ==
+## <span class="section-number">18. </span>Performance Tweaks ##
 
 In most cases the performance of SuiteCRM should not be an issue. However in the case of large datasets or systems with many users you may notice some performance degradation. These changes can help improve performance.
 
-=== Server ===
+### Server ###
 
 The server that SuiteCRM runs on is, of course, very important when it comes to the kind of performance you can expect. A full guide on server setup is outside the scope of this book. However there are some things you can do to ensure that you get the best performance out of SuiteCRM.
 
-==== PHP ====
+#### PHP ####
 
 Installing a PHP opcode cache will increase the performance of all PHP files. These work by caching the compilation of PHP files resulting in less work on each request. Furthermore SuiteCRM will use the caching API of some PHP accelerators which will further increase performance. If you are using Linux then [http://php.net/manual/en/book.apc.php APC] is the usual choice. Windows users should check out [http://php.net/manual/en/book.wincache.php WinCache].
 
-==== MySQL ====
+#### MySQL ####
 
 MySQL is notorious for having small default settings. Fully optimising MySQL is outside the scope of this book (however checkout [http://mysqltuner.pl mysqltuner.pl] for a helpful Perl script which will provide setting recommendations - note that you should be careful when running files from an unknown source). One small change that can make a big difference is increasing the <code>innodb_buffer_pool_size</code>.
 
 If you have migrated or imported a significant amount of data it is possible that some tables will be fragmented. Running <code>OPTIMIZE TABLE tablename</code> can increase performance.
 
-=== Indexes ===
+### Indexes ###
 
 Adding indexes on the fields of modules can improve database performance. The core modules usually have important fields indexed. However if you have created a new module or added new, often searched fields to a module then these fields may benefit from being indexed. See the [[#chap03.xhtml#vardefs-chapter|Vardef]] chapter for adding indexes.
 
-=== Config Changes ===
+### Config Changes ###
 
 The following are some config settings that can be used to improve performance. Please note that in most cases you will have better performance gains by first following the steps in previous sections. These settings should be set in the config_override.php file. See the chapter on the [[#chap09.xhtml#config-chapter|Config]] files for more information.
 

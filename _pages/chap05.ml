@@ -7,7 +7,7 @@ title: "Chapter 05"
 
 <div>
 
-== <span class="section-number">5. </span>Views ==
+## <span class="section-number">5. </span>Views ##
 
 SuiteCRM follows the MVC (Model-View-Controller) pattern and as such has the concept of views. Views are responsible for gathering and displaying data . There are a number of default views in SuiteCRM. These include
 
@@ -18,16 +18,16 @@ SuiteCRM follows the MVC (Model-View-Controller) pattern and as such has the con
 ; EditView
 : The EditView allows editing the various fields of a record and provides validation on these values.
 
-=== Location ===
+### Location ###
 
 Views can be found in <code>modules/&lt;TheModule&gt;/views/</code> or, for custom views,<br />
 <code>custom/modules/&lt;TheModule&gt;/views/</code>, and are named in the following format: <code>view.&lt;viewname&gt;.php</code>. For example, the Accounts DetailView can be found in <code>modules/Accounts/views/view.detail.php</code> with a customised version in <code>custom/modules/Accounts/views/view.detail.php</code>. The custom version is used if it exists. If it doesn’t then the module version is used. Finally, if neither of these exist then the SuiteCRM default is used in <code>include/MVC/View/views/</code>.
 
-=== Customising ===
+### Customising ###
 
 In order to customise a View we first need to create the appropriate view file. This will vary depending on the module we wish to target.
 
-==== Custom module ====
+#### Custom module ####
 
 In this case we can place the file directly into our module. Create a new file (if it doesn’t exist) at <code>modules/&lt;TheModule&gt;/views/view.&lt;viewname&gt;.php</code>. The contents will look similar to:
 
@@ -83,7 +83,7 @@ Example 5.2: Detail view for a custom module, ABC_Vehicles
 
 
 </div>
-==== Preexisting modules ====
+#### Preexisting modules ####
 
 For preexisting modules you will want to add the view to<br />
 <code>custom/modules/&lt;TheModule&gt;/views/view.&lt;viewname&gt;.php</code>.
@@ -172,7 +172,7 @@ Example 5.5: Overriding the Accounts List View
 
 
 </div>
-==== Making changes ====
+#### Making changes ####
 
 Now that we have a custom view what can we actually do? The views have various methods which we can now override to change/add behaviour. The most common ones to override are:
 

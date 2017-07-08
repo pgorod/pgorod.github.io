@@ -7,13 +7,13 @@ title: "Chapter 14"
 
 <div>
 
-== <span class="section-number">14. </span>Extension Framework ==
+## <span class="section-number">14. </span>Extension Framework ##
 
-=== Introduction ===
+### Introduction ###
 
 The extension framework provides a means to modify various application data inside SuiteCRM. For example it provides a way to add or modify vardefs, scheduled tasks, language strings and more. In general a folder is provided in <code>custom/Extension</code> (the exact path depends on the extension). This folder is then scanned for files which will be consolidated into a single ext file which SuiteCRM will then read and use. In this way it is possible for developers to add a new file to affect the behaviour of SuiteCRM rather than altering existing files. This makes the changes more modular and allows the easy addition or removal of changes. Additionally, because these files are all consolidated it means that there is no affect on performance of checking a (possibly large) number of files. This is only done when performing a repair and rebuild in the admin menu.
 
-=== Standard Extensions ===
+### Standard Extensions ###
 
 List of standard SuiteCRM extensions
 
@@ -119,7 +119,7 @@ List of standard SuiteCRM extensions
 | Used to add new WorkFlow actions.
 |}
 
-=== Custom Extensions ===
+### Custom Extensions ###
 
 Interestingly the extension framework can be used to add new extensions. This allows you to create customisations that are easily customised by others (in a similar manner to, for example, how vardefs can be added - see the chapter on [[#chap03.xhtml#vardefs-chapter|Vardefs]]).
 
