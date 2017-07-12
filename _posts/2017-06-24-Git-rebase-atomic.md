@@ -58,6 +58,8 @@ cd ..
 rm -R TempRepo
 {% endhighlight %}
 
+Make sure you edit those two variables at the beginning (`user` and `fork`), to fill them with appropriate values referencing your Github repo.
+
 Of course, with a proper **git** set up you would avoid the long delay of fetching the entire project every time.
 
 This is for Linux but it works great in Windows 10 if you install the Linux Bash Shell from Microsoft.
