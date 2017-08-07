@@ -14,4 +14,88 @@ suitecrm as a generic database
 
 fields in relationships
 
+https://suitecrm.com/forum/suitecrm-7-0-discussion/14778-retrieving-the-results-of-a-report#49805
 
+https://suitecrm.com/forum/suitecrm-7-0-discussion/14827-directly-accessing-the-suitedb#49824
+
+Linux Screen command https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/#starting
+
+Reindex AOD Index https://suitecrm.com/forum/suitecrm-7-0-discussion/15108-advanced-search-doesn-t-work#50811
+
+All the different kinds of email accounts to configure
+
+Print to PDF https://suitecrm.com/media/kunena/attachments/33374/AddingPrintPDFtocustomModule.pdf
+
+
+PT50001000005253546000180
+
+
+[Sun Jan 08 04:15:59.868861 2017] [:error] [pid 6048:tid 1900] [client ::1:50251] PHP Warning:  Declaration of 
+
+PopupSmarty::setup($seed, $file = NULL, $where = NULL, $params = Array, $offset = 0, $limit = -1, $filter_fields = Array, $id_field = 'id') should be compatible with 
+
+ListViewDisplay::setup($seed, $file, $where, $params = Array, $offset = 0, $limit = -1, $filter_fields = Array, $id_field = 'id', $id = NULL) in C:\\xampp\\htdocs\\SuiteCRM\\include\\Popups\\PopupSmarty.php on line 46, referer: 
+
+
+
+
+
+./modules/Accounts/Dashlets/MyAccountsDashlet/MyAccountsDashlet.php
+./modules/Calls/Dashlets/MyCallsDashlet/MyCallsDashlet.php
+./modules/Meetings/Dashlets/MyMeetingsDashlet/MyMeetingsDashlet.php
+./modules/Opportunities/Dashlets/MyOpportunitiesDashlet/MyOpportunitiesDashlet.php
+./modules/SugarFeed/Dashlets/SugarFeedDashlet/SugarFeedDashlet.php
+
+
+
+
+./modules/AM_ProjectTemplates/Dashlets/AM_ProjectTemplatesDashlet/AM_ProjectTemplatesDashlet.php
+./modules/AM_TaskTemplates/Dashlets/AM_TaskTemplatesDashlet/AM_TaskTemplatesDashlet.php
+./modules/AOK_KnowledgeBase/Dashlets/AOK_KnowledgeBaseDashlet/AOK_KnowledgeBaseDashlet.php
+./modules/AOK_Knowledge_Base_Categories/Dashlets/AOK_Knowledge_Base_CategoriesDashlet/AOK_Knowledge_Base_CategoriesDashlet.php
+./modules/AOR_Reports/Dashlets/AORReportsDashlet/AORReportsDashlet.php
+./modules/AOS_Contracts/Dashlets/AOS_ContractsDashlet/AOS_ContractsDashlet.php
+./modules/AOS_Invoices/Dashlets/AOS_InvoicesDashlet/AOS_InvoicesDashlet.php
+./modules/AOS_PDF_Templates/Dashlets/AOS_PDF_TemplatesDashlet/AOS_PDF_TemplatesDashlet.php
+./modules/AOS_Product_Categories/Dashlets/AOS_Product_CategoriesDashlet/AOS_Product_CategoriesDashlet.php
+./modules/AOS_Products/Dashlets/AOS_ProductsDashlet/AOS_ProductsDashlet.php
+./modules/AOS_Quotes/Dashlets/AOS_QuotesDashlet/AOS_QuotesDashlet.php
+./modules/AOW_Processed/Dashlets/AOW_ProcessedDashlet/AOW_ProcessedDashlet.php
+./modules/AOW_WorkFlow/Dashlets/AOW_WorkFlowDashlet/AOW_WorkFlowDashlet.php
+./modules/Bugs/Dashlets/MyBugsDashlet/MyBugsDashlet.php
+./modules/Calendar/Dashlets/CalendarDashlet/CalendarDashlet.php
+./modules/Campaigns/Dashlets/TopCampaignsDashlet/TopCampaignsDashlet.php
+./modules/Cases/Dashlets/MyCasesDashlet/MyCasesDashlet.php
+./modules/Charts/Dashlets/CampaignROIChartDashlet/CampaignROIChartDashlet.php
+./modules/Charts/Dashlets/MyPipelineBySalesStageDashlet/MyPipelineBySalesStageDashlet.php
+./modules/Charts/Dashlets/OpportunitiesByLeadSourceByOutcomeDashlet/OpportunitiesByLeadSourceByOutcomeDashlet.php
+./modules/Charts/Dashlets/OpportunitiesByLeadSourceDashlet/OpportunitiesByLeadSourceDashlet.php
+./modules/Charts/Dashlets/OutcomeByMonthDashlet/OutcomeByMonthDashlet.php
+./modules/Charts/Dashlets/PipelineBySalesStageDashlet/PipelineBySalesStageDashlet.php
+./modules/Contacts/Dashlets/MyContactsDashlet/MyContactsDashlet.php
+./modules/Documents/Dashlets/MyDocumentsDashlet/MyDocumentsDashlet.php
+./modules/Emails/Dashlets/MyEmailsDashlet/MyEmailsDashlet.php
+./modules/Favorites/Dashlets/Favorites/FavoritesDashlet.php
+./modules/FP_Event_Locations/Dashlets/FP_Event_LocationsDashlet/FP_Event_LocationsDashlet.php
+./modules/FP_events/Dashlets/FP_eventsDashlet/FP_eventsDashlet.php
+./modules/Home/Dashlets/ChartsDashlet/ChartsDashlet.php
+./modules/Home/Dashlets/iFrameDashlet/iFrameDashlet.php
+./modules/Home/Dashlets/InvadersDashlet/InvadersDashlet.php
+./modules/Home/Dashlets/JotPadDashlet/JotPadDashlet.php
+./modules/Home/Dashlets/RSSDashlet/RSSDashlet.php
+./modules/Home/Dashlets/SugarNewsDashlet/SugarNewsDashlet.php
+./modules/jjwg_Areas/Dashlets/jjwg_AreasDashlet/jjwg_AreasDashlet.php
+./modules/jjwg_Maps/Dashlets/jjwg_MapsDashlet/jjwg_MapsDashlet.php
+./modules/jjwg_Markers/Dashlets/jjwg_MarkersDashlet/jjwg_MarkersDashlet.php
+./modules/Leads/Dashlets/MyLeadsDashlet/MyLeadsDashlet.php
+./modules/Meetings/Dashlets/MyMeetingsDashlet/MyMeetingsDashlet.php
+./modules/Notes/Dashlets/MyNotesDashlet/MyNotesDashlet.php
+./modules/Opportunities/Dashlets/MyClosedOpportunitiesDashlet/MyClosedOpportunitiesDashlet.php
+./modules/Opportunities/Dashlets/MyOpportunitiesDashlet/MyOpportunitiesDashlet.php
+./modules/OutboundEmailAccounts/Dashlets/OutboundEmailAccountsDashlet/OutboundEmailAccountsDashlet.php
+./modules/Project/Dashlets/MyProjectDashlet/MyProjectDashlet.php
+./modules/ProjectTask/Dashlets/MyProjectTaskDashlet/MyProjectTaskDashlet.php
+./modules/Spots/Dashlets/SpotsDashlet/SpotsDashlet.php
+./modules/SugarFeed/Dashlets/SugarFeedDashlet/SugarFeedDashlet.php
+./modules/SugarFeed/Dashlets/SugarFeedDashlet/SugarFeedDashlet.php.save
+./modules/Tasks/Dashlets/MyTasksDashlet/MyTasksDashlet.php

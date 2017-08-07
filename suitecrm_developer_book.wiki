@@ -2360,7 +2360,7 @@ Example 8.6: MyTimeEntryPoint
 
 
 </div>
-Obviously this is a contrived example but any logic that can be performed elsewhere in SuiteCRM can be performed in an entry poiny (for example creating or editing [[#chap02.xhtml#working-with-beans-chapter|SugarBeans]]).
+Obviously this is a contrived example but any logic that can be performed elsewhere in SuiteCRM can be performed in an entry point (for example creating or editing [[#chap02.xhtml#working-with-beans-chapter|SugarBeans]]).
 
 
 </div>
