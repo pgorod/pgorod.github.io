@@ -30,11 +30,26 @@ Don't jump into conclusions when seeing the results. You need to think whether t
 
 ## Deleted records ##
 
-SuiteCRM doesn't really delete records when you delete them from the user interface. It simply marks them by setting a field called `deleted` to 1. Then all the other queries in the app ignore these records, so they don't appear anywhere in the app. But if you really need to recover them, you can do so by accessing the database directly.
+SuiteCRM doesn't really delete records when you delete them from the user interface. It simply marks them by setting a field called `deleted` to 1. Then all the other queries in the app ignore these records, so they don't appear anywhere in the app. But if you really need to recover them, you can do so by accessing the database directly and setting `deleted` back to 0.
 
-If you have too many of those, normally you can safely purge them from the database. There is a Scheduler Job that does that maintenance, it's called `Prune Database`. Note that it is **not** enabled by default, you have to enable it deliberately, after considering the pros and cons of keeping deleted records in your case.
+If you have too many of those, normally you can safely purge them from the database. There is a Scheduler Job that does that maintenance, it's called `Prune Database on 1st of Month`. Note that it is **not** enabled by default, you have to enable it deliberately, after considering the pros and cons of keeping deleted records in your case. It's your call after considering what kind of usage you have, and what kind (and frequency) of backups you have.
 
 ## Workflow left-overs ##
 
-Other tables that frequently need manual pruning are `aow_processed` and `aow_processed_aow_actions`. These are related to Workflows and depend on your use of `repeated runs`. See this discussion for some interesting [comments](https://github.com/salesagility/SuiteCRM/issues/3328#issuecomment-290490251). Be careful and backup before touching this.
+Other tables that frequently need manual pruning are `aow_processed` and `aow_processed_aow_actions`. These are related to Workflows and depend on your use of `repeated runs`. See this discussion for some interesting [comments](https://github.com/salesagility/SuiteCRM/issues/3328#issuecomment-290490251). Be careful and backup before touching this. But if you find 14 million rows here, like a user once reported in the forums, you know what to work on.
+
+## Slow queries ##
+
+To check if an app performance problem is a database performance problem, you can go into `Admin`/ `System Settings` and turn on the `Log slow queries` option. Set the `Slow query time threshold (msec)` parameter to configure how long a query has to take to be logged.
+
+Then use the app for a while and check the logs to see which queries are taking longest. A really unusual delay could be a sign of database corruption, index corruption, the need for a new or better index, even disk problems. But this logging is a good start to hunt down your problem.
+
+## Orphan records in relationships ##
+
+Finally, another kind of orphan data is records of relationships where one side of the relationship no longer exists. Often this is not wrong at all (when you delete a `Contact` there is no reason to delete an associated `Account`), but other times there is nothing more to store after the record is deleted.
+
+These orphan records can be many in tables like `securitygroups_records` (you don't need security descriptors of records you no longer keep). I also had a SuiteCRM installation with tons of orphan records caused by own import process. Successive cycles of import/delete/import left many loose ends in the database.
+
+You can hunt down these rows with clever SQL.
+
 
