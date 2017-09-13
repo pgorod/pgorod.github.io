@@ -1,3 +1,9 @@
+Testing SMTP https://github.com/salesagility/SuiteCRM/issues/4146
+
+Dashlets Homepage configs https://suitecrm.com/forum/suitecrm-7-0-discussion/15841-lost-dashlets-and-tabs-for-one-user/reply
+
+how to find code that drives a screen
+
 some SQL to see sizes and orphan relationships
 
 ubuntu install
@@ -26,6 +32,7 @@ All the different kinds of email accounts to configure
 
 Print to PDF https://suitecrm.com/media/kunena/attachments/33374/AddingPrintPDFtocustomModule.pdf
 
+https://developer.sugarcrm.com/2013/08/23/yet-another-script-for-doing-quick-rebuild-and-repair/
 
 PT50001000005253546000180
 

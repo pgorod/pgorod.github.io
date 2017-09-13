@@ -38,18 +38,3 @@ There are a few actions you can take without much risk:
 
 
 
-
-
-About the language file, shouldn't it be in
-
-custom/Extension/application/Ext/Language/en_us.descriptivename.php
-
-so that then it would be consolidated into
-
-custom/application/Ext/Language/en_us.lang.php
-
-during the Quick Repair and Rebuild? I'm following Jim Mackin's book here (sections Extension Framework and Language), though I can't test right now.
-
-I think the general idea is that everything in directories named Ext is auto-generated, except stuff under custom/Extension/*/Ext...
-
-
