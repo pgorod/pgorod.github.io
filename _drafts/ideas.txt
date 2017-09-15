@@ -1,10 +1,12 @@
+saved_searches base64encode https://www.base64encode.org/
+
 Testing SMTP https://github.com/salesagility/SuiteCRM/issues/4146
 
 Dashlets Homepage configs https://suitecrm.com/forum/suitecrm-7-0-discussion/15841-lost-dashlets-and-tabs-for-one-user/reply
 
 how to find code that drives a screen
 
-some SQL to see sizes and orphan relationships
+add SQL to see orphan relationships
 
 ubuntu install
 
@@ -25,8 +27,6 @@ https://suitecrm.com/forum/suitecrm-7-0-discussion/14778-retrieving-the-results-
 https://suitecrm.com/forum/suitecrm-7-0-discussion/14827-directly-accessing-the-suitedb#49824
 
 Linux Screen command https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/#starting
-
-Reindex AOD Index https://suitecrm.com/forum/suitecrm-7-0-discussion/15108-advanced-search-doesn-t-work#50811
 
 All the different kinds of email accounts to configure
 

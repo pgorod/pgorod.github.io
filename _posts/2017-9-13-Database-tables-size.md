@@ -48,7 +48,7 @@ Then use the app for a while and check the logs to see which queries are taking 
 
 Finally, another kind of orphan data is records of relationships where one side of the relationship no longer exists. Often this is not wrong at all (when you delete a `Contact` there is no reason to delete an associated `Account`), but other times there is nothing more to store after the record is deleted.
 
-These orphan records can be many in tables like `securitygroups_records` (you don't need security descriptors of records you no longer keep). I also had a SuiteCRM installation with tons of orphan records caused by own import process. Successive cycles of import/delete/import left many loose ends in the database.
+These orphan records can be many in tables like `securitygroups_records` (you don't need security descriptors of records you no longer keep). I once had a SuiteCRM installation with tons of orphan records caused by my own import process. Successive cycles of import/delete/import left many loose ends in the database.
 
 You can hunt down these rows with clever SQL.
 
