@@ -1,0 +1,58 @@
+
+MacOS
+https://gohugo.io/getting-started/installing/#macos
+
+
+sudo apt-get update
+
+sudo apt-get install git
+
+wget https://github.com/gohugoio/hugo/releases/download/v0.31/hugo_0.31_Linux-64bit.deb
+
+sudo dpkg -i hugo_0.31_Linux-64bit.deb
+
+Check Hugo is operational with 
+
+hugo version
+
+Go to some appropriate directory, and use this command to create the SuiteDocs subtree and download everything:
+
+git clone https://github.com/salesagility/SuiteDocs.git
+
+cd SuiteDocs
+
+bundle install
+
+This should pick up the local Gemfile asking for the "asciidoctor" package and install it. Check with:
+
+asciidoctor --version
+
+You're ready to go! To build the site you can simply type 
+
+hugo
+
+But you won't be using that very often because it's enough to launch the local web server, and any outstanding changes will get rebuilt:
+
+hugo server --bind=0.0.0.0  --baseUrl=http://10.0.0.200
+
+(change that into whatever is your local IP address. This will be the URL you put in your browser to navigate the local website).
+
+
+José Ascensão
+-------------
+PHYS - IA. falta iniciativa. Atrasos (a fazer outros trabalhos). Joga? Usa PC nas aulas para outras cadeiras.
+ENG - fez oral, ainda nao tem nota, mas nao correu bem, _nervoso_, 4 ou 5 em 10. Vale 20%. Ensaios? Melhorou nos papers.
+Formação - jogar no PC.
+Sugere-se Agenda, ordem, baixar ansiedade.
+Port - OK
+MAT - fraco, 4, talvez 5. É SL.
+Visual Arts
+EE - em Visual Arts. Desorientado. Lento de processos. Especulativo e em círculos. Aos Sábados não busca o prof. A mãe compra tudo. 
+
+
+Francisco Rosa
+--------------
+PHYS - EE. Fez toda parte experimental. Escrita adiantada. Drafts daqui a 2 semanas. 
+IA - 9? Tiveram simulação com feedback. Sessão de explicação. Falaram muito entre si e contaminaram-se de aboradagem errada. É esperto, pode subir notas. Pode chegar ao 6.
+Port - OK
+

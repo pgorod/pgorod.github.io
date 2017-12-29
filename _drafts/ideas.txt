@@ -2,15 +2,18 @@ saved_searches base64encode https://www.base64encode.org/
 
 Testing SMTP https://github.com/salesagility/SuiteCRM/issues/4146
 
-Dashlets Homepage configs https://suitecrm.com/forum/suitecrm-7-0-discussion/15841-lost-dashlets-and-tabs-for-one-user/reply
+Dashlets Homepage configs https://suitecrm.com/forum/suitecrm-7-0-discussion/15841-lost-dashlets-and-tabs-for-one-user/
 
 how to find code that drives a screen
+   "see" command to find in files  https://suitecrm.com/forum/suitecrm-7-0-discussion/16201-tpl-file-values/reply
 
 add SQL to see orphan relationships
 
 ubuntu install
 
 campaigns - complete post
+
+iframe field type, with data as arguments - https://www.suitecrm.com/forum/suitecrm-7-0-discussion/16297-iframe-field-how-to-embed-externale-web-page-with-context
 
 backup strategies
 
@@ -33,6 +36,12 @@ All the different kinds of email accounts to configure
 Print to PDF https://suitecrm.com/media/kunena/attachments/33374/AddingPrintPDFtocustomModule.pdf
 
 https://developer.sugarcrm.com/2013/08/23/yet-another-script-for-doing-quick-rebuild-and-repair/
+
+Weird accounts-leads relationship http://support.sugarcrm.com/Knowledge_Base/Accounts_Contacts_Leads/Troubleshooting_Sticky_Account_Names_on_Leads/
+
+
+
+
 
 PT50001000005253546000180
 
