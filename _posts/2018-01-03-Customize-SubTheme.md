@@ -14,21 +14,17 @@ I start by editing `custom/themes/SuiteP/themedef.php`, and near the end, next t
 
 Now we need add that new label in a couple of places:
 
-/var/www/html/modules/Users/language/en_us.lang.php:171:    'LBL_SUBTHEME_OPTIONS_NOON' => 'Noon',
+`/var/www/html/modules/Users/language/en_us.lang.php:171:    'LBL_SUBTHEME_OPTIONS_NOON' => 'Noon',`
 
-/var/www/html/include/language/en_us.lang.php:2358:    'LBL_SUBTHEME_OPTIONS_NOON' => 'Noon',
+`/var/www/html/include/language/en_us.lang.php:2358:    'LBL_SUBTHEME_OPTIONS_NOON' => 'Noon',`
 
 Next, we copy the subdirectory of the sub-theme that looks closest to what we want, giving this command from the root of the SuiteCRM installation:
 
-cp -R themes/SuiteP/css/Day themes/SuiteP/css/Noon
+`cp -R themes/SuiteP/css/Day themes/SuiteP/css/Noon`
 
 At this point, the Sub-theme is operational and can be selected from the User's profile, `Advanced` tab.
 
 ## Compiling the styles ##
-
-The variables file is important to configure the styles:
-
-`themes/SuiteP/css/variables.scss`
 
 In order to be able to compile this CSS, you need to install a SASS compiler. On Ubuntu this can be done from your SuiteCRM directory with:
 
@@ -38,19 +34,29 @@ You can then compile using the following command everytime you change any `.scss
 
 `./vendor/bin/pscss -f compressed themes/SuiteP/css/Noon/style.scss >  themes/SuiteP/css/Noon/style.css`
 
+Note that you always use this exact command even if you didn't change `style.scss`, but another `.scss` file, because this is the main file that includes all the others.
+
 ## Customizing the styles ##
+
+There are several `.scss` files that can be changed. 
+
+`themes/SuiteP/css/variables.scss`
+`themes/SuiteP/css/color-palette.scss`
+`themes/SuiteP/css/style.scss`
 
 Here are a few tweaks I tried in `color-palette.scss` to add more contrast:
 
 Top menus
-C2C3C$ > 555555
+`C2C3C$ > 555555`
 
 Lettering
-817C8D > 111
+`817C8D > 111`
 
 Sidebar
-929798 > 626768
-707d84 > 303d44
+`929798 > 626768`
+`707d84 > 303d44`
+
+
 
 The full `color-palette.scss` looks like this after the changes:
 
