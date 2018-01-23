@@ -21,7 +21,7 @@ Try to make steps 1 and 2 in quick succession so that no indexing cron jobs run 
 
 If you're using a different command (like `rm`), note that you must delete also that final Index directory, not just the files within it.
 
-2. In your database, backup (by exporting) and then delete SQL tables `aod_index` and `aod_indexevent`.
+2. In your database, backup (by exporting) and then delete all rows from SQL tables `aod_index` and `aod_indexevent`. Don't delete the tables themselves, just the rows in them.
 
 3. In SuiteCRM Schedulers, make sure that "Optimise AOD Index" and "Perform Lucene Index" are running at their appointed times.
 

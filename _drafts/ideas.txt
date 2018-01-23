@@ -39,6 +39,7 @@ https://developer.sugarcrm.com/2013/08/23/yet-another-script-for-doing-quick-reb
 
 Weird accounts-leads relationship http://support.sugarcrm.com/Knowledge_Base/Accounts_Contacts_Leads/Troubleshooting_Sticky_Account_Names_on_Leads/
 
+Accounts copy office phone https://suitecrm.com/suitecrm/forum/suitecrm-7-0-discussion/17375-do-not-update-phone-work-in-contact-editview-while-selecting-account
 
 
 

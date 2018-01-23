@@ -52,4 +52,4 @@ That third example is an `OR`, so grep will match any of those three words (very
 
 With this I believe you can **see "under the hood"** what SuiteCRM is trying to load, including directories it is searching, before deciding to load a file. You can also detect if the problem is caused by insufficient permissions. This is a great way to get a grip on what's wrong with some file you're trying to customize.
 
-I even use it to **learn how Studio works**: I  "watch" it doing the changes when I create a relationship, for example, and then check the files it touched to further customize or understand. It also let's me learn the various steps involved (`Save`, `Deploy`, `Quick Repair and Rebuild`).
+I even use it to **learn how Studio works**: I  "watch" it doing the changes when I create a relationship, for example, and then check the files it touched to further customize or understand. It also lets me learn the various steps involved (`Save`, `Deploy`, `Quick Repair and Rebuild`).
