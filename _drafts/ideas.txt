@@ -41,8 +41,21 @@ Weird accounts-leads relationship http://support.sugarcrm.com/Knowledge_Base/Acc
 
 Accounts copy office phone https://suitecrm.com/suitecrm/forum/suitecrm-7-0-discussion/17375-do-not-update-phone-work-in-contact-editview-while-selecting-account
 
+Register users from API
+https://suitecrm.com/suitecrm/forum/suitecrm-7-0-discussion/17489-allow-users-to-register#58825
 
+Undelete records, recover pruned data
+https://community.sugarcrm.com/thread/21135
 
+Prune aow_processed and aow_processed_aow_actions tables
+https://suitecrm.com/suitecrm/forum/developer-help/11262-very-large-aow-processed-and-aow-processed-aow-actions-tables#56405
+
+Reassign records from deleted user: https://suitecrm.com/suitecrm/forum/suitecrm-7-0-discussion/18204-howto-transfer-contacts-and-associated-calls-between-employees
+
+Sum lead scores in Detail view: https://suitecrm.com/suitecrm/forum/developer-help/18236-calculate-and-display-total-lead-scores
+
+Load balancing tips:
+https://suitecrm.com/suitecrm/forum/suitecrm-7-0-discussion/18312-load-balancing-how-to-maintain-session-between-servers#62373
 
 PT50001000005253546000180
 
