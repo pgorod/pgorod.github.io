@@ -34,6 +34,14 @@ SuiteCRM doesn't really delete records when you delete them from the user interf
 
 If you have too many of those, normally you can safely purge them from the database. There is a Scheduler Job that does that maintenance, it's called `Prune Database on 1st of Month`. Note that it is **not** enabled by default, you have to enable it deliberately, after considering the pros and cons of keeping deleted records in your case. It's your call after considering what kind of usage you have, and what kind (and frequency) of backups you have.
 
+## Job queue left-overs ##
+
+If you see a very large `job_queue` table, you might want to purge it. I've used this query to look at old `job_queue` entries:
+
+{% highlight sql %}
+SELECT * FROM `job_queue` where status= 'done' and date_modified > date_sub(now(), interval 1 month)
+{% endhighlight %}
+
 ## Workflow left-overs ##
 
 Other tables that frequently need manual pruning are `aow_processed` and `aow_processed_aow_actions`. These are related to Workflows and depend on your use of `repeated runs`. See this discussion for some interesting [comments](https://github.com/salesagility/SuiteCRM/issues/3328#issuecomment-290490251). Be careful and backup before touching this. But if you find 14 million rows here, like a user once reported in the forums, you know what to work on.
