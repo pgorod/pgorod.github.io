@@ -1,0 +1,57 @@
+DELETE FROM qhzr6_kunena_topics 
+WHERE id NOT IN
+  (SELECT m.thread FROM `qhzr6_kunena_messages` m
+  WHERE year(FROM_UNIXTIME(m.time))=2018 AND month(FROM_UNIXTIME(m.time))>3)
+
+DELETE ChildTable
+FROM qhzr6_kunena_messages ChildTable    
+LEFT JOIN qhzr6_kunena_topics ParentTable 
+ON ChildTable.thread = ParentTable.id
+WHERE ParentTable.id IS NULL
+
+
+DELETE ChildTable
+FROM qhzr6_kunena_messages_text ChildTable    
+LEFT JOIN qhzr6_kunena_messages ParentTable 
+ON ChildTable.mesid = ParentTable.id
+WHERE ParentTable.id IS NULL
+
+
+
+
+grep -n "Table structure" mydump.sql
+# identify the first and last line numbers (n1 and n2) of desired table
+sed -n n1,n2p mydump.sql > mytable.sql 
+# (e.g. sed -n 48,112p)
+
+
+The solution was to measure how fast the query was scanning rows in the table scan of the fact table. This is shown by the Handler_read_rnd_next status variable. Here’s an easy way to watch it (innotop is another handy way):
+	
+mysqladmin extended -r -i 10 | grep Handler_read_rnd_next
+-- ignore the first line of output...
+| Handler_read_rnd_next             | 429224      |
+
+So the server was reading roughly 43K rows per second, and there were 150 million rows in the table. A little math later, and you get 3488 seconds to completion, or a little less than an hour. And indeed the query completed in about 55 minutes.
+
+
+
+
+SELECT year(FROM_UNIXTIME (time)), month(FROM_UNIXTIME (time)), userid, qhzr6_users.username, count(*) 
+FROM `qhzr6_kunena_messages` m
+LEFT JOIN qhzr6_users ON m.userid = qhzr6_users.id where year(FROM_UNIXTIME (time))=2015 and month(FROM_UNIXTIME (time))=3 group by year(FROM_UNIXTIME (time)),month(FROM_UNIXTIME (time)), userid ORDER BY count(*) DESC LIMIT 30
+
+
+SELECT year(FROM_UNIXTIME (time)), month(FROM_UNIXTIME (time)), userid, username, 
+SELECT year(FROM_UNIXTIME (time)) AS 'Year', month(FROM_UNIXTIME (time)) AS 'Month', 
+-- userid, username, 
+ (CASE
+    WHEN userid in (6776) THEN 'Pgr'
+    WHEN userid in (93, 1330, 30574, 37218, 2234, 41, 3588, 42, 32053, 28652, 54350, 30153) THEN 'SA'
+    ELSE 'Others'
+    END) AS 'Class',
+    count(*) 
+FROM `qhzr6_kunena_messages` m
+LEFT JOIN qhzr6_users u ON m.userid = u.id 
+-- WHERE Year=2015 and Month=3 
+group by Year, Month, Class 
+ORDER BY Year, Month DESC LIMIT 500
