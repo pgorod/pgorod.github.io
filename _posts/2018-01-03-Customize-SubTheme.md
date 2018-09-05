@@ -29,9 +29,7 @@ And a slightly different one for `$app_strings` here:
 
 {% highlight php %}
 <?php
-$app_strings = array (
-  'LBL_SUBTHEME_OPTIONS_NOON' => 'Noon',
-);
+$app_strings['LBL_SUBTHEME_OPTIONS_NOON']= 'Noon';
 {% endhighlight %}
 
 Next, we copy the subdirectory of the sub-theme that looks closest to what we want, giving this command from the root of the SuiteCRM installation:
