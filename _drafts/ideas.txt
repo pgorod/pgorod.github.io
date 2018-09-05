@@ -89,7 +89,10 @@ https://web.archive.org/web/20140116145925/http://www.eggsurplus.com/home/conten
 Change SQL query for subpanel (as in CTM installation):
 https://suitecrm.com/suitecrm/forum/suitecrm-7-0-discussion/19222-subpanels-cases#66668
 
-Related Dropdowns, parent (amariussi)
+Add target_list subpanel to Contacts etc:
+https://suitecrm.com/suitecrm/forum/developer-help/11352-how-to-add-a-target-lists-subpanel-to-leads-or-contacts-etc#70833
+
+Related / Dependent / Associated Dropdowns, parent (amariussi)
 https://suitecrm.com/suitecrm/forum/suitecrm-7-0-discussion/19487-how-to-create-an-associated-dropdown
 
 Invalidate cache selectively (clemente) 
@@ -104,7 +107,7 @@ https://store.suitecrm.com/docs/securitysuite/optimizing-securitysuite
 Calculated non-db field in vardefs and List view process_record hook:
 https://stackoverflow.com/questions/15278977/sugarcrm-smarty-code-in-listviewdefs
 
-Show total of values in Ooportunity List view
+Show total of values in Opportunity List view
 https://suitecrm.com/suitecrm/forum/developer-help/19492-displaying-a-total-at-bottom-of-opportunities-listview-in-7-10-5#68373
 
 Quick-search dropdowns, sqs, auto-populate 
@@ -122,8 +125,17 @@ https://suitecrm.com/suitecrm/forum/developer-help/19706-mysql-select-from-conta
 Extend Workflows with Custom Actions
 https://www.google.com/search?safe=active&client=firefox-b&ei=Sx9HW5_TFsiSkwXgvLTAAQ&q=%22suitecrm%22+extending+workflows+actions.ext.php
 
-Enabel advanced AOD search for Producst module (Clemente), also for audited=true
+Enable advanced AOD search for Product module (Clemente), also for audited=true
 https://suitecrm.com/suitecrm/forum/suitecrm-7-0-discussion/19734-all-products-are-shown-in-basic-search-results#69363
 
 SugarField Replace the standard MultiEnum (i.e., Multi-Select) with Checkboxes
 https://github.com/pgorod/SugarCRM-CheckboxMultiEnum
+
+Dynamic Fields plugin
+https://suitecrm.com/suitecrm/forum/developer-help/12771-dynamic-fields-plugin
+
+Idea about https://github.com/salesagility/SuiteCRM/pull/3806 and discussion on Mattermost Jun 6, 2018 (search "repeated runs"):
+- in Workflows, add option "Run" as "Scheduler, specific job"
+- add an option in "Add Scheduler" called "Specific Workflow" with parameter letting you choose existing "specific job" Workflows from Dropdown
+- in general workflow execution, ignore these Workflows when launched from the generic Scheduler job, and run them when run from the specific one
+

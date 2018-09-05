@@ -3,18 +3,39 @@ WHERE id NOT IN
   (SELECT m.thread FROM `qhzr6_kunena_messages` m
   WHERE year(FROM_UNIXTIME(m.time))=2018 AND month(FROM_UNIXTIME(m.time))>3)
 
-DELETE ChildTable
+SELECT * -- DELETE ChildTable
 FROM qhzr6_kunena_messages ChildTable    
 LEFT JOIN qhzr6_kunena_topics ParentTable 
 ON ChildTable.thread = ParentTable.id
 WHERE ParentTable.id IS NULL
 
 
-DELETE ChildTable
+SELECT * -- DELETE ChildTable
 FROM qhzr6_kunena_messages_text ChildTable    
 LEFT JOIN qhzr6_kunena_messages ParentTable 
 ON ChildTable.mesid = ParentTable.id
 WHERE ParentTable.id IS NULL
+
+
+SELECT * -- DELETE 
+FROM `qhzr6_users` 
+WHERE not(year(qhzr6_users.lastvisitDate)=2018 AND month(qhzr6_users.lastvisitDate)>3)
+
+
+SELECT * -- DELETE ChildTable
+FROM `qhzr6_users` ChildTable    
+LEFT JOIN `qhzr6_kunena_messages` ParentTable 
+ON ChildTable.id = ParentTable.userid
+WHERE ParentTable.userid IS NULL  
+
+
+SELECT * -- DELETE ChildTable
+FROM `qhzr6_kunena_users` ChildTable    
+LEFT JOIN `qhzr6_users` ParentTable 
+ON ChildTable.userid = ParentTable.id
+WHERE ParentTable.id IS NULL  
+
+
 
 
 

@@ -8,21 +8,37 @@ Since SuiteCRM 7.10, the SuiteP theme started to have 4 Sub-themes called **Dawn
 
 ## Forking an existing Sub-theme ##
 
-I start by editing `custom/themes/SuiteP/themedef.php`, and near the end, next to the similar lines, I had this one:
+I start by editing `custom/themes/SuiteP/themedef.php`, and near the end, next to the similar lines, I add this one:
 
 `   'Noon' => $app_strings['LBL_SUBTHEME_OPTIONS_NOON'],`
 
 Now we need add that new label in a couple of places:
 
-`/var/www/html/modules/Users/language/en_us.lang.php:171:    'LBL_SUBTHEME_OPTIONS_NOON' => 'Noon',`
+`custom/modules/Users/language/en_us.lang.php`:
 
-`/var/www/html/include/language/en_us.lang.php:2358:    'LBL_SUBTHEME_OPTIONS_NOON' => 'Noon',`
+{% highlight php %}
+<?php
+$mod_strings = array (
+  'LBL_SUBTHEME_OPTIONS_NOON' => 'Noon',
+);
+{% endhighlight %}
+
+And a slightly different one for `$app_strings` here:
+
+`custom/Extension/application/Ext/Language/en_us.NoonThemeLabel.php`:
+
+{% highlight php %}
+<?php
+$app_strings = array (
+  'LBL_SUBTHEME_OPTIONS_NOON' => 'Noon',
+);
+{% endhighlight %}
 
 Next, we copy the subdirectory of the sub-theme that looks closest to what we want, giving this command from the root of the SuiteCRM installation:
 
 `cp -R themes/SuiteP/css/Day themes/SuiteP/css/Noon`
 
-At this point, the Sub-theme is operational and can be selected from the User's profile, `Advanced` tab.
+At this point, just do a Quick Repair and Rebuild and the Sub-theme is operational and can be selected from the User's profile, `Advanced` tab.
 
 ## Compiling the styles ##
 
@@ -150,8 +166,4 @@ $color-81: #F08377;
 $color-82: #FFFFFF;
 {% endhighlight %}
 
-## Things that need improvement ##
-
-1. I'm not editing files under the `custom` directory to ensure it's upgrade-safe. I simply didn't try it that way, but perhaps it can be done and it works. 
-
-2. I just customized some "quick wins", a few colors that I could change and affect a lot of places in the application. There are many other things that need to be tuned after this.
+Note that I just customized some "quick wins", a few colors that I could change and affect a lot of places in the application. There are many other things that need to be tuned after this.
