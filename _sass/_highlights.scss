@@ -21,7 +21,7 @@ code {
   font-size: 91%;
 }
 
-code::selection {
+code::selection * {
   background-color: $myyellow;
 }
 
