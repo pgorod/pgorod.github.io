@@ -21,8 +21,8 @@ code {
   font-size: 91%;
 }
 
-code::selection * {
-  background-color: $myyellow;
+code::selection {
+  background-color: $myyellow!important;
 }
 
 .highlight > pre > code {
