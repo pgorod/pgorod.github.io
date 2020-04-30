@@ -17,7 +17,11 @@ code {
   font-size: 91%;
 }
 
-.highlight > code {
+code::selection {
+  background-color: $yellow;
+}
+
+.highlight > pre > code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
   font-size: 89%;
 }
