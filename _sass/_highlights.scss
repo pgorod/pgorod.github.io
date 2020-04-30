@@ -11,6 +11,10 @@
   font-size: 90%;
 }
 
+.highlight::selection {
+  background-color: $myyellow;
+}
+
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
   background-color: $lightGray;
