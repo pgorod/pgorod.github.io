@@ -4,25 +4,38 @@ title: About
 permalink: /about/
 ---
 
-Apparently, this user likes to keep an air of mistery about himself...
-
-### More Information
-
 I'm user [pgorod](https://github.com/pgorod) on Github, and user [pgr](https://suitecrm.com/forum/profile/6776-pgr) on the SuiteCRM forums.
+
+### Me and SuiteCRM
+
+I began tracking SugarCRM CE around 2008, and SuiteCRM ever since its inception. I worked part-time 
+for SalesAgility as Community Leader between 2017-2020.
+
+Now I'm trying to become "an employee" of the SuiteCRM Community itself, via a 
+[Sponsorship programme](https://github.com/sponsors/pgorod)
+based not just on friendship and good-will, but on constantly delivering actual value.
+
+### What else?
+
+Apart from being a Computer Science engineer and a developer, I am also a teacher, a sysadmin, 
+involved in way too many non-profit projects, and I am one of those people 
+with excessive number of interests and hobbies. Stuff I like: playing indoor football, electric guitar,
+ancient Greek, Kierkegaard, Cinema, Literature, politics, Media studies and Marshall McLuhan, 
+Deep work, Audiophilia, etc.
 
 ### Contact me
 
-I'm not currently providing a contact email, but you can always mention me on Github or post in any forum post where I participated, to get my attention.
+I'm not currently providing a contact email, but you can always mention me on Github 
+or post in any forum post where I participated, to get my attention.
 
+Finally, you can send me a private message on the Forums, but please think twice before doing it.
+It's better to keep all questions and support requests **public** unless it's really inadequate 
+for some reason. **Discussing in public is good**, it builds up Community knowledge.
 
 ### Commenting on this site
 
-I also moderate comments here so I will see what you write in comments. I'd like to try some original commenting policies on this site, but it will be experimental and I still don't know exactly how things will play out. 
+Comments on this site are moderated, and I might remove some after a while, when doing 
+clean-up of things whose interest is transitory or limited. 
 
-My basic idea is to try and work on this site a bit like on Stack Overflow articles, where the contents improve throughout time, becoming more accurate and complete. 
-
-I see comments as a way for readers to help me in this purpose, but I'd prefer incorporating their wisdom and corrections into the main article, and then delete the comment.
-
-And I'd like to avoid comments unrelated to the content, or simply asking off help on a related issue... please leave that for the SuiteCRM forums.
-
-Let's see how this works... thanks in advance for any contributions!
+I prefer that you start discussions regarding my work or my add-ons on the SuiteCRM Forums 
+instead of here, because that gives me visibility while giving the Community better content. 
