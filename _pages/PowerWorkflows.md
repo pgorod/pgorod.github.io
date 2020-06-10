@@ -1,9 +1,10 @@
 ---
+layout: page
 title: pedro
-
+permalink: /power-workflows/
 ---
 
-Hey
----
+### Between automatic and manual, that's where productivity lies...
 
-pedro **is** cool
+You 
+

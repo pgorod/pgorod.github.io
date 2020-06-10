@@ -9,7 +9,9 @@ I'm user [pgorod](https://github.com/pgorod) on Github, and user [pgr](https://s
 ### Me and SuiteCRM
 
 I began tracking SugarCRM CE around 2008, and SuiteCRM ever since its inception. I worked part-time 
-for SalesAgility as Community Leader between 2017-2020.
+for SalesAgility as Community Leader between 
+[2017](https://community.suitecrm.com/t/welcome-to-the-team-pedro/53341/) -
+[2020](https://community.suitecrm.com/t/dear-suitecrm-community-members/72862/16).
 
 Now I'm trying to become "an employee" of the SuiteCRM Community itself, via a 
 [Sponsorship programme](https://github.com/sponsors/pgorod)
@@ -18,8 +20,8 @@ based not just on friendship and good-will, but on constantly delivering actual 
 ### What else?
 
 Apart from being a Computer Science engineer and a developer, I am also a teacher, a sysadmin, 
-involved in way too many non-profit projects, and I am one of those people 
-with excessive number of interests and hobbies. Stuff I like: playing indoor football, electric guitar,
+involved a bunch non-profit projects (mostly related to education), and I am one of those people 
+with an excessive number of interests and hobbies. Stuff I like: playing indoor football, electric guitar,
 ancient Greek, Kierkegaard, Cinema, Literature, politics, Media studies and Marshall McLuhan, 
 Deep work, Audiophilia, etc.
 
