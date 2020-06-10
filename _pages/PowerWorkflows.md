@@ -73,12 +73,12 @@ launching the Workflows from the **Bulk Actions** dropdown.
 
 The Filters function is powerful and combines very well with this add-on. You can use saved filters,
 combine several fields in the search, and then further drill down by selecting a few records manually.
-Remember the **conditions** inside the Workflow will also be taken into account, in case you prefer to do it
-from there.
+Remember the **conditions** inside the Workflow will also be taken into account, in case you prefer 
+to filter from there.
 
-Just imagine the possibilities! Select a bunch of records and have a Workflow create individual **Calls** 
+**Just imagine the possibilities!** Select a bunch of records and have a Workflow create individual **Calls** 
 for each of them. Or have a Workflow use a Calculated Field to update some field inside them with
-new information from a related record. Or send an email to that record, based on a template, without 
+new information from a related record. Or send an email to those records, based on a template, without 
 going into each record individually.
 
 Note that this is **limited to the selected records visible on each list page**. If you're looking at a 
@@ -88,3 +88,16 @@ with **performance** - as you add too many records, it gets awkward to have the 
 for 20 or 30 seconds while they execute. The mechanism needs to applied reasonably, especially
 with Workflows that take a long time!
  
+## Sponsor Now!
+
+[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
+
+So, what are you waiting for to [![Sponsor button](../images/sponsor_btn.png)](https://github.com/sponsors/pgorod) me on Github and get 
+access to this great SponsorWare add-on?
+
+You wll also effectively be **contributing to the SuiteCRM project** as a whole, by keeping
+me in the Community working to write code that will all eventually be donated into Core!
+
+If enough people sponsor, we will effectively have one more developer working for SuiteCRM - that's
+why I could be selling these add-ons in the SuiteCRM Store, for higher prices and forever, but I 
+chose not to.
