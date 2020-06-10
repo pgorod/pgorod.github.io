@@ -25,9 +25,31 @@ saved money in your organization, in no time.
 
 While setting up a Workflow, you get a new option in the **Run** dropdown:
 
-![p](../images/pw1.png)
+![New option in "Run" dropdown](../images/pw_dropdown.png)
 
 This marks the Workflow as something that will not be run when some scheduler runs, 
-or when some record is changed, but rather when a user decides to run it on a record she 
+or when some record is changed, but rather **when a user decides** to run it on a record she 
 has on the screen in front of her.
+
+#### Run Workflows from the Detail view action buttons
+
+In each record (any kind, including custom modules), you will get a new **Action button** 
+called **Run Workflows** on the top. Here we show the menu as separate buttons, but it's
+also there if your System Settings define it's a dropdown menu instead.
+
+![New button in Detail view Action buttons](../images/pw_detail.png)
+
+Pressing that button will invoke all Workflows with these characteristics, on the current record:
+* marked as Active
+* applicable to the current module
+* marked as **From User Actions in Views** in the **Run** dropdown
+* the conditions on the Workflow are true for the current record
+
+#### Run Workflows from any Sub-panel in Detail views
+
+In each record (any kind, including custom modules), you will get a new **Action button** 
+called **Run Workflows** on the top. Here we show the menu as separate buttons, but it's
+also there if your System Settings define it's a dropdown menu instead.
+
+![New button in Detail view Action buttons](../images/pw_subpanel.png)
 
