@@ -109,6 +109,5 @@ chose not to.
 
 9 minutes, with sound.
 
-<video autoplay controls>
-<source src=“/images/PowerWorkflowsAlpha.mp4” type=“video/mp4”>
+<video autoplay controls src=“/images/PowerWorkflowsAlpha.mp4” type=“video/mp4” width="400">
 </video>
