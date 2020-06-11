@@ -93,7 +93,7 @@ of Workflows, gives you a myriad of new features; it multiplies the productivity
 
 ## Sponsor Now!
 
-So, what are you waiting for to [![Sponsor button](../images/sponsor_btn2.png)](https://github.com/sponsors/pgorod) me on Github and get 
+So, what are you waiting for to [![Sponsor button](../images/sponsor_btn.png)](https://github.com/sponsors/pgorod) me on Github and get 
 access to this great SponsorWare add-on?
 
 You wll also effectively be **contributing to the SuiteCRM project** as a whole, by keeping
