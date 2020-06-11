@@ -93,8 +93,10 @@ of Workflows, gives you a myriad of new features; it multiplies the productivity
 
 ## Sponsor Now!
 
-So, what are you waiting for to [![Sponsor button](../images/sponsor_btn.png)](https://github.com/sponsors/pgorod) me on Github and get 
-access to this great SponsorWare add-on?
+So, what are you waiting for?
+
+[![Sponsor button](../images/sponsor_btn.png) me on Github](https://github.com/sponsors/pgorod) and get 
+access to this great SponsorWare add-on!
 
 You wll also effectively be **contributing to the SuiteCRM project** as a whole, by keeping
 me in the Community working to write code that will **all** eventually be donated into Core!
@@ -102,3 +104,11 @@ me in the Community working to write code that will **all** eventually be donate
 If enough people sponsor, we will effectively have one more developer working for SuiteCRM - that's
 why I could be selling these add-ons in the SuiteCRM Store, for higher prices and forever, but I 
 chose not to.
+
+## Watch the Demo Video
+
+9 minutes, with sound.
+
+<video autoplay controls>
+<source src=“../images/PowerWorkflowsAlpha.mp4” type=“video/mp4”>
+</video>
