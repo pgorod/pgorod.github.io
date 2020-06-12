@@ -59,6 +59,23 @@ enter calculated dates, evaluate conditions, etc.
 This add-on is a bomb that multiplies SuiteCRM's usefulness, 
 saves employees' time while increasing productivity and sales. 
 
+### For End-Users or for Developers?
+
+This all sounds very powerful, and it's not drag-and-drop. You need to write a Template text with some 
+codes to handle the transformations described above. 
+
+So yeah, this might not be every end-users cup of tea... maybe some technical help might be needed
+for the more complex templates. And yes, they can get complex.
+
+But still, this will be well within the reach of _many_ end-users, who will definitely be able 
+to learn their template syntax and make their own, or make adjustments to existing ones. 
+Every team out there should have at least one or two people that can do this sort of work, 
+and that others can ask for help. 
+
+In fact, what some end-users will love about this is that it frees them from the developers. They will
+be able to get their work done, and adjust their CRM processes, without having to go through all the 
+hierarchy and budgeting and delays of getting developers to do something for them. 
+
 ### Demo video
 
 Coming up soon.
