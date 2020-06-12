@@ -47,6 +47,12 @@ it would be better to execute asynchronously, without hanging the UI while waiti
 operation to complete. Since I am already an AJAX call that easily lends itself to being 
 made asynchronous, it would be nice to allow for that.  
 
+#### 4. Security Groups Options
+
+I'd like to add the ability to restrict the presence of each specific Workflow button with 
+the usual SuiteCRM **Security Groups** and **Roles**. This way you could easily configure who has
+which buttons available to them.  
+
 ### Releases
 
 * PowerWorkflows v0.5 (Alpha) released on 15th June 2020.

@@ -110,7 +110,7 @@ So, what are you waiting for?
 [![Sponsor button](../images/sponsor_btn.png) me on Github](https://github.com/sponsors/pgorod) and get 
 access to this great SponsorWare add-on!
 
-You wll also effectively be **contributing to the SuiteCRM project** as a whole, by keeping
+You will also effectively be **contributing to the SuiteCRM project** as a whole, by keeping
 me in the Community working to write code that will **all** eventually be donated into Core!
 
 If enough people sponsor, we will effectively have one more developer working for SuiteCRM - that's
