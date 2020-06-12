@@ -22,29 +22,39 @@ reach them easily.
 * mold to your Customer's **relationship with you**: data from their past interactions, preferences, 
 purchases, invoices...
 
-### New Syntax Options
+### New Syntax Options in Email Templates
 
 Super-charges your Email Templates with dozens of additional syntax options so that this vision
 can become reality.
  
-Now you can add 
+Now you can use all these in your Compose Email window, or in Campaigns, or all the other places where 
+Email Templates are used:
 
-| Feature  | Goal |
+| Feature | Goal |
 | ------------- | ------------- |
-| Conditions | If...then...else logic that tests your data and adapts the text.  |
-| Localization | Text labels respect the user's preferred language. |
-| Date formatting | Specify how you want your dates shown. |
-| Date operations | Specify dates as "1st of next month" or "Wednesday next week" and see them translated into specific days in your email. Do date calculus adding days, weeks, etc. |
-| Time zones | Make your text sensitive to your time zone, or your customer's time zone. |
-| Related records | Access the records related to the one you're working one. Examples: get subject of latest email form customer, total of outstanding invoices, etc.| 
-| Loops | Iterate over a number of related records, for example, and create a comma-separated list or a table. | 
-| Maths | Do mathematical calculations in your templates. |
-| String processing | Various string operations: change case, concatenate, white-space control, find and replace, word wrap, regular expressions, etc. |
-| Encoding | Control character encoding. |
-| Currencies | Advanced currency formatting. |
-| and much more... | |
+| **Conditions** | If...then...else logic that tests your data and adapts the text.  |
+| **Localization** | Text labels respect the user's preferred language. |
+| **Date formatting** | Specify how you want your dates shown. |
+| **Date operations** | Specify dates as "1st of next month" or "Wednesday next week" and see them translated into specific days in your email. Do date calculus adding days, weeks, etc. |
+| **Time zones** | Make your text sensitive to your time zone, or your customer's time zone. |
+| **Related records** | Access the records related to the one you're working one. Examples: get subject of latest email form customer, total of outstanding invoices, etc.| 
+| **Loops** | Iterate over a number of related records, for example, and create a comma-separated list or a table. | 
+| **Maths** | Do mathematical calculations in your templates. |
+| **String processing** | Various string operations: change case, concatenate, white-space control, find and replace, word wrap, regular expressions, etc. |
+| **Encoding** | Control character encoding. |
+| **Currencies** | Advanced currency formatting. |
+| and **much** more... | |
+
+### Calculated Fields
 
 Oh, did I mention you also get advanced **Calculated fields** 😮 everywhere in SuiteCRM? 
+
+If you double-click to **inline edit** a field, you can insert one of the advanced template formulas in there, 
+and it will be converted before saving. Your browser will remember you entered it there once, so they 
+are easy to retrieve when you use the same formula often.
+
+This means that a thousand possibilities open up for you: quickly grab data from a related record, 
+enter calculated dates, evaluate conditions, etc. 
 
 This add-on is a bomb that multiplies SuiteCRM's usefulness, 
 saves employees' time while increasing productivity and sales. 
