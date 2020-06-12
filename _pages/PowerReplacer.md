@@ -34,15 +34,12 @@ Now you can add
 | Conditions | If...then...else logic that tests your data and adapts the text.  |
 | Localization | Text labels respect the user's preferred language. |
 | Date formatting | Specify how you want your dates shown. |
-| Date operations | Specify dates as "1st of next month" or "Wednesday next week" and see them 
-translated into specific days in your email. Do date calculus adding days, weeks, etc. |
+| Date operations | Specify dates as "1st of next month" or "Wednesday next week" and see them translated into specific days in your email. Do date calculus adding days, weeks, etc. |
 | Time zones | Make your text sensitive to your time zone, or your customer's time zone. |
-| Related records | Access the records related to the one you're working one. Examples: 
-get subject of latest email form customer, total of outstanding invoices, etc.| 
-| Loops | Iterate over a number of related records, for example, and create a comma-separated 
-list or a table. | 
+| Related records | Access the records related to the one you're working one. Examples: get subject of latest email form customer, total of outstanding invoices, etc.| 
+| Loops | Iterate over a number of related records, for example, and create a comma-separated list or a table. | 
 | Maths | Do mathematical calculations in your templates. |
-| String processing | Various string operations: change case, concatenate, white-space control, find and replace, word wrap, regular expressions, etc.
+| String processing | Various string operations: change case, concatenate, white-space control, find and replace, word wrap, regular expressions, etc. |
 | Encoding | Control character encoding. |
 | Currencies | Advanced currency formatting. |
 | and much more... | |
