@@ -23,6 +23,14 @@ So, [my sponsors on Github](https://github.com/sponsors/pgorod) get access to th
 which will greatly increase the power of SuiteCRM. This will convert to happier users and 
 saved money in your organization, in no time.
 
+## How It Works
+
+You can watch the Demo Video (9 minutes, with sound). You'll probably want to go full-screen to see it better.
+
+<video autoplay controls width="600"> 
+    <source src="/images/PowerWorkflowsAlpha.mp4" type="video/mp4">
+</video>
+
 While setting up a Workflow, you get a new option in the **Run** dropdown:
 
 ![New option in "Run" dropdown](../images/pw_dropdown.png)
@@ -91,6 +99,10 @@ going into each record individually.
 Some add-ons give you a single new feature. This one, by tapping in to the various possibilities
 of Workflows, gives you a myriad of new features; it multiplies the productivity of the CRM.
 
+### Technical Info
+
+Check the [Technical info page](/power-workflows-technical) for details about Requirements, Releases, future features, etc.
+
 ## Sponsor Now!
 
 So, what are you waiting for?
@@ -105,10 +117,3 @@ If enough people sponsor, we will effectively have one more developer working fo
 why I could be selling these add-ons in the SuiteCRM Store, for higher prices and forever, but I 
 chose not to.
 
-## Watch the Demo Video
-
-9 minutes, with sound.
-
-<video autoplay controls width="400"> 
-    <source src="/images/PowerWorkflowsAlpha.mp4" type="video/mp4">
-</video>
