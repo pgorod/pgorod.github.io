@@ -12,7 +12,7 @@ but definitely when using a CRM.
 This post is really a Tip about one of the most useful SuiteCRM add-ons I know of, which... isn't exactly
 a SuiteCRM add-on, it's something you install in your Windows / Linux / MacOS.
 
-I am not affiliated with any of the software I mention in this post.
+> Note: I am not affiliated with any of the software I mention in this post. These are just honest tips.
 
 Basically, you do a lot of copy-paste when moving around different records, browser tabs, etc. Using a
 Clipboard manager let's you accumulate the things you have previously copied.
@@ -54,3 +54,5 @@ a markdown-formatted link.
 You'll find that this tip not only **saves you time**, but it also helps you have **clearer work-flow** and 
 keep your focus better. You'll find yourself making **less mistakes**, and being able to **recover** better
 from pitfalls, by having access to more of your recent past. 
+
+Try it! Afterwards, you'll see there's no going back.
