@@ -21,8 +21,9 @@ Clipboard manager let's you accumulate the things you have previously copied.
 
 ## Which one to use?
 
-There are many available. I've personally used [Ditto](https://ditto-cp.sourceforge.io/) on Windows, and am now test-driving 
-[CopyQ](https://hluk.github.io/CopyQ/) which runs on all major OS's and is fully-featured.
+There are many available. I've personally used [Ditto](https://ditto-cp.sourceforge.io/) on Windows, 
+and recently changed to [CopyQ](https://hluk.github.io/CopyQ/) which runs on all major OS's and 
+is fully-featured.
 
 ## Use-case scenarios
 
@@ -39,3 +40,17 @@ or when I'm changing something which I sense I might regret later... just copy i
 be there later. if I forget about it for too long, it will disappear. Perfect - that just  means I didn't 
 regret my change.
 
+* **Edit before pasting**: you can change the formats, and even edit the text before pasting. You 
+get "Paste as" functionality even in apps that don't have it.
+
+* **Actions**: CopyQ is extensible and customizable,and people on the Internet share [useful commands they
+added](https://copyq.readthedocs.io/en/latest/command-examples.html). This means that with a bit more technical 
+tweaking you can even script those common transformations you need to do frequently to text. For example,
+you can pick up (copy) a link text and link URL, and then have it pasted in one go as a complete HTML `<a>` tag, or
+a markdown-formatted link.
+
+## Not only a time saver
+
+You'll find that this tip not only **saves you time**, but it also helps you have **clearer work-flow** and 
+keep your focus better. You'll find yourself making **less mistakes**, and being able to **recover** better
+from pitfalls, by having access to more of your recent past. 
