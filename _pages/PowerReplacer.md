@@ -45,6 +45,23 @@ Email Templates are used:
 | **Currencies** | Advanced currency formatting. |
 | and **much** more... | |
 
+### Sand-boxed Security
+
+Security is not an after-thought. Full sand-boxing of Templates is available - you can list allowed 
+tags and filters one by one. Only white-listed Template options will be executed.
+
+### Extensible
+
+Template functions can be extended in code. So you can develop things like...
+
+* grabbing beautiful Google charts of live data for that customer
+* converting currencies with their live-fetched valuations for the day when the email is being sent
+* complex calculations on your CRM data, delivered with simplicity to the template for presentation
+* consume any external API to get extra live data from your other corporate systems  
+* generate time-limited tokens for additional security in tracker links.
+* for deliveries, include up-to-date tracker information from your parcel service.
+* ... and much more!
+
 ### Calculated Fields
 
 Oh, did I mention you also get advanced **Calculated fields** 😮 everywhere in SuiteCRM? 
