@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Free Add-on for SuiteCRM - Clipboard queue
+title: Free "Add-on" for SuiteCRM - Clipboard queue
 categories: [Add-ons, Tips]
 ---
 
@@ -9,7 +9,7 @@ but definitely when using a CRM.
 
 ## Why use an Enhanced Clipboard?
 
-This post is really a Tip about one of the most useful SuiteCRM add-ons I know of, which... isn't exactly
+This post is really a Tip about one of the most useful SuiteCRM "add-ons" I know of, which... isn't exactly
 a SuiteCRM add-on, it's something you install in your Windows / Linux / MacOS.
 
 > Note: I am not affiliated with any of the software I mention in this post. These are just honest tips.
@@ -23,7 +23,7 @@ Clipboard manager let's you accumulate the things you have previously copied.
 
 There are many available. I've personally used [Ditto](https://ditto-cp.sourceforge.io/) on Windows, 
 and recently changed to [CopyQ](https://hluk.github.io/CopyQ/) which runs on all major OS's and 
-is fully-featured.
+is full-featured.
 
 ## Use-case scenarios
 
@@ -37,7 +37,7 @@ your full name, the starts and ends of emails (`"Best regards, Me"`), and much m
 
 * **Backups**: I find that sometimes I even use CopyQ for small text backups. When I'm writing a long text, 
 or when I'm changing something which I sense I might regret later... just copy it into the Clipboard. It will 
-be there later. if I forget about it for too long, it will disappear. Perfect - that just  means I didn't 
+be there later. if I forget about it for too long, it will disappear. Perfect - that just means I didn't 
 regret my change.
 
 * **Edit before pasting**: you can change the formats, and even edit the text before pasting. You 

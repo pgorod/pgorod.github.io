@@ -56,8 +56,8 @@ are easy to retrieve when you use the same formula often.
 This means that a thousand possibilities open up for you: quickly grab data from a related record, 
 enter calculated dates, evaluate conditions, etc. 
 
-This add-on is a bomb that multiplies SuiteCRM's usefulness, 
-saves employees' time while increasing productivity and sales. 
+This add-on is a bomb that multiplies SuiteCRM's usefulness, saves employees' time while increasing 
+productivity and sales. 
 
 ### For End-Users or for Developers?
 
@@ -83,3 +83,23 @@ Coming up soon.
 ### Release Date
 
 To be released before the end June 2020.
+
+
+### Technical Info
+
+Check the [Technical info page](/power-replacer-technical) for details about Requirements, Releases, future features, etc.
+
+## Sponsor Now!
+
+So, what are you waiting for?
+
+[![Sponsor button](../images/sponsor_btn.png) me on Github](https://github.com/sponsors/pgorod) and get 
+access to this great SponsorWare add-on!
+
+You will also effectively be **contributing to the SuiteCRM project** as a whole, by keeping
+me in the Community working to write code that will **all** eventually be donated into Core!
+
+If enough people sponsor, we will effectively have one more developer working for SuiteCRM - that's
+why I could be selling these add-ons in the SuiteCRM Store, for higher prices and forever, but I 
+chose not to.
+
