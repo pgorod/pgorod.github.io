@@ -43,6 +43,7 @@ Email Templates are used:
 | **String processing** | Various string operations: change case, concatenate, white-space control, find and replace, word wrap, regular expressions, etc. |
 | **Encoding** | Control character encoding. |
 | **Currencies** | Advanced currency formatting. |
+| **CSS Management** | Include external CSS files from disk. They can be big and complete, but optionally only the **used** styles will actually get copied into the Email, and they will be transformed into inline CSS. |
 | and **much** more... | |
 
 ### Sand-boxed Security

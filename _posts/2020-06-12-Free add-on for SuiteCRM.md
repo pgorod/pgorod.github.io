@@ -19,6 +19,18 @@ Clipboard manager let's you accumulate the things you have previously copied.
 
 **It's like switching from the usual Alzheimer clipboard to one that remembers much more of the past.**
 
+## How does it work?
+
+You do all your Copy-paste normally using your preferred shortcuts. But when you copy something, whatever was 
+previously in the Clipboard is not lost. It's just moved one position down in a list of all your
+recent clippings. 
+
+Then when you want to use some previous value, you just hit the global shortcut (it's `Ctrl+'` by default)
+and a window shows up hovering over your screen, with the list of clips. You can select your desired clip using
+up and down arrows, or your mouse, but the most practical thing is to just immediately start typing
+in a **find-as-you-type** manner, to bring the clip you want to the focus. Just press enter and you're done 
+pasting!
+
 ## Which one to use?
 
 There are many available. I've personally used [Ditto](https://ditto-cp.sourceforge.io/) on Windows, 
