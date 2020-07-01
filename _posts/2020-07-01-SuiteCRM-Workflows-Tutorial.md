@@ -40,7 +40,9 @@ that affect when Workflows are triggered. Then I can explain each one.
 
 **All** of the mentioned conditions must be met in order for the Workflow to be successfully triggered.
 
-
+An **additional condition** that applies to all Workflows is that they only run if their
+**`Status`** is set to **`Active`**.
+ 
 #### Cron Requirement
 
 For this requirement, your Scheduler jobs must be getting executed, after a successful configuration. 
@@ -78,3 +80,10 @@ So the Workflow can be triggered many times, but only if applied to different re
 
 The history of each Workflow and execution for specific records is saved in the `aow_processed` table.
 
+### More and Better Ways to Trigger SuiteCRM Workflows
+
+Workflows would be so much more powerful if you could set them up as tasks to be invoked fron anywhere in 
+SuiteCRM. That's exactly what my [PowerWorkflows](/power-workflows) add-on does.
+
+The main criteria that this adds is _user discretion_. A human being deciding that the Workflow should run 
+**_now_**, for **_this_** record.
