@@ -24,6 +24,6 @@ Work in progress. This add-on needs a _present_ before it can have a future :-)
 
 ### Releases
 
-* PowerReplacer v0.5 (Alpha) to be released on 30th June 2020.
+* PowerReplacer v0.5 (Alpha) to be released on 30th July 2020.
 
 

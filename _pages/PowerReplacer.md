@@ -100,7 +100,7 @@ Coming up soon.
 
 ### Release Date
 
-To be released before the end June 2020.
+To be released before the end July 2020.
 
 
 ### Technical Info
