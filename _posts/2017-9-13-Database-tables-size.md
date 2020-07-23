@@ -4,7 +4,10 @@ title: Size of Tables and Indexes in Database
 categories: [Database, Troubleshooting]
 ---
 
-SuiteCRM's Database can grow to a considerable size, depending on your use of the system. Having lots of data can be a good thing, but sometimes while investigating some error or performance problem, you will find an overgrown table. This post helps you track down those issues.
+SuiteCRM's Database can grow to a considerable size, depending on your use of the system. 
+Having lots of data can be a good thing, but sometimes while investigating some error 
+or performance problem, you will find an overgrown table. This post helps you track down 
+those issues.
 
 > Be careful when handling data directly in the database. A single badly written DELETE query can ruin your database. Be sure to Backup first and do things at your own risk.
 
