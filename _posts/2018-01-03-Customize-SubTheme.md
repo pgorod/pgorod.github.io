@@ -5,12 +5,13 @@ categories: [Customization, Themes]
 ---
 
 Since SuiteCRM 7.10, the SuiteP theme started to have 4 
-Sub-themes called **Dawn**, **Day**, **Dusk** and **Night**. 
+Sub-themes called **Dawn**, **Day**, **Dusk** and **Night**.
+
+ 
 This article teaches how to "fork" one of these and start a new Sub-theme of your own. 
 I will create a new Sub-theme called **Noon**, based on **Day**, 
 and I will make some changes in order to increase the contrast in some parts of the app.
 
-<!-- more -->
 
 ## Forking an existing Sub-theme ##
 
