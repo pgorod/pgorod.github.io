@@ -10,6 +10,8 @@ This article teaches how to "fork" one of these and start a new Sub-theme of you
 I will create a new Sub-theme called **Noon**, based on **Day**, 
 and I will make some changes in order to increase the contrast in some parts of the app.
 
+<!--more-->
+
 ## Forking an existing Sub-theme ##
 
 I start by editing `custom/themes/SuiteP/themedef.php`, and near the end, next to the similar lines, I add this one:
