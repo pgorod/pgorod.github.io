@@ -2,6 +2,7 @@
 layout: post
 title: Creating a Custom SuiteP Sub-theme
 categories: [Customization, Themes]
+excerpt: I will create a new Sub-theme called Noon, based on Day, and I will make some changes in order to increase the contrast in some parts of the app.
 ---
 
 Since SuiteCRM 7.10, the SuiteP theme started to have 4 
