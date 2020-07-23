@@ -10,7 +10,7 @@ This article teaches how to "fork" one of these and start a new Sub-theme of you
 I will create a new Sub-theme called **Noon**, based on **Day**, 
 and I will make some changes in order to increase the contrast in some parts of the app.
 
-<!--more-->
+<!-- more -->
 
 ## Forking an existing Sub-theme ##
 
