@@ -116,12 +116,8 @@ hierarchy and budgeting and delays of getting developers to do something for the
 
 ### Demo video
 
-Coming up soon.
-
-### Release Date
-
-To be released before the end July 2020.
-
+Coming up soon (the add-on has been evolving so quickly, and significantly, I keep postponing the video
+until it stabilizes...).
 
 ### Technical Info
 
