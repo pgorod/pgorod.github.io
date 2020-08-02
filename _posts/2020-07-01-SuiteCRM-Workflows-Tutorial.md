@@ -46,7 +46,7 @@ An **additional condition** that applies to all Workflows is that they only run 
 #### Cron Requirement
 
 For this requirement, your Scheduler jobs must be getting executed, after a successful configuration. 
-You can check they are running in **Admin / Schedulers / Run AOW Workflows job**. Go into that job and 
+You can check they are running in **Admin / Schedulers / Process Workflow Tasks**. Go into that job and 
 have a look at the **`Last ran successfully`** field. Has it run recently? Is that time in the correct timezone?
 
 If you need to troubleshoot this, have a look at this article I wrote: 

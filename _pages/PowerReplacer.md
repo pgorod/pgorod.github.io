@@ -21,6 +21,7 @@ reach them easily.
 * mold to your Customer's **identity**: their language, gender, time zone...
 * mold to your Customer's **relationship with you**: data from their past interactions, preferences, 
 purchases, invoices...
+* be fully **preview-able** - see exactly what the receiver will see, before sending.
 
 ### New Syntax Options in Email Templates
 
@@ -45,6 +46,17 @@ Email Templates are used:
 | **Currencies** | Advanced currency formatting. |
 | **CSS Management** | Include external CSS files from disk. They can be big and complete, but optionally only the **used** styles will actually get copied into the Email, and they will be transformed into inline CSS. |
 | and **much** more... | |
+
+### Dynamic Attachments
+
+Since you can also specify email attachments with the enhanced new language, you can
+
+* conditionally send attachments only to some recipients, based on some data in their record
+* attach some files only if it's the first time the person is being contacted
+* send specific attachments to specific people (for example, each user gets his own monthly invoice)
+* with some custom code, generate attachments on the fly, right before sending
+* adapt content according to whether the file to be attached exists or not
+* change filename while attaching, substituting for a better-looking one ("Your October invoice.pdf" instead of "000342566-Oct-20.pdf")
 
 ### Sand-boxed Security
 
@@ -76,6 +88,14 @@ enter calculated dates, evaluate conditions, etc.
 
 This add-on is a bomb that multiplies SuiteCRM's usefulness, saves employees' time while increasing 
 productivity and sales. 
+
+### Campaigns Improvements
+
+This add-on also adds a much-requested and much-needed feature to Campaigns: the ability to **preview the 
+entire Campaign**, seeing all the emails that will be sent out, in one page, with all variables substituted,
+before sending the Campaign.
+
+It's only natural that you want to check _what_ you're sending before you send...   
 
 ### For End-Users or for Developers?
 

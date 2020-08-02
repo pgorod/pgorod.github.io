@@ -20,7 +20,7 @@ Check out the full [Product page and Demo video](/power-workflows).
 
 ### Ideas for Future Features
 
-#### 1, Localization
+#### 1. Localization
 
 Allow translating the button text.
 
