@@ -8,8 +8,8 @@ permalink: /power-replacer-technical/
 
 ### Introduction
 
-PowerReplacer is a SponsorWare add-on for SuiteCRM that provides enhanced Workflow capabilities, 
-by adding buttons in views that manually trigger Workflows.
+PowerReplacer is a SponsorWare add-on for SuiteCRM that provides enhanced Templating capabilities, 
+vastly improving regular emails, campaigns, and even ordinary fields.
 
 Check out the full [Product page and Demo video](/power-replacer).
 
