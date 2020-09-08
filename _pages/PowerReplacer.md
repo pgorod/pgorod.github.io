@@ -23,6 +23,14 @@ reach them easily.
 purchases, invoices...
 * be fully **preview-able** - see exactly what the receiver will see, before sending.
 
+## How It Works
+
+You can watch the Demo Video (12 minutes, with sound). You'll probably want to go full-screen to see it better.
+
+<video autoplay controls width="600"> 
+    <source src="/images/PowerReplacerAlpha.mp4" type="video/mp4">
+</video>
+
 ### New Syntax Options in Email Templates
 
 Super-charges your Email Templates with dozens of additional syntax options so that this vision
@@ -73,6 +81,7 @@ Template functions can be extended in code. So you can develop things like...
 * consume any external API to get extra live data from your other corporate systems  
 * generate time-limited tokens for additional security in tracker links.
 * for deliveries, include up-to-date tracker information from your parcel service.
+* generate QR codes or other barcodes from record data
 * ... and much more!
 
 ### Calculated Fields
@@ -113,11 +122,6 @@ and that others can ask for help.
 In fact, what some end-users will love about this is that it frees them from the developers. They will
 be able to get their work done, and adjust their CRM processes, without having to go through all the 
 hierarchy and budgeting and delays of getting developers to do something for them. 
-
-### Demo video
-
-Coming up soon (the add-on has been evolving so quickly, and significantly, I keep postponing the video
-until it stabilizes...).
 
 ### Technical Info
 
