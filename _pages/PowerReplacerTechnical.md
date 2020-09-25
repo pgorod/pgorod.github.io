@@ -20,7 +20,7 @@ Check out the full [Product page and Demo video](/power-replacer).
 
 ### Current scope of features
 
-* Works with... 
+* Works with...  
     * Emails module, Compose Window
     * Compose Window, launched as a pop-up from other modules' Activities subpanel.
     * Templates defined in the Email Templates module.

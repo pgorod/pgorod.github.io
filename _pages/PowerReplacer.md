@@ -14,8 +14,6 @@ information from a centralized database, is a big part of the reason why you got
 
 You need your CRM Emails to...
 
-* **_Work_**: you can't have codes like `$contact_user_name` going out un-replaced to your dear customers. 
-* Have **context**: any field from the record you're working on should be available.
 * Have **more context**: related records typically hold crucial information, you need to be able to 
 reach them easily.
 * mold to your Customer's **identity**: their language, gender, time zone...
