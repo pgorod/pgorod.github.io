@@ -10,4 +10,4 @@ permalink: /suitecrm-add-ons/
 
 * [PowerReplacer](/power-replacer) - supercharges Email Templates and Campaigns. Make them dynamic and preview them before they go.
 
-Or read my explanation of this **SponsorWare Model** I'm trying, [how it can work!](https://github.com/sponsors/pgorod/) for me, for SuiteCRM, and for you!
+Or read my explanation of this **SponsorWare Model** I'm trying, [how it can work](https://github.com/sponsors/pgorod/){:target="_blank"} for me, for SuiteCRM, and for you!
