@@ -23,18 +23,49 @@ Applications are endless, but here are some examples...
 - applying text, number and phone formats, handling time zones, currencies, etc.
 - concatenating data from related records into a single comma-separated list: **`Bought: Apples, Pears, Grapes`**
 
-## How It Works
+### How It Works
 
-You can watch the Demo Video (12 minutes, with sound). You'll probably want to go full-screen to see it better.
+The syntax is Twig templates - with some super-useful SuiteCRM extensions (for example, to easily access
+related records). You can read more about what it allows in my page describing [PowerReplacer add-on](/power-replacer) 
+which essentially applies the same technology to Email templates.
 
-<video autoplay controls width="600"> 
-    <source src="/images/PowerReplacerAlpha.mp4" type="video/mp4">
-</video>
+#### Option 1: Entering formulas directly by hand
 
+Maximum flexibility! Only you can know what-goes-where.
 
-If you double-click to **inline edit** a field, you can insert one of the advanced template formulas in there, 
-and it will be converted before saving. Your browser will remember you entered it there once, so they 
-are easy to retrieve when you use the same formula often.
+You can type a formula in any field in an **edit view** of any module, or in an **inline edit** (when you 
+double-click to edit a field), and it will be converted before saving. Your browser will remember you 
+entered it there once, so they are easy to retrieve when you use the same formula often.
+
+Some users like to keep a list of useful formulas ready to copy-paste as appropriate, to save them time.
+
+#### Option 2: Entering formulas from Studio
+
+In Studio, in the **Fields** area of every module, you can specify two new settings for each field: 
+- **Auto New**: formula that will be applied to that field when creating new records. You can think of this 
+as an advanced "default value" setting. 
+- **Auto Edit**: formula that will be applied to the field whenever the record is edited in an edit view, or 
+the field is inline-edited individually.
+
+This way you get the full power of templates to access related records, set up dependent fields, make 
+calculations, formats, or even (by extending the code) grab extra information from an external corporate system!
+
+#### Option 3: Combine the two approaches!
+
+Set up your formula in Studio, but have it include a reference to what was in the field before, or 
+what the user just typed when editing. Think of this as an automated find-and-replace of user edits.
+
+It also allows for validation code, and for ensuring consistent formatting of entered numbers, 
+dates, currencies, etc.
+
+Some of the things that used to require a **Workflow** or an `after_save` **Logic Hook** can be handled 
+in a much simpler and user-friendly way with this approach.
+
+### Completely extensible!
+
+Twig templates let you add your own commands, filters, etc. So, with some simple development work,
+you can make extremely advanced features be condensed into simple keywords that your users can 
+apply when needed.
 
 ### Open-source wins!
 
