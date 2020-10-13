@@ -9,7 +9,7 @@ permalink: /power-replacer-technical/
 ### Introduction
 
 PowerReplacer is a SponsorWare add-on for SuiteCRM that provides enhanced Templating capabilities, 
-vastly improving regular emails, campaigns, and even ordinary fields.
+vastly improving regular emails and campaigns.
 
 Check out the full [Product page and Demo video](/power-replacer).
 
@@ -47,7 +47,7 @@ Check out the full [Product page and Demo video](/power-replacer).
 
 ### Releases
 
-* PowerReplacer v0.5 (Alpha) released on 30th July 2020.
+* PowerReplacer v0.5 (Beta) released on 30th July 2020.
     * Twig Template syntax available on Emails Module, Compose View, with Preview option
     * Same for Campaigns Emails
     * Full Campaign previews
@@ -57,6 +57,5 @@ Check out the full [Product page and Demo video](/power-replacer).
     `photo` (provide image from bean image fields), `owner` (find bean from email address), `recent`
     (access the most recently visited bean from a certain module), `attach` (evaluate an expression and
     use it as the name of a file to attach to email)   
-    * ability to use templates from any field anywhere in CRM (calculated fields).
 
 

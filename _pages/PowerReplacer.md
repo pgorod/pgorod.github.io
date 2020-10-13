@@ -82,20 +82,6 @@ Template functions can be extended in code. So you can develop things like...
 * generate QR codes or other barcodes from record data
 * ... and much more!
 
-### Calculated Fields
-
-Oh, did I mention you also get advanced **Calculated fields** 😮 everywhere in SuiteCRM? 
-
-If you double-click to **inline edit** a field, you can insert one of the advanced template formulas in there, 
-and it will be converted before saving. Your browser will remember you entered it there once, so they 
-are easy to retrieve when you use the same formula often.
-
-This means that a thousand possibilities open up for you: quickly grab data from a related record, 
-enter calculated dates, evaluate conditions, etc. 
-
-This add-on is a bomb that multiplies SuiteCRM's usefulness, saves employees' time while increasing 
-productivity and sales. 
-
 ### Campaigns Improvements
 
 This add-on also adds a much-requested and much-needed feature to Campaigns: the ability to **preview the 
