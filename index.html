@@ -5,11 +5,42 @@ layout: default
 
 {% include myads.html %}
 
+<article class="page">
+
+  <h1>My SuiteCRM SponsorWare Add-Ons</h1>
+
+  <div class="entry">
+    <h3 id="power-suitecrm-add-ons-i-created-available-to-my-sponsors-on-github">Power SuiteCRM Add-ons I created, available to my Sponsors on GitHub</h3>
+
+    <h4 id="basic-tier">Basic Tier</h4>
+
+    <ul>
+      <li><a href="/power-workflows">PowerWorkflows</a> - adds actions buttons on views, saves your user’s time by improving processes - your way.</li>
+    </ul>
+
+    <h4 id="pro-tier">Pro Tier</h4>
+
+    <ul>
+      <li><a href="/power-replacer">PowerReplacer</a> - supercharges Email Templates and Campaigns. Make them dynamic and preview them
+        before they go.</li>
+      <li><a href="/power-fields">PowerFields</a> - advanced formulas (calculated fields) everywhere. Can be typed directly or set as
+        defaults from Studio.</li>
+    </ul>
+
+    <h3 id="why-how-what-for">Why? How? What for?</h3>
+
+    <p>Read my explanation of this <strong>SponsorWare Model</strong> I’m trying,
+      <a href="https://github.com/sponsors/pgorod/" target="_blank">how it can work</a> for me, for SuiteCRM, and for you!</p>
+
+  </div>
+</article>
+
 <div class="posts">
+  <h1>Latest Blog Articles:</h1>
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
         {{ post.excerpt }}
