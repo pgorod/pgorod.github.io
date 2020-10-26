@@ -48,7 +48,8 @@ as an advanced "default value" setting.
 the field is inline-edited individually.
 
 This way you get the full power of templates to access related records, set up dependent fields, make 
-calculations, formats, or even (by extending the code) grab extra information from an external corporate system!
+calculations, formats, or even (by extending the code) grab extra information from an external 
+corporate system!
 
 #### Option 3: Combine the two approaches!
 

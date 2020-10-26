@@ -44,7 +44,7 @@ every module, I'd prefer not to repeat that work every time a page loads.
 
 For the longer-running operations, such as the ones triggered from List Views with many records, 
 it would be better to execute asynchronously, without hanging the UI while waiting for the 
-operation to complete. Since I am already an AJAX call that easily lends itself to being 
+operation to complete. Since I am already in an AJAX call that easily lends itself to being 
 made asynchronous, it would be nice to allow for that.  
 
 #### 4. Security Groups Options
