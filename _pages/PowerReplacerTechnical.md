@@ -24,6 +24,8 @@ Check out the full [Product page and Demo video](/power-replacer).
     * Emails module, Compose Window
     * Compose Window, launched as a pop-up from other modules' Activities subpanel.
     * Templates defined in the Email Templates module.
+    * Templates defined in the PDF Templates module, which appear as **Print to PDF** option in each
+    module's Detail view. 
     * Emails sent from Campaigns module.
     * The "Direct HTML" email editor (as chosen on each user's profile)
 * does **not** (yet) work with... 
@@ -43,7 +45,6 @@ Check out the full [Product page and Demo video](/power-replacer).
 
 * keep improving the Emails experience
 * keep improving the Campaigns experience
-* extend these templating capabilities to PDF generation.
 
 ### Releases
 

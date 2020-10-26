@@ -12,7 +12,7 @@ permalink: /suitecrm-add-ons/
 
 #### Pro Tier
 
-* [PowerReplacer](/power-replacer) - supercharges Email Templates and Campaigns. Make them dynamic and preview them 
+* [PowerReplacer](/power-replacer) - supercharges Email Templates, PDF Templates and Campaigns. Make them dynamic and preview them 
 before they go.
 * [PowerFields](/power-fields) - advanced formulas (calculated fields) everywhere. Can be typed directly or set as 
 defaults from Studio.

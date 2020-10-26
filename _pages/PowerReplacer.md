@@ -29,12 +29,12 @@ You can watch the Demo Video (12 minutes, with sound). You'll probably want to g
     <source src="/images/PowerReplacerAlpha.mp4" type="video/mp4">
 </video>
 
-### New Syntax Options in Email Templates
+### New Syntax Options in Email and PDF Templates
 
-Super-charges your Email Templates with dozens of additional syntax options so that this vision
+Super-charges your Templates with dozens of additional syntax options so that this vision
 can become reality.
  
-Now you can use all these in your Compose Email window, or in Campaigns, or all the other places where 
+Now you can use all these in your **`Print to PDF`**, **`Compose Email`** window, or in **`Campaigns`**, or all the other places where 
 Email Templates are used:
 
 | Feature | Goal |
@@ -63,6 +63,7 @@ Since you can also specify email attachments with the enhanced new language, you
 * with some custom code, generate attachments on the fly, right before sending
 * adapt content according to whether the file to be attached exists or not
 * change filename while attaching, substituting for a better-looking one ("Your October invoice.pdf" instead of "000342566-Oct-20.pdf")
+* **You can even specify to attach a PDF file which is generated from a separate template!**
 
 ### Sand-boxed Security
 
