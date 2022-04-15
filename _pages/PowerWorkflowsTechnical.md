@@ -15,8 +15,9 @@ Check out the full [Product page and Demo video](/power-workflows).
 
 ### Requirements
 
-* SuiteCRM version 7.9 or newer, using the SuiteP Theme.
-* PHP version - any that works with SuiteCRM
+* SuiteCRM version 7.12.x, using the SuiteP Theme
+* PHP version - minimum 7.3
+* SuiteCRM 8.x support coming soon!
 
 ### Ideas for Future Features
 

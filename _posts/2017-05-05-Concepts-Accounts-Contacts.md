@@ -46,7 +46,7 @@ SuiteCRM is built to have only one Account attributed to a Contact. The user int
 
 If you do this, the user interface will behave strangely. It will still only show one Account in a Contact's record (I'm not sure if it shows the first one inserted, the last one inserted, or just a random pick). So you see a single Account linked, but if you delete it, instead of seeing an unlinked record, the second Account will magically appear in its place.
 
-There might be good reasons to use this system, imperfect as it is. If you need to, you can work around it's interface limitations in two ways:
+There might be good reasons to use this system, imperfect as it is. If you need to, you can work around its interface limitations in two ways:
 
 - handle the relationships directly from the database (you will find multiple rows in table `accounts_contacts` for a single contact)
 - if you don't see the second Account from the Contacts detail record, you can still see the Contact in the Accounts record, as an item in a subpanel. From that line you can select "delete". Remember deleting in subpanels doesn't delete the full records, it only deletes the relationship between the record you are on, and that linked record.
