@@ -6,7 +6,7 @@ categories: [Database, File System]
 
 When uploading a ton of images to match each Contact you have, it's useful to avoid doing it 
 from the user interface, and go directly into the file system and database.
-
+<!--more-->
 ## The Contacts `Photo` field
 
 Some people don't even notice this exists - but it is actually quite useful for many purposes. 

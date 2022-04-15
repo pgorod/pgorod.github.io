@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm user [pgorod](https://github.com/pgorod) on Github, and user [pgr](https://suitecrm.com/forum/profile/6776-pgr) on the SuiteCRM forums.
+I'm user [pgorod](https://github.com/pgorod) on Github, and user [pgr](https://community.suitecrm.com/u/pgr/summary) on the SuiteCRM forums.
 
 ### Me and SuiteCRM
 
