@@ -106,21 +106,21 @@ ways to include images.
 
 ### Ways of triggering these templates:
 
-1. Go to an edit view, or double-click in Detail view to trigger an inline edit, and type a template directly. 
+1. Go to an **Edit view**, or double-click in Detail view to trigger an **Inline Edit**, and type a template directly. 
 I suggest `{% raw %}{{ 2 + 2 }}{% endraw %}` as an initial test. It should get saved as "4". you might need to 
 refresh the screen to see the change. Note that the field must start with that `{% raw %}{{{% endraw %}` in the very first position 
 (this can be configured differently).
 
-2. From the Emails **Compose** window by typing a template directly in the `Subject` or `Body` fields. Of course, 
+2. **From the Emails Compose** window by typing a template directly in the `Subject` or `Body` fields. Of course, 
 more often you will want to pull in a predefined template from the Email Templates module. Note the **Preview** 
 button at the bottom, it is really helpful to see the produced results and check everything looks ok before you send.
 
-3. From Email Campaigns. Note the new "Check all" button at the bottom of the last step in the wizard, it will give you a 
+3. **From Email Campaigns**. Note the new "Check all" button at the bottom of the last step in the wizard, it will give you a 
 complete Campaign Preview.
 
-4. From Workflows, with a new Action called "Send PowerReplacer Email". Check the logs in case the email doesn't get sent.
+4. **From Workflows**, with a new Action called "Send PowerReplacer Email". Check the logs in case the email doesn't get sent.
 
-5. You can create PDFs from PowerReplacer templates from **Print as PDF** action in detail views, and as PDF attachments
+5. You can create PDFs from PowerReplacer templates from **Print as PDF** action in detail views, and as **PDF attachments**
 using the `topdf` filter inside Email templates.
 
 ## Some examples
@@ -147,19 +147,93 @@ Your recent quote received at {{ quote.date_modified|date("F jS g:ia", "Europe/R
 ```
 
 This references a few other files that get included:
-```
+
+**products.html**:
+```html
 {% raw %}
+{%- apply inline_css(source("custom_css")) -%}
+<table>
+    <thead>
+    <tr>
+        <th>Name</th><th>Image</th><th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in quote|related('aos_products') %}
+    <tr>
+        <td>{{ item.name|raw }}</td>
+        <td>{{ item|photo }}</td>
+        <td class="price">{{ item.price|format_currency('EUR') }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+        <td><b>Total (EUR):</b></td>
+        <td></td>
+        <td class="price"><b>{{ quote.total_amt|format_currency('EUR') }}</b></td>
+    </tr>
+    </tbody>
+</table>
+{%- endapply -%}
 {% endraw %}
 ```
 
+**signature.html**:
+```html
+{% raw %}
+{%- apply inline_css(source("custom_css")) -%}
+<p></p>
+<table>
+    <tbody>
+    <tr>
+        <td>{{ assigned|photo }}</td>
+        <td><b>{{ assigned.name }}</b> is standing by to assist you with this purchase.<br/>Questions? Please dial {{ assigned.phone_work }} (Office), {{ assigned.phone_mobile }} (Mobile) or simply reply to this email.</td>
+        <td><img src="http://voipalameda.no-ip.org:201/public/emailImages/hopeShoes.png" width=80></td>
+    </tr>
+    </tbody>
+</table>
+{%- endapply -%}
+{% endraw %}
+```
 
+The **custom_css** reference loads a file from `custom/pgr/PowerReplacer/custom_styles.css` which you can edit to fit 
+your tastes and needs:
+```css
+{% raw %}
+@media screen {
+  @font-face{
+    font-family:'Lato';
+    font-style:normal;
+    font-weight:400;
+    src:local('Lato'), url('http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+  }
+}
 
+body, p, th, td {
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+}
 
-- try formula in inlineEdit, several field types
+table {
+  border: solid 1px #DDEEEE;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 13px Lato, sans-serif;
+}
+table thead th {
+  background-color: #58638f;
+  border: solid 1px #DDEEEE;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+table tbody td {
+  border: solid 1px #DDEEEE;
+  color: #333;
+  padding: 10px;
+}
+td.price {
+  text-align: right;
+}
+{% endraw %}
+```
 
-- try context "was" and "were.name"
-
-- go in Studio, cases, field description, set autonew and auto
-
-- in those, try context "currentEdit"
 
