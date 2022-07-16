@@ -71,8 +71,8 @@ Special values made available to templates.
 Ways of triggering these templates:
 
 1. Go to an edit view, or double-click in Detail view to trigger an inline edit, and type a template directly. 
-I suggest `{{ 2 + 2 }}` as an initial test. It should get saved as "4". you might need to 
-refresh the screen to see the change. Note that the field must start with that `{{` in the very first position 
+I suggest {% raw %}{{ 2 + 2 }}{% endraw %} as an initial test. It should get saved as "4". you might need to 
+refresh the screen to see the change. Note that the field must start with that {% raw %}{{{% endraw %} in the very first position 
 (this can be configured differently).
 
 2. 
