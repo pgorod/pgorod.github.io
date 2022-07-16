@@ -21,13 +21,14 @@ Check out the full [Product page and Demo video](/power-replacer).
 
 ### Current scope of features
 
-* Works with...  
+* Works with...
     * Emails module, Compose Window
     * Compose Window, launched as a pop-up from other modules' Activities subpanel.
     * Templates defined in the Email Templates module.
     * Templates defined in the PDF Templates module, which appear as **Print to PDF** option in each
     module's Detail view. 
     * Emails sent from Campaigns module.
+    * Emails sent from Workflows.
     * The "Direct HTML" email editor (as chosen on each user's profile)
 * does **not** (yet) work with... 
     * Email notifications (meeting reminders, assignments, etc).
@@ -46,8 +47,15 @@ Check out the full [Product page and Demo video](/power-replacer).
 
 * keep improving the Emails experience
 * keep improving the Campaigns experience
+* add templates to auto-replies (Cases module)
 
 ### Releases
+
+* PowerReplacer v0.7 (Beta) released on 1st July 2022.
+    * Added templated Emails from Workflows
+    * Added partial 7.11.x compatibility for people who haven't upgraded yet.
+    * Refactoring
+    * More configurable
 
 * PowerReplacer v0.5 (Beta) released on 30th July 2020.
     * Twig Template syntax available on Emails Module, Compose View, with Preview option
@@ -55,7 +63,7 @@ Check out the full [Product page and Demo video](/power-replacer).
     * Full Campaign previews
     * Smart context gives you access to more beans in your variables: not just the current records, but also 
     assigned users, beans retrieved from email `to`, `cc` and `bcc` fields, system options, etc.
-    * Custom Twig functions provided: `related` (navigate relationships no reach nearby beans), 
+    * Custom Twig functions provided: `related` (navigate relationships to reach nearby beans), 
     `photo` (provide image from bean image fields), `owner` (find bean from email address), `recent`
     (access the most recently visited bean from a certain module), `attach` (evaluate an expression and
     use it as the name of a file to attach to email)   
