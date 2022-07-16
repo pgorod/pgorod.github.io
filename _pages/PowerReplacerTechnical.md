@@ -22,7 +22,8 @@ Check out the full [Product page and Demo video](/power-replacer).
 
 ### Documentation 
 
-To learn how to use Templates, and details on the language options available, check out the [Templates Documentation](/templates-documentation)
+To learn how to use Templates, and details on the language options available, check out 
+the [Templates Documentation](/templates-documentation).
 
 ### Current scope of features
 
