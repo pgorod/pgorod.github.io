@@ -16,8 +16,13 @@ Check out the full [Product page and Demo video](/power-replacer).
 ### Requirements
 
 * SuiteCRM version 7.12.x, using the SuiteP Theme
+* (if you're still with SuiteCRM 7.11.x, ask me for a possible partial compatibility)
 * PHP version - minimum 7.3
 * SuiteCRM 8.x support coming soon!
+
+### Documentation 
+
+To learn how to use Templates, and details on the language options available, check out the [Templates Documentation](/templates-documentation)
 
 ### Current scope of features
 
