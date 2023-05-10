@@ -2,7 +2,7 @@ Welcome to the **[pgorod.github.io](https://pgorod.github.io)** Github Pages!
 
 This is a Github repository that produces a website at [pgorod.github.io](https://pgorod.github.io) where I post about SuiteCRM.
 
-The site is made with Jekyll and you can clone it and edit it yourself, submitting pull requests.
+The site is made with Jekyll and you can clone it and edit it yourself, submitting pull requests. 
 
 For this or for any other Jekyll site, here's a handy script to take care of pushing any changes you make locally:
 
